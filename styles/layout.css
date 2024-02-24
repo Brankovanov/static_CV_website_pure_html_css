@@ -1,0 +1,9 @@
+.content-container {
+    width: 100%; 
+    
+    /* DESKTOP */
+    @media (min-width: 1366px) {
+        max-width: 85rem;
+        margin: auto;
+    }
+}
