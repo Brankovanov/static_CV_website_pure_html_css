@@ -46,22 +46,57 @@
 
 .static-container header {
   display: flex;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-    text-wrap: nowrap;
+  text-wrap: nowrap;
 }
 
 .header-menu {
+  display: none;
+
+  /* DESKTOP */
+  @media (min-width: 1366px) {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+header button {
+  display: block;
+  /* DESKTOP */
+  @media (min-width: 1366px) {
+    display: none;
+  }
+}
+
+main section:not(#about-me) {
+  min-height: calc(100vh - 10rem);
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+main section article {
   display: flex;
   gap: 2rem;
 }
 
-main section {
-    min-height: calc(100vh - 10rem);
-    border: 1px solid black;
-    padding: 2rem;
+article .picture-container {
+  flex: 1;
+}
+
+article .content-container {
+  flex: 1;
+}
+
+article h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

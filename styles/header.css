@@ -1,0 +1,98 @@
+header {
+  border: 1px solid yellow;
+}
+
+.static-container header,
+header button {
+  background-color: gray;
+  color: white;
+}
+
+.header-menu a {
+  color: lightgray;
+  text-decoration: none;
+  border: 1px solid lightgray;
+  padding: 1rem;
+
+  /* DESKTOP */
+  @media (min-width: 1366px) {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.header-menu a:hover {
+  color: gray;
+
+   /* DESKTOP */
+   @media (min-width: 1366px) {
+    color: white;
+  }
+}
+
+header button {
+  cursor: pointer;
+}
+
+header button:hover div {
+  background-color: lightgray;
+}
+
+header button:hover div {
+  background-color: white;
+  opacity: 1;
+  transform: initial;
+}
+.header-menu {
+     /* MOBILE + TABLET */
+     @media (max-width: 1365px) {
+
+         top: 0;
+         transition: all 1s;
+     }
+}
+.header-wrapper:hover .header-menu {
+    /* MOBILE + TABLET */
+    @media (max-width: 1365px) {
+        top: 5rem;
+        background-color: gray;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+
+header a:hover {
+  background-color: lightgray;
+}
+
+.header-wrapper:hover button div:nth-of-type(1) {
+  transform: translate(0, 1rem) rotate(-45deg);
+}
+
+.header-wrapper:hover button div:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header-wrapper:hover button div:nth-of-type(3) {
+  transform: translate(0, -1rem) rotate(45deg);
+}
+
+.header-wrapper:hover .header-menu{
+  top: 5rem
+}
+header button {
+  padding: 1rem;
+}
+
+header button div {
+  width: 4.5rem;
+  height: 0.5rem;
+  background-color: lightgray;
+  margin: 0.5rem 0;
+  transition: all 1s;
+}

@@ -10,27 +10,23 @@ aside {
     border: 1px solid blue;
 }
 
-header {
-    border: 1px solid yellow;
-}
-
 footer {
     border: 1px solid green;
 }
 
-.static-container header {
+.static-container footer {
     background-color: gray;
     color: white;
 }
 
-.header-menu a {
-    text-decoration: none;
-    color: lightgray;
-}
 
-.header-menu a:hover {
-    text-decoration: none;
-    color: white;
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main section {
