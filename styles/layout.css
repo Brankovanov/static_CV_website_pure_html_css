@@ -41,4 +41,27 @@
 .static-container header,
 .static-container footer {
   height: 5rem;
+  padding: 0 2rem;
+}
+
+.static-container header {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    text-wrap: nowrap;
+}
+
+.header-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+main section {
+    min-height: calc(100vh - 10rem);
+    border: 1px solid black;
+    padding: 2rem;
 }
