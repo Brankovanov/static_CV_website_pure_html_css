@@ -1,9 +1,44 @@
-.content-container {
-    width: 100%; 
-    
-    /* DESKTOP */
-    @media (min-width: 1366px) {
-        max-width: 85rem;
-        margin: auto;
-    }
+.dynamic-container {
+  width: 100%;
+  min-height: calc(100vh - 10rem);
+  display: flex;
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1366px) {
+    max-width: 85rem;
+    margin: auto;
+  }
+}
+
+.dynamic-container main {
+  flex: 1;
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    flex: 3;
+  }
+}
+
+.dynamic-container aside {
+  display: none;
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    display: block;
+    flex: 1;
+  }
+}
+
+.static-container {
+  width: 100%;
+}
+
+.static-container header,
+.static-container footer {
+  height: 5rem;
 }
