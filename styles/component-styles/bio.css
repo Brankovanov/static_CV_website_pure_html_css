@@ -1,0 +1,35 @@
+.bio {
+  display: flex;
+  gap: 2rem;
+}
+
+.bio .picture-container {
+  flex: 1;
+}
+
+.bio .content-container {
+  padding: 0 1rem;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: height 3s;
+}
+ 
+
+ 
+.bio .content-container:hover  {
+  display: block;
+}
+
+article h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

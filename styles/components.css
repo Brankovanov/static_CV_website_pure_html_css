@@ -1,3 +1,6 @@
+@import url('component-styles/header.css');
+@import url('component-styles/bio.css');
+
 html {
     scroll-behavior: smooth;
 }
