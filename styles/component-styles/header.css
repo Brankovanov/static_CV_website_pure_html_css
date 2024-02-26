@@ -1,8 +1,9 @@
 .static-container header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 5rem;
+  min-height: 5rem;
   padding: 0 2rem;
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -10,12 +11,17 @@
 
 /* Logo */
 .logo {
-  text-wrap: nowrap;
+  text-align: center;
 }
 /* Logo */
 
+.header-wrapper {
+  margin: auto;
+}
+
 /* Header button */
 .header-wrapper button {
+  position: relative;
   background-color: inherit;
   cursor: pointer;
   padding: 1rem;
@@ -51,7 +57,6 @@
 .header-menu {
   position: absolute;
   height: auto;
-  top: 5rem;
   right: -100%;
   display: flex;
   flex-direction: column;
