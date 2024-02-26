@@ -1,73 +1,16 @@
-header {
-  border: 1px solid yellow;
+.static-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 2rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
-.static-container header,
-header button {
-  background-color: gray;
-  color: white;
-}
-
-.header-menu a {
-  color: lightgray;
-  text-decoration: none;
-  border: 1px solid lightgray;
-  padding: 1rem;
-
-  /* DESKTOP */
-  @media (min-width: 1366px) {
-    border: 0;
-    padding: 0;
-  }
-}
-
-.header-menu a:hover {
-  color: gray;
-
-   /* DESKTOP */
-   @media (min-width: 1366px) {
-    color: white;
-  }
-}
-
-header button {
-  cursor: pointer;
-}
-
-header button:hover div {
-  background-color: lightgray;
-}
-
-header button:hover div {
-  background-color: white;
+/* Header wrapper */
+.header-wrapper:hover .header-menu a{
   opacity: 1;
-  transform: initial;
-}
-.header-menu {
-     /* MOBILE + TABLET */
-     @media (max-width: 1365px) {
-
-         top: 0;
-         transition: all 1s;
-     }
-}
-.header-wrapper:hover .header-menu {
-    /* MOBILE + TABLET */
-    @media (max-width: 1365px) {
-        top: 5rem;
-        background-color: gray;
-        position: absolute;
-        display: flex;
-        width: 100%;
-        left: 0;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-}
-
-header a:hover {
-  background-color: lightgray;
 }
 
 .header-wrapper:hover button div:nth-of-type(1) {
@@ -82,17 +25,65 @@ header a:hover {
   transform: translate(0, -1rem) rotate(45deg);
 }
 
-.header-wrapper:hover .header-menu{
-  top: 5rem
+.header-wrapper:hover .header-menu {
+  right: 0;
 }
-header button {
+/* Header wrapper */
+
+/* Logo */
+.logo {
+  text-wrap: nowrap;
+}
+/* Logo */
+
+/* Header button */
+.header-wrapper button {
+  background-color: inherit;
+  cursor: pointer;
   padding: 1rem;
 }
 
-header button div {
+.header-wrapper button div {
   width: 4.5rem;
   height: 0.5rem;
-  background-color: lightgray;
+  background-color: var(--secondary-color);
   margin: 0.5rem 0;
-  transition: all 1s;
+  transition: right 1s ease-in-out;
 }
+
+.header-wrapper button:hover div {
+  background-color: var(--secondary-color);
+  transform: initial;
+}
+
+/* Header button */
+
+/* Header menu */
+.header-menu {
+  position: absolute;
+  height: auto;
+  /* top: -30rem; */
+  top: 5rem;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  transition: 1s all;
+}
+
+.header-menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  
+}
+
+.header-menu a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* Header menu */
