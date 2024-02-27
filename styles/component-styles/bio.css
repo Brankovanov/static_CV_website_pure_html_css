@@ -1,6 +1,7 @@
-.bio {
+.bio article {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .bio .picture-container {
@@ -10,10 +11,6 @@
 .bio .content-container {
   padding: 0 1rem;
   flex: 1;
-}
-
-.bio .content-container h2 {
-  text-align: center;
 }
 
 img {
