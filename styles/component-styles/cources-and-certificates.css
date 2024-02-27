@@ -6,13 +6,14 @@
 }
 
 .carousel-container {
-  width: 100%; 
+  width: 100%;
   border: 1px solid;
 }
 
 .carousel-indicators {
   width: 100%;
 }
+
 .carousel-indicators a {
   display: inline-block;
   text-align: center;
@@ -22,9 +23,9 @@
 
 .slide-container {
   width: 100%;
-  height: 60vh;
-  overflow:auto;
-  display:flex;
+  height: 55vh;
+  overflow: hidden;
+  display: flex;
   scroll-behavior: smooth;
   scroll-margin-top: 26rem;
 }
@@ -32,4 +33,27 @@
 .slide-container .slide {
   border: 1px solid red;
   flex: 0 0 100%;
+  transition: all 1s;
+}
+
+/* test */
+input {
+  opacity: 0;
+
+}
+
+input:nth-of-type(4):checked~.slide-container .slide:first-of-type {
+  margin-left: -300%;
+}
+
+input:nth-of-type(3):checked~.slide-container .slide:first-of-type {
+  margin-left: -200%;
+}
+
+input:nth-of-type(2):checked~.slide-container .slide:first-of-type {
+  margin-left: -100%;
+}
+
+input:nth-of-type(1):checked~.slide-container .slide:first-of-type {
+  margin-left: 0%;
 }
