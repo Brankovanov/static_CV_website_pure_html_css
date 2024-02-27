@@ -1,20 +1,11 @@
 @import url('component-styles/header.css');
 @import url('component-styles/bio.css');
+@import url('component-styles/experience.css');
+@import url('component-styles/education.css');
+@import url('component-styles/cources-and-certificates.css');
 
 html {
     scroll-behavior: smooth;
-}
-
-main {
-    border: 1px solid red;
-}
-
-aside {
-    border: 1px solid blue;
-}
-
-footer {
-    border: 1px solid green;
 }
 
 .static-container footer {
@@ -23,15 +14,15 @@ footer {
 }
 
 
-
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
 
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main section {
-    border: 1px solid black;
 }
