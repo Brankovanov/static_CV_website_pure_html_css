@@ -1,0 +1,13 @@
+section .languages {
+    padding: 0 1rem;
+}
+
+.languages table {
+    width: 100%;
+    text-align: center;
+}
+
+table thead th {
+    display: none;
+}
+

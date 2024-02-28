@@ -3,6 +3,7 @@
 @import url('component-styles/experience.css');
 @import url('component-styles/education.css');
 @import url('component-styles/cources-and-certificates.css');
+@import url('component-styles/languages.css');
 
 html {
     scroll-behavior: smooth;
