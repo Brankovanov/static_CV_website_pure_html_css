@@ -7,23 +7,34 @@
 
 .carousel-container {
   width: 100%;
-  border: 1px solid;
 }
 
 .carousel-indicators {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.carousel-indicators a {
+.carousel-indicators label {
   display: inline-block;
   text-align: center;
-  border: 1px solid;
-  width: 24%;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem 0 0 0.5rem ;
+  border-radius: 50%;
+}
+
+.carousel-indicators label:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .slide-container {
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   overflow: hidden;
   display: flex;
   scroll-behavior: smooth;
@@ -31,15 +42,61 @@
 }
 
 .slide-container .slide {
-  border: 1px solid red;
   flex: 0 0 100%;
-  transition: all 1s;
+  transition: margin-left 1s;
 }
 
-/* test */
+.slide {
+  background: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.slide div {
+  padding: 1rem;
+  height: 50%;
+  transition: height 1s;
+  background: var(--secondary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slide div ul  {
+  list-style-type: none;
+ 
+}
+
+.slide div:nth-of-type(2) ul li  {
+  margin-bottom: 0.5rem;
+ 
+}
+.slide img {
+  object-fit: contain;
+}
+
+.slide div:nth-of-type(2):active,
+.slide div:nth-of-type(1):active {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.slide div:first-of-type:active {
+  padding: 0;
+}
+
+.slide div:last-of-type:active  {
+  padding: 2rem;
+  display: block;
+}
+
 input {
   opacity: 0;
-
+  height: 0;
+  width: 0;
 }
 
 input:nth-of-type(4):checked~.slide-container .slide:first-of-type {
@@ -56,4 +113,11 @@ input:nth-of-type(2):checked~.slide-container .slide:first-of-type {
 
 input:nth-of-type(1):checked~.slide-container .slide:first-of-type {
   margin-left: 0%;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

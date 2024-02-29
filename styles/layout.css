@@ -15,6 +15,9 @@
   }
 }
 
+main {
+  width: 100%;
+}
 .dynamic-container main {
   flex: 1;
   /* TABLET */

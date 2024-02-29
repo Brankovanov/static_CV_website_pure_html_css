@@ -23,6 +23,25 @@ details summary:hover {
 
 details .details-container {
   padding: 0 1rem 1rem;
+  transition: height 1s;
+  height: 50%;
+  cursor: pointer;
+}
+details .details-container:active {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  display: block;
+}
+
+details .details-container p {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 details ul {
