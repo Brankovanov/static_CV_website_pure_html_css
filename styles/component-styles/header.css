@@ -13,22 +13,22 @@
   background-color: var(--primary-color);
 }
 
-.logo {
+.main-header .logo {
   text-align: center;
 }
 
-.header-wrapper {
+.main-header .header-wrapper {
   margin: auto;
 }
 
-.header-wrapper button {
+.main-header .header-wrapper button {
   position: relative;
   background-color: inherit;
   cursor: pointer;
   padding: 1rem;
 }
 
-.header-wrapper button div {
+.main-header .header-wrapper button div {
   width: 4.5rem;
   height: 0.5rem;
   background-color: var(--secondary-color);
@@ -36,19 +36,19 @@
   transition: right 1s ease-in-out;
 }
 
-.header-wrapper:hover button div:nth-of-type(1) {
+.main-header .header-wrapper:hover button div:nth-of-type(1) {
   transform: translate(0, 1rem) rotate(-45deg);
 }
 
-.header-wrapper:hover button div:nth-of-type(2) {
+.main-header .header-wrapper:hover button div:nth-of-type(2) {
   opacity: 0;
 }
 
-.header-wrapper:hover button div:nth-of-type(3) {
+.main-header .header-wrapper:hover button div:nth-of-type(3) {
   transform: translate(0, -1rem) rotate(45deg);
 }
 
-.header-menu {
+.main-header .header-menu {
   position: absolute;
   height: auto;
   right: 0;
@@ -61,12 +61,12 @@
   overflow: hidden;
 }
 
-.header-wrapper:hover .header-menu {
+.main-header .header-wrapper:hover .header-menu {
   width: 100%;
   overflow: auto;
 }
 
-.header-menu a {
+.main-header .header-menu a {
   color: var(--secondary-color);
   text-decoration: none;
   border: 1px solid var(--secondary-color);
@@ -74,7 +74,7 @@
   white-space: nowrap;
 }
 
-.header-menu a:hover {
+.main-header .header-menu a:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }

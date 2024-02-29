@@ -1,4 +1,4 @@
-section .languages {
+.languages {
     padding: 0 1rem;
 }
 
@@ -7,7 +7,6 @@ section .languages {
     text-align: center;
 }
 
-table thead th {
+.languages table thead th {
     display: none;
 }
-

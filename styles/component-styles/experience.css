@@ -1,33 +1,34 @@
-details {
+.work-experience details {
   border: 1px solid var(--primary-color);
   border-radius: 1rem;
   margin: 0 1rem 1rem;
 }
 
-details summary {
+.work-experience details summary {
   padding: 1rem;
   border-radius: 1rem;
   color: var(--primary-color);
   cursor: pointer;
 }
 
-details[open] summary {
+.work-experience details[open] summary {
   border-radius: 1rem 1rem 0 0;
 }
 
-details summary:hover {
+.work-experience details summary:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
 }
 
-details .details-container {
+.work-experience details .details-container {
   padding: 0 1rem 1rem;
   transition: height 1s;
   height: 50%;
   cursor: pointer;
 }
-details .details-container:active {
+
+.work-experience details .details-container:active {
   position: fixed;
   height: 100%;
   top: 0;
@@ -37,18 +38,18 @@ details .details-container:active {
   display: block;
 }
 
-details .details-container p {
+.work-experience details .details-container p {
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
 
-details ul {
+.work-experience details ul {
   margin-top: 0.5rem;
   margin-left: 2rem;
 }
 
-details li {
+.work-experience details li {
   margin-bottom: 0.5rem;
 }

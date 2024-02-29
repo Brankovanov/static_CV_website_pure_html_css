@@ -4,26 +4,4 @@
 @import url('component-styles/education.css');
 @import url('component-styles/cources-and-certificates.css');
 @import url('component-styles/languages.css');
-
-html {
-    scroll-behavior: smooth;
-}
-
-.static-container footer {
-    background-color: gray;
-    color: white;
-}
-
-
-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url('component-styles/footer.css');
