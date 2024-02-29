@@ -35,7 +35,6 @@ html {
 
 .dynamic-container main section h2 {
   text-align: center;
-  height: 5rem;
   margin-bottom: 1rem;
   padding: 0 2rem;
   color: var(--primary-color);
@@ -62,4 +61,10 @@ html {
 
 .static-container {
   width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

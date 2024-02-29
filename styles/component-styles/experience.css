@@ -38,6 +38,10 @@
   display: block;
 }
 
+.work-experience details .details-container:active p {
+  display: block;
+}
+
 .work-experience details .details-container p {
   display: -webkit-box;
   -webkit-line-clamp: 10;

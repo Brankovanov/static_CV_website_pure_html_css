@@ -42,6 +42,7 @@
 }
 
 .courses-and-ceriticates .slide-container .slide {
+  width: 100%;
   flex: 0 0 100%;
   transition: margin-left 1s;
   background: var(--secondary-color);
@@ -84,9 +85,11 @@
 .courses-and-ceriticates .slide div:first-of-type:active {
   padding: 0;
 }
-
-.courses-and-ceriticates .slide div:last-of-type:active {
-  padding: 2rem;
+.courses-and-ceriticates .slide div:last-of-type .description {
+  display: none;
+}
+.courses-and-ceriticates .slide div:last-of-type:active .description {
+  padding: 1rem;
   display: block;
 }
 
@@ -118,3 +121,5 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* TO BE FIXED */
