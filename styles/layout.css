@@ -1,8 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .dynamic-container {
+  display: flex;
   width: 100%;
   min-height: calc(100vh - 10rem);
-  display: flex;
- 
+
   /* TABLET */
   @media (min-width: 768px) {
     flex-wrap: wrap;
@@ -11,16 +15,42 @@
   /* DESKTOP */
   @media (min-width: 1366px) {
     max-width: 85rem;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
 .dynamic-container main {
+  width: 100%;
   flex: 1;
+  z-index: 0;
+
   /* TABLET */
   @media (min-width: 768px) {
     flex: 3;
   }
+}
+
+.dynamic-container main section {
+  scroll-margin-top: 11rem;
+}
+
+.dynamic-container main section h2,
+.dynamic-container main section h3,
+.dynamic-container main section h4,
+.dynamic-container main section h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  color: var(--primary-color);
+}
+
+.dynamic-container main section:after {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--primary-color);
+  content: "\2756\2756\2756";
 }
 
 .dynamic-container aside {
@@ -28,25 +58,18 @@
 
   /* TABLET */
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
     flex: 1;
   }
 }
 
 .static-container {
   width: 100%;
+  z-index: 1;
 }
 
-.static-container footer {
-  height: 5rem;
-  padding: 0 2rem;
-}
-
-
- 
-
-main section:not(#bio) {
-  min-height: calc(100vh - 10rem);
-  border: 1px solid black;
-  padding: 2rem;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
