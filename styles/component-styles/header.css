@@ -15,10 +15,7 @@
 }
 
 .main-header .logo {
-<<<<<<< HEAD
   width: 100%;
-=======
->>>>>>> 344844eda783649814d7a37be63e9111f68c40f2
   text-align: center;
 }
 
@@ -60,7 +57,10 @@
   flex-direction: column;
   width: 0;
   height: auto;
+  text-align: center;
   transition: width 1s;
+  overflow: hidden;
+  background-color: var(--primary-color);
 }
 
 .main-header .header-wrapper:hover .header-menu {
