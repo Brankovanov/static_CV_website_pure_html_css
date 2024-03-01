@@ -1,35 +1,47 @@
-.bio {
+.bio article {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .bio .picture-container {
+  height: 50%;
+  transition: all 1s;
   flex: 1;
+  cursor: pointer;
 }
 
 .bio .content-container {
+  transition: height 1s;
+  height: 50%;
   padding: 0 1rem;
   flex: 1;
+  cursor: pointer;
+}
+
+.bio .content-container {
   display: -webkit-box;
   -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;  
   overflow: hidden;
-  text-overflow: ellipsis;
-  transition: height 3s;
-}
- 
-
- 
-.bio .content-container:hover  {
-  display: block;
 }
 
-article h2 {
-  text-align: center;
-}
-
-img {
-  width: 100%;
+.bio .picture-container:active,
+.bio .content-container:active {
+  position: fixed;
   height: 100%;
-  object-fit: cover;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  z-index: 2;
+}
+
+.bio .picture-container:active {
+  padding: 0;
+}
+
+.bio .content-containerr:active  {
+  padding: 2rem;
+  display: block;
 }

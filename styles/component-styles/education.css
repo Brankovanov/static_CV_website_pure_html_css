@@ -1,0 +1,31 @@
+.education div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem 1rem;
+}
+
+.education article {
+  width: 100%;
+  cursor: pointer;
+  border:  2px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.education article p {
+  display: none;
+}
+
+.education article:hover h4 { 
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.education article:hover p {
+  display: block;
+}
+
+.education article ul {
+  list-style: none;
+}

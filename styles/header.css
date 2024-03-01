@@ -1,0 +1,92 @@
+.static-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 2rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+/* Header wrapper */
+.header-wrapper:hover .header-menu {
+  top: 5rem;
+}
+
+.header-wrapper:hover .header-menu a{
+  opacity: 1;
+}
+
+.header-wrapper:hover button div:nth-of-type(1) {
+  transform: translate(0, 1rem) rotate(-45deg);
+}
+
+.header-wrapper:hover button div:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header-wrapper:hover button div:nth-of-type(3) {
+  transform: translate(0, -1rem) rotate(45deg);
+}
+
+.header-wrapper:hover .header-menu {
+  top: 5rem
+}
+/* Header wrapper */
+
+/* Logo */
+.logo {
+  text-wrap: nowrap;
+}
+/* Logo */
+
+/* Header button */
+.header-wrapper button {
+  background-color: inherit;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.header-wrapper button div {
+  width: 4.5rem;
+  height: 0.5rem;
+  background-color: var(--secondary-color);
+  margin: 0.5rem 0;
+  transition: all 1s;
+}
+
+.header-wrapper button:hover div {
+  background-color: var(--secondary-color);
+  transform: initial;
+}
+
+/* Header button */
+
+/* Header menu */
+.header-menu {
+  position: absolute;
+  height: auto;
+  top: -30rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  transition: 1s all;
+}
+
+.header-menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  
+}
+
+.header-menu a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* Header menu */

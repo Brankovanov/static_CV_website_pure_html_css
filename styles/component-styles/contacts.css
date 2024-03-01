@@ -1,0 +1,29 @@
+.contacts {
+  padding: 0 1rem;
+}
+
+.contacts ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.contacts ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.contacts ul li a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contacts ul li span {
+  display: inline-block;
+  width: 100%;
+}

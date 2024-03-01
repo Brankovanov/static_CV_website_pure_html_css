@@ -1,37 +1,9 @@
 @import url('component-styles/header.css');
 @import url('component-styles/bio.css');
-
-html {
-    scroll-behavior: smooth;
-}
-
-main {
-    border: 1px solid red;
-}
-
-aside {
-    border: 1px solid blue;
-}
-
-footer {
-    border: 1px solid green;
-}
-
-.static-container footer {
-    background-color: gray;
-    color: white;
-}
-
-
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main section {
-    border: 1px solid black;
-}
+@import url('component-styles/experience.css');
+@import url('component-styles/education.css');
+@import url('component-styles/cources-and-certificates.css');
+@import url('component-styles/languages.css');
+@import url('component-styles/footer.css');
+@import url('component-styles/contacts.css');
+@import url('component-styles/skills.css');
