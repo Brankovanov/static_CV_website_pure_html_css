@@ -31,17 +31,23 @@
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   border-radius: 1rem;
-  transition: height 1s, opacity 1s;
+  transition: width 1s, height 1s, opacity 1s;
   cursor: pointer;
+  margin: 0;
 }
 
-.skills .skills-container div h4:active {
+.skills .skills-container div:nth-child(odd) input:nth-of-type(1):checked~label h4 {
   height: 0;
   opacity: 0;
 }
 
+.skills .skills-container div:nth-child(even) input:nth-of-type(1):checked~label h4 {
+  width: 0;
+  opacity: 0;
+}
+
 .skills .skills-container div h4:hover,
-.skills .skills-container div h4:active {
+.skills .skills-container div input:nth-of-type(1):checked~label h4 {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }

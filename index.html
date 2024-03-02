@@ -16,11 +16,12 @@
                 <h1 class="bold"> Person name </h1>
             </div>
             <div class="header-wrapper">
-                <button>
+                <input type="checkbox" name="toggler" id="toggle-header">
+                <label for="toggle-header">
                     <div></div>
                     <div></div>
                     <div></div>
-                </button>
+                </label>
                 <div class="header-menu">
                     <a class="bold" href="#bio"> About me </a>
                     <a class="bold" href="#work-experience"> Work experience </a>
@@ -34,7 +35,7 @@
         </header>
     </div>
     <!-- MAIN HEADER -->
-    
+
     <div class="dynamic-container">
         <!-- ASIDE -->
         <aside> aside </aside>
@@ -44,26 +45,54 @@
             <!-- BIO -->
             <section id="bio" class="bio">
                 <article>
-                    <div class="picture-container">
-                        <img src="images/pexels-simon-robben-614810.jpg" alt="Person name">
-                    </div>
-                    <div class="content-container">
-                        <header>
-                            <h2>About me</h2>
-                        </header>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                            facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
-                            sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum eget.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut,
-                            pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer
-                            feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. Phasellus
-                            bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. Cras pharetra mi
-                            tristique sapien vestibulum lobortis. Nam eget bibendum metus, non dictum mauris. Nulla at
-                            tellus sagittis, viverra est a, bibendum metus. end
-                        </p>
-                    </div>
+                    <input type="checkbox" name="sections" id="bio-image">
+                    <label for="bio-image">
+                        <div class="picture-container">
+                            <img src="images/pexels-simon-robben-614810.jpg" alt="Person name">
+                            <div class="personal-info">
+                                <h5 class="bold">Person name</h5>
+                                <p>
+                                    <span class="bold">Age:</span> 00
+                                </p>
+                                <p>
+                                    <span class="bold">Telephone: </span>
+                                    <a href="tel:+358 888 888 888">+358 888 888 888</a>
+                                </p>
+                                <p>
+                                    <span class="bold">Email: </span>
+                                    <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
+                                </p>
+                                <p>
+                                    <span class="bold">Linkedin: </span>
+                                    <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
+                                </p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="sections" id="bio-description">
+                    <label for="bio-description">
+                        <div class="content-container">
+                            <header>
+                                <h2>About me</h2>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
+                                facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
+                                sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum
+                                eget.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
+                                Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut,
+                                pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer
+                                feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.
+                                Phasellus
+                                bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. Cras pharetra mi
+                                tristique sapien vestibulum lobortis. Nam eget bibendum metus, non dictum mauris. Nulla
+                                at
+                                tellus sagittis, viverra est a, bibendum metus. end
+                            </p>
+                        </div>
+                    </label>
                 </article>
             </section>
             <!-- BIO -->
@@ -77,80 +106,104 @@
                     <details>
                         <summary class="bold">Work position one</summary>
                         <div class="details-container">
-                            <ul>
-                                <li>
-                                    <label class="bold">Position: </label>Position title
-                                </li>
-                                <li>
-                                    <span class="bold">Duration: </span>Start date - End date - duration
-                                </li>
-                                <li>
-                                    <label class="bold">Location: </label>Location name
-                                </li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
-                                sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum
-                                eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
-                                posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel
-                                leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim
-                                nunc.
-                            </p>
+                            <input type="checkbox" name="sections" id="work-experience-one">
+                            <label for="work-experience-one">
+                                <ul>
+                                    <li>
+                                        <label class="bold">Position: </label>Position title
+                                    </li>
+                                    <li>
+                                        <span class="bold">Duration: </span>Start date - End date - duration
+                                    </li>
+                                    <li>
+                                        <label class="bold">Location: </label>Location name
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
+                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                    scelerisque
+                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+                                    vestibulum
+                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    inceptos
+                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
+                                    quis
+                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
+                                    vel
+                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
+                                    enim
+                                    inceptos
+                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
+                                    quis
+                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
+                                    vel
+                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
+                                    enim
+                                    nunc.
+                                    nunc.
+                                </p>
+                            </label>
                         </div>
                     </details>
                     <details>
-                        <summary class="bold">Work position one</summary>
-                        <div class="details-container">
-                            <ul>
-                                <li>
-                                    <label class="bold">Position: </label>Position title
-                                </li>
-                                <li>
-                                    <span class="bold">Duration: </span>Start date - End date - duration
-                                </li>
-                                <li>
-                                    <label class="bold">Location: </label>Location name
-                                </li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
-                                sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum
-                                eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
-                                posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel
-                                leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim
-                                nunc.
-                            </p>
-                        </div>
+                        <summary class="bold">Work position Two</summary>
+                        <input type="checkbox" name="sections" id="work-experience-two">
+                        <label for="work-experience-two">
+                            <div class="details-container">
+                                <ul>
+                                    <li>
+                                        <label class="bold">Position: </label>Position title Two
+                                    </li>
+                                    <li>
+                                        <span class="bold">Duration: </span>Start date - End date - duration
+                                    </li>
+                                    <li>
+                                        <label class="bold">Location: </label>Location name
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
+                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                    scelerisque
+                                </p>
+                            </div>
+                        </label>
                     </details>
                     <details>
-                        <summary class="bold">Work position one</summary>
-                        <div class="details-container">
-                            <ul>
-                                <li>
-                                    <label class="bold">Position: </label>Position title
-                                </li>
-                                <li>
-                                    <span class="bold">Duration: </span>Start date - End date - duration
-                                </li>
-                                <li>
-                                    <label class="bold">Location: </label>Location name
-                                </li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
-                                sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum
-                                eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
-                                posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel
-                                leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim
-                                nunc.
-                            </p>
-                        </div>
+                        <summary class="bold">Work position three</summary>
+                        <input type="checkbox" name="sections" id="work-experience-three">
+                        <label for="work-experience-three">
+                            <div class="details-container">
+                                <ul>
+                                    <li>
+                                        <label class="bold">Position: </label>Position title three
+                                    </li>
+                                    <li>
+                                        <span class="bold">Duration: </span>Start date - End date - duration
+                                    </li>
+                                    <li>
+                                        <label class="bold">Location: </label>Location name
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
+                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                    scelerisque
+                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+                                    vestibulum
+                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    inceptos
+                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
+                                    quis
+                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
+                                    vel
+                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
+                                    enim
+                                    nunc.
+                                </p>
+                            </div>
+                        </label>
                     </details>
                 </article>
             </section>
@@ -163,117 +216,141 @@
                         <h2>Education</h2>
                     </header>
                     <div>
-                        <article>
-                            <header>
-                                <h4>Education 1</h4>
-                            </header>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">School: </span>School name
-                                    </li>
-                                    <li>
-                                        <label class="bold">Education degree: </label>Bachelor's degree
-                                    </li>
-                                    <li>
-                                        <label class="bold">Degree name: </label>Degree name
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                    vestibulum
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <header>
-                                <h4>Education 2</h4>
-                            </header>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">School: </span>School name
-                                    </li>
-                                    <li>
-                                        <label class="bold">Education degree: </label>Master's degree
-                                    </li>
-                                    <li>
-                                        <label class="bold">Degree name: </label>Degree name
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                    vestibulum
-                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    nunc. eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    nunc.
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <header>
-                                <h4>Education 3</h4>
-                            </header>
+                        <input type="checkbox" name="sections" id="education-one">
+                        <label for="education-one">
+                            <article>
+                                <header>
+                                    <h4>Education 1</h4>
+                                </header>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span class="bold">School: </span>School name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Education degree: </span>Bachelor's degree
+                                        </li>
+                                        <li>
+                                            <span class="bold">Degree name: </span>Degree name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Duration: </span>Start date - End date - duration
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
+                                        pulvinar
+                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                        scelerisque
+                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+                                        vestibulum
+                                    </p>
+                                </div>
+                            </article>
+                        </label>
 
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">School: </span>School name
-                                    </li>
-                                    <li>
-                                        <label class="bold">Education degree: </label>Master's degree
-                                    </li>
-                                    <li>
-                                        <label class="bold">Degree name: </label>Degree name
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                    vestibulum
-                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    nunc.
-                                </p>
-                            </div>
-                        </article>
+                        <input type="checkbox" name="sections" id="education-two">
+                        <label for="education-two">
+                            <article>
+                                <header>
+                                    <h4>Education 2</h4>
+                                </header>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span class="bold">School: </span>School name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Education degree: </span>Master's degree
+                                        </li>
+                                        <li>
+                                            <span class="bold">Degree name: </span>Degree name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Duration: </span>Start date - End date - duration
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
+                                        pulvinar
+                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                        scelerisque
+                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+                                        vestibulum
+                                        eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                        inceptos
+                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
+                                        lacinia
+                                        quis
+                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
+                                        id
+                                        vel
+                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
+                                        nec
+                                        enim
+                                        nunc. eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                        per
+                                        inceptos
+                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
+                                        lacinia
+                                        quis
+                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
+                                        id
+                                        vel
+                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
+                                        nec
+                                        enim
+                                        nunc.
+                                    </p>
+                                </div>
+                            </article>
+                        </label>
+
+                        <input type="checkbox" name="sections" id="education-three">
+                        <label for="education-three">
+                            <article>
+                                <header>
+                                    <h4>Education 3</h4>
+                                </header>
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span class="bold">School: </span>School name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Education degree: </span>Master's degree
+                                        </li>
+                                        <li>
+                                            <span class="bold">Degree name: </span>Degree name
+                                        </li>
+                                        <li>
+                                            <span class="bold">Duration: </span>Start date - End date - duration
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
+                                        pulvinar
+                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
+                                        scelerisque
+                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+                                        vestibulum
+                                        eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                        inceptos
+                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
+                                        lacinia
+                                        quis
+                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
+                                        id
+                                        vel
+                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
+                                        nec
+                                        enim
+                                        nunc.
+                                    </p>
+                                </div>
+                            </article>
+                        </label>
                     </div>
                 </article>
             </section>
@@ -291,137 +368,185 @@
                         <input type="radio" name="slides" id="slide-3">
                         <input type="radio" name="slides" id="slide-4">
                         <div class="slide-container">
-                            <div class="slide">
+                            <div class="slide" draggable>
                                 <div>
-                                    <img src="images/certificate_1.png" alt="Elephant at sunset" />
+                                    <input type="checkbox" name="sections" id="cources-image-one">
+                                    <label for="cources-image-one">
+                                        <img for="cources-image-one" src="images/certificate_1.png"
+                                            alt="Elephant at sunset" />
+                                    </label>
                                 </div>
                                 <div>
-                                    <ul>
-                                        <li>
-                                            <label class="bold">Cerrificate name: </label>Certificate name
-                                        </li>
-                                        <li>
-                                            <label class="bold">Issuing organization </label>Organization name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Issue date: </span>Start date
-                                        </li>
-                                        <li>
-                                            <span class="bold">Expiration date: </span>End date
-                                        </li>
-                                        <li>
-                                            <span class="bold">Credential ID: </span>ID Number
-                                        </li>
-                                        <li>
-                                            <a class="bold" href="#">Credential URL</a>
-                                        </li>
-                                    </ul>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi
-                                        a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                        tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
-                                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
-                                        pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere
-                                        ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel
-                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
-                                        nec enim nunc.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div>
-                                    <img src="images/certificate_2.png" alt="Elephant at sunset" />
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <label class="bold">Cerrificate name: </label>Certificate name
-                                        </li>
-                                        <li>
-                                            <label class="bold">Issuing organization </label>Organization name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Issue date: </span>Start date
-                                        </li>
-                                        <li>
-                                            <span class="bold">Expiration date: </span>End date
-                                        </li>
-                                        <li>
-                                            <span class="bold">Credential ID: </span>ID Number
-                                        </li>
-                                        <li>
-                                            <a class="bold" href="#">Credential URL</a>
-                                        </li>
-                                    </ul>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi
-                                        a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                        tincidunt laoreet ex, in pretium orci vestibulum
-                                    </p>
+                                    <input type="checkbox" name="sections" id="cources-content-one">
+                                    <label for="cources-content-one">
+                                        <ul>
+                                            <li>
+                                                <span class="bold">Cerrificate name: </span>
+                                                Certificate name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issuing organization </span>
+                                                Organization name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issue date: </span>
+                                                Start date
+                                            </li>
+                                            <li>
+                                                <span class="bold">Expiration date: </span>
+                                                End date
+                                            </li>
+                                            <li>
+                                                <span class="bold">Credential ID: </span>
+                                                ID Number
+                                            </li>
+                                            <li>
+                                                <a class="bold" href="#">Credential URL</a>
+                                            </li>
+                                        </ul>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
+                                            Morbi
+                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
+                                            tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
+                                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+                                            pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
+                                            posuere
+                                            ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
+                                            vel
+                                            leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere.
+                                            Morbi
+                                            nec enim nunc.
+                                        </p>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="slide">
+                            <div class="slide" draggable>
                                 <div>
-                                    <img src="images/certificate_1.png" alt="Elephant at sunset" />
+                                    <input type="checkbox" name="sections" id="cources-image-two">
+                                    <label for="cources-image-two">
+                                        <img src="images/certificate_2.png" alt="Elephant at sunset" />
+                                    </label>
                                 </div>
                                 <div>
-                                    <ul>
-                                        <li>
-                                            <label class="bold">Cerrificate name: </label>Certificate name
-                                        </li>
-                                        <li>
-                                            <label class="bold">Issuing organization </label>Organization name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Issue date: </span>Start date
-                                        </li>
-                                        <li>
-                                            <a class="bold" href="#">Credential URL</a>
-                                        </li>
-                                    </ul>
-                                    <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque nisl eros, pulvinar </p>
+                                    <input type="checkbox" name="sections" id="cources-content-two">
+                                    <label for="cources-content-two">
+                                        <ul>
+                                            <li>
+                                                <span class="bold">Cerrificate name: </span>
+                                                Certificate name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issuing organization </span>
+                                                Organization name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issue date: </span>
+                                                Start date
+                                            </li>
+                                            <li>
+                                                <span class="bold">Expiration date: </span>
+                                                End date
+                                            </li>
+                                            <li>
+                                                <span class="bold">Credential ID: </span>ID Number
+                                            </li>
+                                            <li>
+                                                <a class="bold" href="#">Credential URL</a>
+                                            </li>
+                                        </ul>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
+                                            Morbi
+                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
+                                            tincidunt laoreet ex, in pretium orci vestibulum
+                                        </p>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="slide">
+                            <div class="slide" draggable>
+                                <div>
+                                    <input type="checkbox" name="sections" id="cources-image-three">
+                                    <label for="cources-image-three">
+                                        <img src="images/certificate_1.png" alt="Elephant at sunset" />
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="sections" id="cources-content-three">
+                                    <label for="cources-content-three">
+                                        <ul>
+                                            <li>
+                                                <span class="bold">Cerrificate name: </span>
+                                                Certificate name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issuing organization </span>
+                                                Organization name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issue date: </span>
+                                                Start date
+                                            </li>
+                                            <li>
+                                                <a class="bold" href="#">Credential URL</a>
+                                            </li>
+                                        </ul>
+                                        <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Quisque nisl eros, pulvinar </p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="slide" draggable>
                                 <div>
 
                                 </div>
                                 <div class="content">
-                                    <ul>
-                                        <li>
-                                            <label class="bold">Cerrificate name: </label>Certificate name
-                                        </li>
-                                        <li>
-                                            <label class="bold">Issuing organization </label>Organization name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Issue date: </span>Start date
-                                        </li>
-                                        <li>
-                                            <span class="bold">Credential ID: </span>ID Number
-                                        </li>
-                                    </ul>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi
-                                        a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                        tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
-                                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
-                                        pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere
-                                        ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel
-                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
-                                        nec enim nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                        nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
-                                        bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt
-                                        laoreet ex, in pretium orci vestibulum eget. Class aptent taciti sociosqu ad
-                                        litora torquent per conubia nostra, per inceptos himenaeos. Duis pharetra luctus
-                                        lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar
-                                        vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer
-                                        feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.
-                                    </p>
+                                    <input type="checkbox" name="sections" id="cources-content-four">
+                                    <label for="cources-content-four">
+                                        <ul>
+                                            <li>
+                                                <span class="bold">Cerrificate name: </span>Certificate name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issuing organization </span>Organization name
+                                            </li>
+                                            <li>
+                                                <span class="bold">Issue date: </span>Start date
+                                            </li>
+                                            <li>
+                                                <span class="bold">Credential ID: </span>ID Number
+                                            </li>
+                                        </ul>
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
+                                            Morbi
+                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
+                                            tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
+                                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
+                                            pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
+                                            posuere
+                                            ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
+                                            vel
+                                            leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere.
+                                            Morbi
+                                            nec enim nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Quisque
+                                            nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
+                                            bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
+                                            tincidunt
+                                            laoreet ex, in pretium orci vestibulum eget. Class aptent taciti sociosqu ad
+                                            litora torquent per conubia nostra, per inceptos himenaeos. Duis pharetra
+                                            luctus
+                                            lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar
+                                            vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo.
+                                            Integer
+                                            feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim
+                                            nunc.
+                                        </p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -445,86 +570,123 @@
                     <div class="skills-container">
                         <h3>Technical skills</h3>
                         <div>
-                            <h4>Tech skill 1</h4>
-                            <p class="bold">Tech skill 1</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-one">
+                            <label for="skill-one">
+                                <h4>Tech skill 1</h4>
+                                <p class="bold">Tech skill 1</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                </p>
+                            </label>
                         </div>
                         <div>
-                            <h4>Tech skill 2</h4>
-                            <p class="bold">Tech skill 2</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-two">
+                            <label for="skill-two">
+                                <h4>Tech skill 2</h4>
+                                <p class="bold">Tech skill 2</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                            </label>
                         </div>
                         <div>
-                            <h4>Tech skill 3</h4>
-                            <p class="bold">Tech skill 3
-                            <p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-three">
+                            <label for="skill-three">
+                                <h4>Tech skill 3</h4>
+                                <p class="bold">Tech skill 3</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                            </label>
                         </div>
                     </div>
                     <div class="skills-container">
                         <h3>Soft skills</h3>
+
                         <div>
-                            <h4>Soft skills 1</h4>
-                            <p class="bold">Soft skills 1</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-four">
+                            <label for="skill-four">
+                                <h4>Soft skills 1</h4>
+                                <p class="bold">Soft skills 1</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                            </label>
                         </div>
                         <div>
-                            <h4>Soft skills 2</h4>
-                            <p class="bold">Soft skills 2</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-five">
+                            <label for="skill-five">
+                                <h4>Soft skills 2</h4>
+                                <p class="bold">Soft skills 2</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                            </label>
                         </div>
                         <div>
-                            <h4>Soft skills 3</h4>
-                            <p class="bold">Soft skills 3</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-six">
+                            <label for="skill-six">
+                                <h4>Soft skills 3</h4>
+                                <p class="bold">Soft skills 3</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </label>
                         </div>
                         <div>
-                            <h4>Soft skills 4</h4>
-                            <p class="bold">Soft skills 4</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
+                            <input type="checkbox" name="sections" id="skill-seven">
+                            <label for="skill-seven">
+                                <h4>Soft skills 4</h4>
+                                <p class="bold">Soft skills 4</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                </p>
+                            </label>
                         </div>
                     </div>
                 </article>
