@@ -6,3 +6,28 @@
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
+
+.static-container footer .go-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: 1s all;
+}
+
+.static-container footer .go-to-top:hover {
+    scale: 1.5;
+    border: 0.2rem solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+ 
