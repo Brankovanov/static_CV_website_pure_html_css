@@ -15,7 +15,7 @@
   border-radius: 1rem 1rem 0 0;
 }
 
-.work-experience details summary:hover {
+.work-experience details:hover summary {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -76,12 +76,4 @@
 
 .work-experience details li {
   margin-bottom: 0.5rem;
-}
-
-.work-experience details .details-container{
-  border-top: 1px solid transparent;
-}
-
-.work-experience details .details-container:hover{
-  border-top: 1px solid var(--primary-color);
 }
