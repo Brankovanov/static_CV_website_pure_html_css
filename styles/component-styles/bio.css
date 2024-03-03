@@ -9,6 +9,7 @@
   transition: all 1s;
   flex: 1;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .bio label {

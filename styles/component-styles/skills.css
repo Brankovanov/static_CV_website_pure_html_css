@@ -44,6 +44,7 @@
 .skills .skills-container div:nth-child(even) input:nth-of-type(1):checked~label h4 {
   width: 0;
   opacity: 0;
+  white-space: nowrap;
 }
 
 .skills .skills-container div h4:hover,
