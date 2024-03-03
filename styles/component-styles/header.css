@@ -24,10 +24,14 @@
 }
 
 .main-header .header-wrapper label {
+  display: inline-block;
   position: relative;
   background-color: inherit;
   cursor: pointer;
   padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 .main-header .header-wrapper label div {
@@ -35,7 +39,12 @@
   height: 0.5rem;
   background-color: var(--secondary-color);
   margin: 0.5rem 0;
-  transition: all 1s ease-in-out;
+  transition: all 1s;
+}
+
+.main-header .header-wrapper label:hover {
+  border: 1px solid var(--secondary-color);
+  border-radius: 1rem;
 }
 
 .main-header .header-wrapper input {
