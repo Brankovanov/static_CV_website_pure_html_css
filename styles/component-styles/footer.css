@@ -23,11 +23,11 @@
     transition: 1s all;
 }
 
-.static-container footer .go-to-top:hover {
-    scale: 1.5;
-    border: 0.2rem solid var(--secondary-color);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
- 
+@media (any-pointer: coarse) {
+    .static-container footer .go-to-top:hover {
+        scale: 1.5;
+        border: 0.2rem solid var(--secondary-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+  }

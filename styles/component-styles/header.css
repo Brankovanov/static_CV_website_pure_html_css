@@ -42,11 +42,6 @@
   transition: all 1s;
 }
 
-.main-header .header-wrapper label:hover {
-  border: 1px solid var(--secondary-color);
-  border-radius: 1rem;
-}
-
 .main-header .header-wrapper input {
   display: none;
 }
@@ -89,8 +84,15 @@
   border: 1px solid var(--secondary-color);
 }
 
-.main-header .header-menu a:hover {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: 1px solid var(--primary-color);
+@media (any-pointer: coarse) {
+  .main-header .header-wrapper label:hover {
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+  }
+  
+  .main-header .header-menu a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+  }
 }

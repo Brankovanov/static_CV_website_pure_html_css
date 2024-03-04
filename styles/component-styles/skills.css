@@ -47,8 +47,14 @@
   white-space: nowrap;
 }
 
-.skills .skills-container div h4:hover,
 .skills .skills-container div input:nth-of-type(1):checked~label h4 {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+@media (any-pointer: coarse) {
+  .skills .skills-container div h4:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
 }

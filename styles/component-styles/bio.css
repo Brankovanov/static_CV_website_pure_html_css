@@ -19,14 +19,6 @@
   cursor: pointer;
 }
 
-.bio label:hover img {
-  transition: scale 1s;
-}
-
-.bio label:hover img {
-  scale: 1.1;
-}
-
 .bio label img {
   object-fit: contain;
 }
@@ -42,10 +34,6 @@
   text-decoration: none;
 }
 
-.bio label .personal-info a:hover {
-  color: black;
-  text-decoration: none;
-}
 
 .bio input:nth-of-type(1):checked ~ label .personal-info {
   display: block;
@@ -82,4 +70,19 @@
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media (any-pointer: coarse) {
+  .bio label:hover img {
+    transition: scale 1s;
+  }
+  
+  .bio label:hover img {
+    scale: 1.1;
+  }
+
+  .bio label .personal-info a:hover {
+    color: black;
+    text-decoration: none;
+  }
 }

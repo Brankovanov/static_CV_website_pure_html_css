@@ -27,10 +27,7 @@
   border-radius: 50%;
 }
 
-.courses-and-ceriticates .carousel-container .carousel-indicators label:hover {
-  border: 2px solid var(--primary-color);
-  background-color: var(--secondary-color);
-}
+
 
 .courses-and-ceriticates .carousel-container .slide-container {
   width: 100%;
@@ -49,9 +46,7 @@
   border: 2px solid transparent;
 }
 
-.courses-and-ceriticates .carousel-container .slide-container .slide:hover {
-  border: 2px solid var(--primary-color);
-}
+
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div {
   cursor: pointer;
@@ -80,11 +75,6 @@
 }
 .courses-and-ceriticates .carousel-container .slide-container .slide div ul {
   list-style-type: none;
-}
-
-
-.courses-and-ceriticates .carousel-container .slide-container .slide div img:hover {
-  scale: 1.1;
 }
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div:nth-of-type(2) ul li {
@@ -166,4 +156,19 @@
 
 .description {
   display: none;
+}
+
+@media (any-pointer: coarse) {
+  .courses-and-ceriticates .carousel-container .carousel-indicators label:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+
+  .courses-and-ceriticates .carousel-container .slide-container .slide:hover {
+    border: 2px solid var(--primary-color);
+  }
+
+  .courses-and-ceriticates .carousel-container .slide-container .slide div img:hover {
+    scale: 1.1;
+  } 
 }

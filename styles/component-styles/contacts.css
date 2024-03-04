@@ -18,12 +18,14 @@
   color: var(--secondary-color);
 }
 
-.contacts ul li a:hover {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
 .contacts ul li span {
   display: inline-block;
   width: 100%;
+}
+
+@media (any-pointer: coarse) {
+  .contacts ul li a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
 }
