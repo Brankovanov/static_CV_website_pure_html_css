@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
   .contacts ul li a:hover {
     text-decoration: none;
     color: var(--primary-color);

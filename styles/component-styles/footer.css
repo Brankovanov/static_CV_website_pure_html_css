@@ -23,7 +23,7 @@
     transition: 1s all;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
     .static-container footer .go-to-top:hover {
         scale: 1.5;
         border: 0.2rem solid var(--secondary-color);

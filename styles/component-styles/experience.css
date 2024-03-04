@@ -73,7 +73,7 @@
   margin-bottom: 0.5rem;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
   .work-experience details:hover summary {
     color: var(--secondary-color);
     background-color: var(--primary-color);

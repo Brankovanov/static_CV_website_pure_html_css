@@ -45,7 +45,7 @@
   list-style: none;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
   .education label  article:hover h4 { 
     background-color: var(--primary-color);
     color: var(--secondary-color);

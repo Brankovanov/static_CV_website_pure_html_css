@@ -72,7 +72,7 @@
   overflow: hidden;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
   .bio label:hover img {
     transition: scale 1s;
   }

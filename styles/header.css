@@ -52,7 +52,7 @@
 }
 /* Header menu */
 
-@media (any-pointer: coarse) {
+@media (any-pointer: fine) {
   /* Header wrapper */
   .header-wrapper:hover .header-menu {
     top: 5rem;

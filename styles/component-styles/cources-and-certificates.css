@@ -158,7 +158,7 @@
   display: none;
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer: fine) {
   .courses-and-ceriticates .carousel-container .carousel-indicators label:hover {
     border: 2px solid var(--primary-color);
     background-color: var(--secondary-color);

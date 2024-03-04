@@ -52,7 +52,7 @@
   color: var(--secondary-color);
 }
 
-@media (any-pointer: coarse) {
+@media (any-pointer:  fine) {
   .skills .skills-container div h4:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
