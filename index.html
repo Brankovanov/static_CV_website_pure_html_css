@@ -18,11 +18,14 @@
             <div class="header-wrapper">
                 <input type="checkbox" name="toggler" id="toggle-header">
              
-                <label for="toggle-header">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </label>
+                <label for="toggle-header"></label>
+                <div class="toggle-button" tabindex="-1" autofocus onchange='this === document.activeElement ? this.blur() : this.focus()'>
+                    <label for="toggle-header">      
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
                 <div class="header-menu">
                     <a class="bold" href="#bio"> About me </a>
                     <a class="bold" href="#work-experience"> Work experience </a>
