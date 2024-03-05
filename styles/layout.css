@@ -79,3 +79,12 @@ img {
 input {
   display: none;
 }
+
+.main-header:has(+ .dynamic-container .bio input[type=checkbox]:checked),
+.main-header:has(+ .dynamic-container .work-experience input[type=checkbox]:checked),
+.main-header:has(+ .dynamic-container .courses-and-ceriticates input[type=checkbox]:checked),
+.dynamic-container:has(.bio input[type=checkbox]:checked) + .static-container footer a,
+.dynamic-container:has(.work-experience input[type=checkbox]:checked) + .static-container footer a,
+.dynamic-container:has(.courses-and-ceriticates input[type=checkbox]:checked) + .static-container footer a {
+  z-index: -1;
+}
