@@ -31,6 +31,7 @@
 .bio label img {
   object-fit: contain;
   transition: scale 1s;
+  max-height: 50vh;
 }
 
 .bio label .personal-info {
@@ -47,9 +48,18 @@
 
 .bio input:nth-of-type(1):checked ~ label .personal-info {
   display: block;
+  position: absolute;
+  width: 100%;
 }
 
 .bio input:checked ~ label .toggle-content  {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  display: block;
+}
+
+.bio input:checked ~ label .toggle-content:hover  {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);

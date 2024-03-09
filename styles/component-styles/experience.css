@@ -64,9 +64,21 @@
   background-color: var(--secondary-color);
 }
 
+.work-experience input:checked~label .toggle-content  {
+  display: block;
+}
+
 .work-experience input:nth-of-type(1):checked~label:nth-of-type(1) .toggle-content:nth-of-type(1),
 .work-experience input:nth-of-type(2):checked~label:nth-of-type(2) .toggle-content:nth-of-type(2),
 .work-experience input:nth-of-type(3):checked~label:nth-of-type(3) .toggle-content:nth-of-type(3) {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.work-experience input:nth-of-type(1):checked~label:nth-of-type(1) .toggle-content:nth-of-type(1):hover,
+.work-experience input:nth-of-type(2):checked~label:nth-of-type(2) .toggle-content:nth-of-type(2):hover,
+.work-experience input:nth-of-type(3):checked~label:nth-of-type(3) .toggle-content:nth-of-type(3):hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);

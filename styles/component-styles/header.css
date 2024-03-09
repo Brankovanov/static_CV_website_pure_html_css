@@ -30,7 +30,6 @@
 
   
   @media (min-width: 1024px) {
-    /* height: 9rem; */
     flex-wrap: wrap;
     text-align: center;
   }
@@ -55,12 +54,17 @@
   }
 }
 
+.main-header .header-wrapper .toggle-button label {
+  cursor: pointer;
+}
+
 .main-header .header-wrapper .toggle-button div {
   width: 4.5rem;
   height: 0.5rem;
   background-color: var(--secondary-color);
   margin: 0.5rem 0;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .main-header .header-wrapper input:nth-of-type(1):checked~.toggle-button:focus label div:nth-of-type(1) {

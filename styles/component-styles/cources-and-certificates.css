@@ -123,11 +123,17 @@
 }
 
 .courses-and-ceriticates .carousel-container .slide-container .slide input:checked ~ label .toggle-content  {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  display: block;
+}
+
+.courses-and-ceriticates .carousel-container .slide-container .slide input:checked~label .toggle-content:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-
 .courses-and-ceriticates .carousel-container .slide-container .slide input:checked ~ label .toggle-content::after  {
   content: "Close!";
 }

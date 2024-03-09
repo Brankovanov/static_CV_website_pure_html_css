@@ -4,6 +4,10 @@ html {
   -moz-user-select: none;
 }
 
+html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
+  overflow: hidden;
+}
+
 .dynamic-container {
   display: flex;
   width: 100%;
@@ -34,6 +38,10 @@ html {
 
 .dynamic-container main section {
   scroll-margin-top: 11rem;
+
+  @media (min-width: 768px) {
+    scroll-margin-top: 3rem;
+  }
 }
 
 .dynamic-container main section h2,
@@ -87,4 +95,23 @@ input {
 .dynamic-container:has(.work-experience input[type=checkbox]:checked) + .static-container footer a,
 .dynamic-container:has(.courses-and-ceriticates input[type=checkbox]:checked) + .static-container footer a {
   z-index: -1;
+}
+
+.toggle-content {
+  display: none;
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: fit-content;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+
+  @media (any-pointer: coarse) {
+      display: block;
+  }
+}
+
+.toggle-content::after {
+  content: "Read more!";
 }
