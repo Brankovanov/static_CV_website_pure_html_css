@@ -4,6 +4,29 @@
   border: 1px solid var(--primary-color);
 }
 
+.work-experience article {
+  @media (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.work-experience article header {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.work-experience article details {
+  @media (min-width: 768px) {
+    width: calc(50% - 1rem);
+    margin: 0;
+    height: fit-content;
+  }
+}
+
 .work-experience details summary {
   padding: 1rem;
   border-radius: 1rem;

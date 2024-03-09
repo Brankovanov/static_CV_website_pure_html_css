@@ -4,11 +4,29 @@
   padding: 0 1rem;
 }
 
+.skills .skills-container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.skills .skills-container h3{
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
 .skills .skills-container div {
   border: 1px solid var(--primary-color);
   border-radius: 1rem;
   margin-bottom: 1rem;
   position: relative;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 1rem);
+  }
 }
 
 .skills .skills-container p:first-of-type {

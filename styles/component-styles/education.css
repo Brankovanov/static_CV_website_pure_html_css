@@ -8,6 +8,10 @@
 .education label {
   display: inline-block;
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 1rem);
+  }
 }
 
 .education label article {

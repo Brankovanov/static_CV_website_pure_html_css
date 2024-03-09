@@ -2,6 +2,14 @@
 
 html {
     font: 12px/1.5 'system-ui', 'sans-serif';
+    
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 16px;
+    }
 }
 
 body,

@@ -1,6 +1,10 @@
 .main-header {
   position: sticky;
   top: 0;
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .main-header header {
@@ -11,12 +15,25 @@
   color: var(--secondary-color);
   background-color: var(--primary-color);
   border-bottom: 2px solid var(--secondary-color); 
+  height: 6rem;
+
+  @media (min-width: 1024px) {
+    height: 9rem;
+    flex-wrap: wrap;
+  }
 }
 
 .main-header .logo {
-  font-size: 2vw;
+  font-size: min(2vw, 1em);
   width: 100%;
   text-align: start;
+
+  
+  @media (min-width: 1024px) {
+    /* height: 9rem; */
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 
 .main-header .header-wrapper {
@@ -24,7 +41,6 @@
 }
 
 .main-header .header-wrapper .toggle-button {
-
   display: inline-block;
   position: relative;
   background-color: inherit;
@@ -33,6 +49,10 @@
   border: 1px solid transparent;
   border-radius: 1rem;
   transition: all 1s ease-in-out;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .main-header .header-wrapper .toggle-button div {
@@ -43,10 +63,6 @@
   transition: all 1s;
 }
 
-.main-header .header-wrapper input {
-  display: none;
-}
- 
 .main-header .header-wrapper input:nth-of-type(1):checked~.toggle-button:focus label div:nth-of-type(1) {
   transform: translate(0, 1rem) rotate(-45deg);
 }
@@ -70,6 +86,12 @@
   transition: width 1s;
   overflow: hidden;
   background-color: var(--primary-color);
+
+  @media (min-width: 1024px) {
+    position: initial;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .main-header .header-wrapper input:nth-of-type(1):checked~.toggle-button:focus~.header-menu {
@@ -83,6 +105,10 @@
   white-space: nowrap;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+
+  @media (min-width: 1024px) {
+    border: 1px solid transparent;
+  }
 }
 
 @media (any-pointer:  fine) {

@@ -43,10 +43,26 @@
   flex: 0 0 100%;
   transition: margin-left 1s;
   background: var(--secondary-color);
-  border: 2px solid transparent;
+  border: 2px solid var(--primary-color);
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
+.courses-and-ceriticates .carousel-container .slide-container .slide div:nth-child(1) label{
+  @media (min-width: 768px) {
+   justify-content: center;
+  }
+}
 
+.courses-and-ceriticates .carousel-container .slide-container .slide div:nth-child(2) label{
+  @media (min-width: 768px) {
+   justify-content: space-between;
+  }
+}
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div {
   cursor: pointer;
@@ -55,11 +71,24 @@
   transition: height 1s;
   background: var(--secondary-color);
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    height: 100%;
+    width: calc(50% - 1rem);
+    
+  }
 }
+
 .courses-and-ceriticates .carousel-container .slide-container .slide label {
   height: 50%;
   transition: height 1s;
 
+  @media (min-width: 768px) {
+    height: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+  }
 }
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div ul,
