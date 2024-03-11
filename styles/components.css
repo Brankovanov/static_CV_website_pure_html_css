@@ -1,29 +1,10 @@
 @import url('component-styles/header.css');
+@import url('component-styles/aside.css');
 @import url('component-styles/bio.css');
 @import url('component-styles/experience.css');
 @import url('component-styles/education.css');
 @import url('component-styles/cources-and-certificates.css');
 @import url('component-styles/languages.css');
-@import url('component-styles/footer.css');
 @import url('component-styles/contacts.css');
 @import url('component-styles/skills.css');
-
-.toggle-content {
-    display:  none;
-
-    @media (any-pointer: coarse) {
-        display: block;
-        height: auto;
-        margin: 1rem auto;
-        padding: 1rem;
-        border-radius: 1rem;
-        width: fit-content;
-        color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-    }
-}
-
-.toggle-content::after {
-    content: "Read more!";
-}
-
+@import url('component-styles/footer.css');
