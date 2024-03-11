@@ -19,10 +19,11 @@
 }
 
 .contacts ul li span {
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 
+/* MOUSE */
 @media (any-pointer:  fine) {
   .contacts ul li a:hover {
     text-decoration: none;

@@ -16,15 +16,15 @@
 }
 
 .courses-and-ceriticates .carousel-container .carousel-indicators label {
-  display: inline-block;
-  text-align: center;
-  border: 2px solid var(--secondary-color);
-  background-color: var(--primary-color);
-  cursor: pointer;
   width: 1rem;
   height: 1rem;
+  display: inline-block;
   margin: 0.5rem 0 0 0.5rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 
@@ -33,8 +33,8 @@
   width: 100%;
   height: 36rem;
   min-height: fit-content;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   scroll-behavior: smooth;
   scroll-margin-top: 26rem;
 }
@@ -43,36 +43,70 @@
   flex: 0 0 100%;
   transition: margin-left 1s;
   background: var(--secondary-color);
-  border: 2px solid transparent;
+  border: 2px solid var(--primary-color);
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
+.courses-and-ceriticates .carousel-container .slide-container .slide div:nth-child(1) label{
+  /* TABLET */
+  @media (min-width: 768px) {
+   justify-content: center;
+  }
+}
 
+.courses-and-ceriticates .carousel-container .slide-container .slide div:nth-child(2) label{
+  /* TABLET */
+  @media (min-width: 768px) {
+   justify-content: space-between;
+  }
+}
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div {
-  cursor: pointer;
-  padding: 1rem;
   height: 50%;
-  transition: height 1s;
+  padding: 1rem;
   background: var(--secondary-color);
   overflow: hidden;
+  cursor: pointer;
+  transition: height 1s;
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    width: calc(50% - 1rem);
+    height: 100%;
+  }
 }
+
 .courses-and-ceriticates .carousel-container .slide-container .slide label {
   height: 50%;
   transition: height 1s;
 
+  /* TABLET */
+  @media (min-width: 768px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
 }
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div ul,
 .courses-and-ceriticates .carousel-container .slide-container .slide div img {
   cursor: pointer;
-  
 }
+
 .courses-and-ceriticates .carousel-container .slide-container .slide div img {
+  height: 90%;
   object-fit: contain;
   scale: 1;
-  height: 90%;
   transition: scale 1s;
 }
+
 .courses-and-ceriticates .carousel-container .slide-container .slide div ul {
   list-style-type: none;
 }
@@ -83,17 +117,24 @@
 
 .courses-and-ceriticates .carousel-container .slide-container .slide input:nth-of-type(1):checked ~ label  ,
 .courses-and-ceriticates .carousel-container .slide-container .slide input:nth-of-type(2):checked ~ label  {
+  width: 100%;
+  height: 100%;
   display: inline-block;
   position: fixed;
-  height: 100%;
   left: 0;
   top: 0;
-  width: 100%;
   z-index: 1;
   background-color: var(--secondary-color);
 }
 
 .courses-and-ceriticates .carousel-container .slide-container .slide input:checked ~ label .toggle-content  {
+  display: block;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.courses-and-ceriticates .carousel-container .slide-container .slide input:checked~label .toggle-content:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
@@ -103,13 +144,9 @@
   content: "Close!";
 }
 
-.courses-and-ceriticates .carousel-container .slide-container .slide div:last-of-type input:checked~label  {
-  padding: 0;
-}
-
 .courses-and-ceriticates .carousel-container .slide-container .slide div:first-of-type input:checked~label img {
-  padding:2rem;
   height: 70%;
+  padding:2rem;
   object-fit: contain;
 }
 
@@ -133,9 +170,9 @@
 }
 
 .courses-and-ceriticates .carousel-container input {
-  opacity: 0;
-  height: 0;
   width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .courses-and-ceriticates .carousel-container input:nth-of-type(4):checked~.slide-container .slide:first-of-type {
@@ -158,6 +195,7 @@
   display: none;
 }
 
+/* MOUSE */
 @media (any-pointer: fine) {
   .courses-and-ceriticates .carousel-container .carousel-indicators label:hover {
     border: 2px solid var(--primary-color);

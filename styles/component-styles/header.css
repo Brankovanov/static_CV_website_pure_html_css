@@ -1,9 +1,15 @@
 .main-header {
   position: sticky;
   top: 0;
+
+  /* TABLET */
+  @media (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .main-header header {
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,12 +17,24 @@
   color: var(--secondary-color);
   background-color: var(--primary-color);
   border-bottom: 2px solid var(--secondary-color); 
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    height: 9rem;
+    flex-wrap: wrap;
+  }
 }
 
 .main-header .logo {
-  font-size: 2vw;
   width: 100%;
+  font-size: min(2vw, 1em);
   text-align: start;
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 
 .main-header .header-wrapper {
@@ -24,29 +42,34 @@
 }
 
 .main-header .header-wrapper .toggle-button {
-
   display: inline-block;
   position: relative;
-  background-color: inherit;
-  cursor: pointer;
   padding: 1rem;
+  background-color: inherit;
   border: 1px solid transparent;
   border-radius: 1rem;
+  cursor: pointer;
   transition: all 1s ease-in-out;
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.main-header .header-wrapper .toggle-button label {
+  cursor: pointer;
 }
 
 .main-header .header-wrapper .toggle-button div {
   width: 4.5rem;
   height: 0.5rem;
-  background-color: var(--secondary-color);
   margin: 0.5rem 0;
-  transition: all 1s;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 
-.main-header .header-wrapper input {
-  display: none;
-}
- 
 .main-header .header-wrapper input:nth-of-type(1):checked~.toggle-button:focus label div:nth-of-type(1) {
   transform: translate(0, 1rem) rotate(-45deg);
 }
@@ -60,16 +83,23 @@
 }
 
 .main-header .header-menu {
+  width: 0;
+  height: auto;
   position: absolute;
   right: 0;
   display: flex;
   flex-direction: column;
-  width: 0;
-  height: auto;
   text-align: center;
-  transition: width 1s;
   overflow: hidden;
   background-color: var(--primary-color);
+  transition: width 1s ease-in-out;
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    width: 100%;
+    position: initial;
+    flex-direction: row;
+  }
 }
 
 .main-header .header-wrapper input:nth-of-type(1):checked~.toggle-button:focus~.header-menu {
@@ -83,8 +113,14 @@
   white-space: nowrap;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    border: 1px solid transparent;
+  }
 }
 
+/* MOUSE */
 @media (any-pointer:  fine) {
   .main-header .header-wrapper label:hover {
     border: 1px solid var(--secondary-color);
