@@ -9,6 +9,10 @@ html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
   overflow: hidden;
 }
 
+html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
+  overflow: hidden;
+}
+
 .dynamic-container {
   display: flex;
   width: 100%;
