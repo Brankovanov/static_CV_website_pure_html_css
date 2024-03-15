@@ -9,13 +9,17 @@
 }
 
 .contacts ul li {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 
 .contacts ul li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--text-color);
+
+  @media (any-pointer:  fine){
+    color: var(--primary-color);
+  }
 }
 
 .contacts ul li span {
@@ -27,6 +31,6 @@
 @media (any-pointer:  fine) {
   .contacts ul li a:hover {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
   }
 }

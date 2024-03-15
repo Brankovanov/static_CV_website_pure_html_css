@@ -9,14 +9,11 @@ html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
   overflow: hidden;
 }
 
-html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
-  overflow: hidden;
-}
-
 .dynamic-container {
   display: flex;
   width: 100%;
   min-height: calc(100vh - 10rem);
+
   /* TABLET */
   @media (min-width: 768px) {
     flex-wrap: wrap;
@@ -108,7 +105,7 @@ input {
   display: none;
   margin: 1rem auto;
   padding: 1rem;
-  color: var(--primary-color);
+  color: var(--text-color);
   border: 1px solid var(--primary-color);
   border-radius: 1rem;
 
@@ -120,4 +117,12 @@ input {
 
 .toggle-content::after {
   content: "Read more!";
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--text-color);
 }
