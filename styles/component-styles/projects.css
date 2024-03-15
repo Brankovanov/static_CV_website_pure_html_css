@@ -1,0 +1,43 @@
+.project-list {
+  padding: 0 1rem;
+
+     /* DESKTOP */
+     @media (min-width: 768px) {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+     }
+}
+
+.project-list .tech-stack {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-list .tech-stack span{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text-color);
+}
+
+.project-list article {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--text-color);
+  margin-top: 1rem;
+
+   /* DESKTOP */
+  @media (min-width: 768px) {
+   max-width: calc(50% - 1rem);
+  }
+}
+
+.project-list div ul {
+ list-style: none;
+}
+
+.project-list div p {
+  margin-top: 0.5rem;
+}

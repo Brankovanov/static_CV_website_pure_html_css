@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static cv website</title>
+    <meta name="description" content="About the page">
+    <meta name="msapplication-TileColor" content="#204020">
+    <meta name="theme-color" content="#204020">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+
     <link rel="stylesheet" href="styles/styles.css">
+    <title>Static cv website</title>
 </head>
 
 <body>
@@ -17,10 +27,11 @@
             </div>
             <div class="header-wrapper">
                 <input type="checkbox" name="toggler" id="toggle-header">
-             
+
                 <label for="toggle-header"></label>
-                <div class="toggle-button" tabindex="-1" autofocus onchange='this === document.activeElement ? this.blur() : this.focus()'>
-                    <label for="toggle-header">      
+                <div class="toggle-button" tabindex="-1" autofocus
+                    onchange='this === document.activeElement ? this.blur() : this.focus()'>
+                    <label for="toggle-header">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -31,6 +42,7 @@
                     <a class="bold" href="#work-experience"> Work experience </a>
                     <a class="bold" href="#education"> Education </a>
                     <a class="bold" href="#courses-and-ceriticates"> Cources and certificates </a>
+                    <a class="bold" href="#projects"> Projects </a>
                     <a class="bold" href="#skills"> Skills </a>
                     <a class="bold" href="#languages"> Languages </a>
                     <a class="bold" href="#contacts"> Contacts </a>
@@ -48,6 +60,7 @@
                 <a class="bold" href="#work-experience"> Work experience </a>
                 <a class="bold" href="#education"> Education </a>
                 <a class="bold" href="#courses-and-ceriticates"> Cources and certificates </a>
+                <a class="bold" href="#projects"> Projects </a>
                 <a class="bold" href="#skills"> Skills </a>
                 <a class="bold" href="#languages"> Languages </a>
                 <a class="bold" href="#contacts"> Contacts </a>
@@ -62,7 +75,7 @@
                     <input type="checkbox" name="sections" id="bio-image">
                     <label for="bio-image">
                         <div class="picture-container">
-                            <img src="images/pexels-simon-robben-614810.jpg" alt="Person name">
+                            <img src="images/pexels-simon-robben-614810.webp" alt="Person name">
                             <div class="personal-info">
                                 <h5 class="bold">Person name</h5>
                                 <p>
@@ -239,7 +252,7 @@
                         <label for="education-one">
                             <article>
                                 <header>
-                                    <h4>Education 1</h4>
+                                    <h3>Education 1</h3>
                                 </header>
                                 <div>
                                     <ul>
@@ -273,7 +286,7 @@
                         <label for="education-two">
                             <article>
                                 <header>
-                                    <h4>Education 2</h4>
+                                    <h3>Education 2</h3>
                                 </header>
                                 <div>
                                     <ul>
@@ -331,7 +344,7 @@
                         <label for="education-three">
                             <article>
                                 <header>
-                                    <h4>Education 3</h4>
+                                    <h3>Education 3</h3>
                                 </header>
 
                                 <div>
@@ -394,7 +407,8 @@
                                 <div>
                                     <input type="checkbox" name="sections" id="cources-image-one">
                                     <label for="cources-image-one">
-                                        <img for="cources-image-one" src="images/certificate_1.png" alt="Elephant at sunset" />
+                                        <img for="cources-image-one" src="images/certificate_1.webp"
+                                            alt="certificate_1" />
                                     </label>
                                 </div>
                                 <div>
@@ -448,7 +462,7 @@
                                 <div>
                                     <input type="checkbox" name="sections" id="cources-image-two">
                                     <label for="cources-image-two">
-                                        <img src="images/certificate_2.png" alt="Elephant at sunset" />
+                                        <img src="images/certificate_2.webp" alt="certificate_2" />
                                     </label>
                                 </div>
                                 <div>
@@ -493,7 +507,7 @@
                                 <div>
                                     <input type="checkbox" name="sections" id="cources-image-three">
                                     <label for="cources-image-three">
-                                        <img src="images/certificate_1.png" alt="Elephant at sunset" />
+                                        <img src="images/certificate_1.webp" alt="certificate_1" />
                                     </label>
                                 </div>
                                 <div>
@@ -516,9 +530,9 @@
                                                 <a class="bold" href="#">Credential URL</a>
                                             </li>
                                         </ul>
-                                        <p class="description"> 
+                                        <p class="description">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque nisl eros, pulvinar 
+                                            Quisque nisl eros, pulvinar
                                         </p>
                                         <span class="toggle-content"></span>
                                     </label>
@@ -587,6 +601,120 @@
                 </article>
             </section>
             <!-- COURSES AND CERTIFICATES -->
+
+            <!--PERSONAL PROJECTS-->
+            <section id="projects">
+                <article>
+                    <header>
+                        <h2>Personal projects</h2>
+                    </header>
+                    <div class="project-list">
+                        <article>
+                            <header>
+                                <h3>
+                                    Project one
+                                </h3>
+                            </header>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Project link:</span> 
+                                        <a href="#">project link</a>
+                                    </li>
+                                    <li>
+                                        <span class="bold">Repository link:</span>
+                                        <a href="#">project link</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum
+                                </p>
+                                <div class="tech-stack">
+                                    <span>Tech 1</span>
+                                    <span>Tech 2</span>
+                                    <span>Tech 3</span>
+                                    <span>Tech 4</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <header>
+                                <h3>
+                                    Project Two
+                                </h3>
+                            </header>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Project link:</span> 
+                                        <a href="#">project link</a>
+                                    </li>
+                                    <li>
+                                        <span class="bold">Repository link:</span>
+                                        <a href="#">project link</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                </p>
+                                <div class="tech-stack">
+                                    <span>Tech 1</span>
+                                    <span>Tech 2</span>
+                                    <span>Tech 3</span>
+                                    <span>Tech 4</span>
+                                    <span>Tech 5</span>
+                                    <span>Tech 6</span>
+                                    <span>Tech 7</span>
+                                    <span>Tech 8</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <header>
+                                <h3>
+                                    Project Three
+                                </h3>
+                            </header>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Project link:</span> 
+                                        <a href="#">project link</a>
+                                    </li>
+                                    <li>
+                                        <span class="bold">Repository link:</span>
+                                        <a href="#">project link</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                </p>
+                                <div class="tech-stack">
+                                    <span>Tech 1</span>
+                                    <span>Tech 2</span>
+                                    <span>Tech 3</span>
+                                    <span>Tech 4</span>
+                                    <span>Tech 5</span>
+                                    <span>Tech 6</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+            <!--PERSONAL PROJECTS-->
 
             <!-- SKILLS -->
             <section id="skills">
@@ -796,22 +924,22 @@
                     </header>
                     <ul>
                         <li>
-                            <h5>
-                                <span class="bold">Telephone: </span>
-                                <a href="tel:+358 888 888 888">+358 888 888 888</a>
-                            </h5>
+                            <!-- <h5> -->
+                            <span class="bold">Telephone: </span>
+                            <a href="tel:+358 888 888 888">+358 888 888 888</a>
+                            <!-- </h5> -->
                         </li>
                         <li>
-                            <h5>
-                                <span class="bold">Email: </span>
-                                <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
-                            </h5>
+                            <!-- <h5> -->
+                            <span class="bold">Email: </span>
+                            <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
+                            <!-- </h5> -->
                         </li>
                         <li>
-                            <h5>
-                                <span class="bold">Linkedin: </span>
-                                <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
-                            </h5>
+                            <!-- <h5> -->
+                            <span class="bold">Linkedin: </span>
+                            <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
+                            <!-- </h5> -->
                         </li>
                     </ul>
                 </article>
