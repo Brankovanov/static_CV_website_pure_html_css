@@ -95,6 +95,10 @@
   overflow: hidden;
 }
 
+.bio input:nth-of-type(2):checked ~ label:nth-of-type(2) .content-container {
+  display: block;
+}
+
 /* MOUSE */
 @media (any-pointer:  fine) {
   .bio label:hover img {
