@@ -10,3 +10,8 @@ WEBSITE SECTIONS:
 6. Skill - a list of technical and/or soft skills with short descriptions.
 7. Languages - a list of languages the person knows noting the language level.
 8. Contacts - list of contacts - phone number, email, links to portfolio, Linked In etc
+
+Person photo - [Stock photo from ](https://www.pexels.com/photo/man-in-brown-polo-shirt-614810/)https://www.pexels.com/photo/man-in-brown-polo-shirt-614810/
+Fav icon 
+- Favicon Generator - https://realfavicongenerator.net
+- Favicon.io - https://favicon.io
