@@ -1,0 +1,169 @@
+{
+  "ÜberMich": {
+    "name": "Johann Müller",
+    "alter": 23,
+    "beruf": "Front-End-Entwickler",
+    "beschreibung": "Ich bin ein leidenschaftlicher und detailorientierter Front-End-Entwickler, spezialisiert auf die Erstellung visueller, funktionaler und benutzerfreundlicher Webanwendungen. Mit Erfahrung in der Gestaltung responsiver Benutzeroberflächen und der Implementierung dynamischer Funktionen mithilfe moderner Technologien arbeite ich gerne in Teams und entwickle außergewöhnliche Lösungen, die Design und Technik kombinieren."
+  },
+  "Berufserfahrung": [
+    {
+      "position": "Front-End-Entwickler",
+      "zeitraum": "Januar 2022 - Gegenwart",
+      "arbeitgeber": "Tech Solutions GmbH",
+      "beschreibung": "Leitung der Entwicklung responsiver Webanwendungen, die auf die Anforderungen der Kunden zugeschnitten sind, unter Verwendung von React und Angular. Zusammenarbeit mit Designern und Back-End-Entwicklern, um eine nahtlose Benutzererfahrung zu gewährleisten. Optimierung der Website-Performance mit einer Ladezeitreduktion von 30 % und Implementierung von Best Practices für Barrierefreiheit und SEO."
+    },
+    {
+      "position": "Webentwickler - Praktikant",
+      "zeitraum": "Juni 2021 - Dezember 2021",
+      "arbeitgeber": "Kreativ Webagentur",
+      "beschreibung": "Unterstützung des Teams bei der Entwicklung und Wartung von über 15 Kundenwebsites. Arbeit mit WordPress und JavaScript-Bibliotheken zur Erweiterung der Funktionalität. Unterstützung von Senior-Entwicklern bei der Lösung technischer Probleme und Vorschläge für innovative Designverbesserungen."
+    },
+    {
+      "position": "Freiberuflicher Webdesigner",
+      "zeitraum": "Januar 2020 - Mai 2021",
+      "arbeitgeber": "Selbstständig",
+      "beschreibung": "Entwicklung und Gestaltung maßgeschneiderter Websites für kleine Unternehmen und Start-ups mit Fokus auf Benutzerfreundlichkeit, Ästhetik und Markenidentität. Bereitstellung eines umfassenden Service von Kundenberatung bis zur endgültigen Implementierung. Lieferung hochwertiger Projekte im Zeit- und Budgetrahmen und Aufbau langfristiger Beziehungen zu Kunden."
+    }
+  ],
+  "Bildung": [
+    {
+      "schule": "Universität für Digitale Künste",
+      "abschluss": "Bachelor",
+      "studiengang": "Informatik",
+      "zeitraum": "2018 - 2022",
+      "beschreibung": "Abschluss eines umfassenden Programms mit Schwerpunkt auf Grundlagen der Informatik, Softwareentwicklung und Webtechnologien. Erwerb praktischer Kenntnisse in Programmiersprachen, Datenbanken und modernen Web-Frameworks."
+    },
+    {
+      "schule": "Code Akademie",
+      "abschluss": "Berufszertifikat",
+      "studiengang": "Full-Stack-Webentwicklung",
+      "zeitraum": "2020",
+      "beschreibung": "Vertiefte Kenntnisse in der Entwicklung von Full-Stack-Anwendungen, einschließlich Front-End-Technologien wie React und Back-End-Technologien wie Node.js. Teilnahme an realen Projekten zur praktischen Erfahrungssammlung."
+    },
+    {
+      "schule": "Technisches Gymnasium",
+      "abschluss": "Abitur",
+      "studiengang": "Wissenschaftlich-Technisches Profil",
+      "zeitraum": "2014 - 2018",
+      "beschreibung": "Grundkenntnisse in Mathematik, Naturwissenschaften und grundlegender Programmierung. Teilnahme an Technologiemessen und Entwicklung früher Projekte, die mein Interesse an der Webentwicklung geweckt haben."
+    },
+    {
+      "schule": "Online-Lernplattform",
+      "abschluss": "Nano-Degree",
+      "studiengang": "UX-Design",
+      "zeitraum": "2021",
+      "beschreibung": "Fokus auf das Verständnis des Nutzerverhaltens und die Erstellung von Designs, die Benutzerfreundlichkeit und Zugänglichkeit verbessern. Verfeinerung von Fähigkeiten in der Erstellung von Wireframes, Prototypen und der Durchführung von Usability-Tests."
+    }
+  ],
+  "KurseUndZertifikate": [
+    {
+      "zertifikat": "Zertifizierter Front-End-Entwickler",
+      "organisation": "Institut für Webentwicklung",
+      "ausstellungsdatum": "März 2022",
+      "ablaufdatum": "März 2025",
+      "id": "FED123456",
+      "url": "https://certificates.webdevinstitute.com/FED123456",
+      "beschreibung": "Nachgewiesene Kenntnisse und Fähigkeiten in Front-End-Technologien, einschließlich HTML, CSS, JavaScript und modernen Frameworks wie React und Angular."
+    },
+    {
+      "zertifikat": "JavaScript-Spezialist",
+      "organisation": "Code School",
+      "ausstellungsdatum": "Juni 2021",
+      "ablaufdatum": "Juni 2024",
+      "id": "JS678910",
+      "url": "https://certificates.codeschool.com/JS678910",
+      "beschreibung": "Bewährte Fähigkeiten in JavaScript, einschließlich ES6+, asynchroner Programmierung und DOM-Manipulation."
+    },
+    {
+      "zertifikat": "Responsives Webdesign",
+      "organisation": "FreeCodeCamp",
+      "ausstellungsdatum": "Dezember 2020",
+      "ablaufdatum": null,
+      "id": "RWD345678",
+      "url": "https://www.freecodecamp.org/certification/johndoe/responsive-web-design",
+      "beschreibung": "Erlernung der Prinzipien des responsiven Designs mit CSS und Erstellung mobiler Websites."
+    },
+    {
+      "zertifikat": "Versionskontrolle mit Git",
+      "organisation": "Git Akademie",
+      "ausstellungsdatum": "Juli 2021",
+      "ablaufdatum": null,
+      "id": "GIT987654",
+      "url": "https://certificates.gitacademy.com/GIT987654",
+      "beschreibung": "Erfahrung in der Versionsverwaltung, einschließlich Klonen, Zusammenführen und Konfliktlösung."
+    },
+    {
+      "zertifikat": "Einführung in UI/UX-Design",
+      "organisation": "Design Institut",
+      "ausstellungsdatum": "April 2021",
+      "ablaufdatum": null,
+      "id": "UIUX543210",
+      "url": "https://certificates.designinstitute.com/UIUX543210",
+      "beschreibung": "Kenntnisse in den Prinzipien von UI/UX-Design, Nutzerforschung und Prototyping."
+    }
+  ],
+  "Projekte": [
+    {
+      "name": "Portfolio-Website",
+      "link": "https://johndoe.dev",
+      "repositoryLink": "https://github.com/johndoe/portfolio",
+      "beschreibung": "Visuell ansprechendes und funktionales Portfolio, das meine Fähigkeiten, Erfahrungen und Projekte präsentiert. Erstellt mit HTML, CSS und JavaScript mit responsivem Design für alle Geräte.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "E-Commerce-Plattform",
+      "link": "https://shopmore.com",
+      "repositoryLink": "https://github.com/johndoe/ecommerce-platform",
+      "beschreibung": "Robuste und skalierbare E-Commerce-Plattform mit modernem Benutzerinterface und Zahlungsintegration.",
+      "tags": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "Chat-Anwendung",
+      "link": "https://chatterapp.com",
+      "repositoryLink": "https://github.com/johndoe/chat-application",
+      "beschreibung": "Echtzeit-Chat-Anwendung mit Funktionen für private und Gruppennachrichten. Erstellt mit Vue.js und Socket.IO.",
+      "tags": ["Vue.js", "Socket.IO", "Firebase"]
+    }
+  ],
+  "Fähigkeiten": {
+    "TechnischeFähigkeiten": [
+      {
+        "fähigkeit": "React.js",
+        "beschreibung": "Hohes Fachwissen zur Erstellung modularer und dynamischer Anwendungen mit React. Erfahrung im Zustandsmanagement mit Redux."
+      },
+      {
+        "fähigkeit": "HTML & CSS",
+        "beschreibung": "Expertenkenntnisse in der Erstellung semantischer und zugänglicher Interfaces mit CSS Grid und Flexbox."
+      },
+      {
+        "fähigkeit": "Versionskontrolle",
+        "beschreibung": "Erfahrung mit Git/GitHub für die Zusammenarbeit und Projektverwaltung."
+      }
+    ],
+    "SozialeFähigkeiten": [
+      {
+        "fähigkeit": "Problemlösung",
+        "beschreibung": "Analyse komplexer Aufgaben und Implementierung technischer Lösungen in engen Zeitrahmen."
+      },
+      {
+        "fähigkeit": "Kommunikation",
+        "beschreibung": "Hervorragende Fähigkeiten zur Interaktion mit Teams, Kunden und Stakeholdern."
+      },
+      {
+        "fähigkeit": "Anpassungsfähigkeit",
+        "beschreibung": "Schnelle Anpassung an neue Technologien und Arbeitsumgebungen."
+      }
+    ],
+    "Sprachen": [
+      "Deutsch (Muttersprache)",
+      "Englisch (Fließend)",
+      "Französisch (Grundkenntnisse)"
+    ]
+  },
+  "Kontakte": {
+    "telefon": "+49-152-123-45678",
+    "email": "johannmueller@example.com",
+    "LinkedIn": "https://linkedin.com/in/johannmueller",
+    "GitHub": "https://github.com/johannmueller"
+  }
+}
