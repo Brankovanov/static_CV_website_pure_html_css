@@ -23,6 +23,7 @@
 }
 
 .education label article p {
+  width: 100%;
   display: none;
 }
 
