@@ -47,3 +47,10 @@ summary {
 .bold {
     font-weight: 700;
 }
+
+.main-header .header-menu a {
+    /* DESKTOP */
+    @media (min-width: 1024px) {
+        font-size: Min(1vw, 1rem);
+    }
+}
