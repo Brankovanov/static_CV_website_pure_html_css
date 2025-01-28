@@ -10,7 +10,7 @@ export function generateTemplate(chosenLanguage, content) {
   populateWorkExperience(content);
   populateEducation(content);
   populateCoursesAndCertificates(content);
-  // populateTestimonials(content);
+  populateProjects(content);
   // populateContacts(content);
   // populateFooter(content);
   // hideSpinner();
@@ -30,7 +30,7 @@ function populateHeader(content) {
 }
 
 //Header navigation
-function headerNavigation(content) { 
+function headerNavigation(content) {
   let navigationItemList = document.querySelector(constants.headerNavItemId);
   clearComponents(navigationItemList);
   let navigationItem = navigationItemList.children[0];
@@ -147,8 +147,8 @@ function populateWorkExperience(content) {
 
   for (let index = 0; index < content.workExperience.workExperienceList.length; index++) {
     if (index === 0) {
-      experience.children[1].children[0].id=`${constants.workExperienceNavigationId}-${index}`;
-      experience.children[1].children[1].setAttribute('for',`${constants.workExperienceNavigationId}-${index}`);
+      experience.children[1].children[0].id = `${constants.workExperienceNavigationId}-${index}`;
+      experience.children[1].children[1].setAttribute('for', `${constants.workExperienceNavigationId}-${index}`);
       let experienceTitle = experience.querySelector(constants.experienceTitleId);
       experienceTitle.innerHTML = content.workExperience.workExperienceList[index].position;
       let experienceContent = experience.querySelector(constants.experienceContentId);
@@ -160,8 +160,8 @@ function populateWorkExperience(content) {
       experienceElements.appendChild(experience);
     } else {
       let newExperience = experience.cloneNode(true);
-      newExperience.children[1].children[0].id=`${constants.workExperienceNavigationId}-${index}`;
-      newExperience.children[1].children[1].setAttribute('for',`${constants.workExperienceNavigationId}-${index}`);
+      newExperience.children[1].children[0].id = `${constants.workExperienceNavigationId}-${index}`;
+      newExperience.children[1].children[1].setAttribute('for', `${constants.workExperienceNavigationId}-${index}`);
       let experienceTitle = newExperience.querySelector(constants.experienceTitleId);
       experienceTitle.innerHTML = content.workExperience.workExperienceList[index].position;
       let experienceContent = newExperience.querySelector(constants.experienceContentId);
@@ -185,11 +185,11 @@ function populateEducation(content) {
   let education = educationList.children[0];
 
   clearComponents(educationList);
- 
+
   for (let index = 0; index < content.education.educationList.length; index++) {
     if (index == 0) {
       education.children[0].id = `${constants.educationNavigationId}-${index}`;
-      education.children[1].setAttribute('for',`${constants.educationNavigationId}-${index}`);
+      education.children[1].setAttribute('for', `${constants.educationNavigationId}-${index}`);
       let educationTitle = education.querySelector(constants.educationTitleId);
       educationTitle.innerHTML = content.education.educationList[index].degreeName;
       let educationContent = education.querySelector(constants.educationDescriptionId);
@@ -200,9 +200,9 @@ function populateEducation(content) {
       educationsAttribute.children[2].innerHTML = `<span class="bold">${content.education.educationList[index].degreeNameLabel}: </span>${content.education.educationList[index].degreeName}`;
       educationsAttribute.children[3].innerHTML = `<span class="bold">${content.education.educationList[index].periodLabel}: </span>${content.education.educationList[index].period}`;
     } else {
-      let newEducation= education.cloneNode(true);
+      let newEducation = education.cloneNode(true);
       newEducation.children[0].id = `${constants.educationNavigationId}-${index}`;
-      newEducation.children[1].setAttribute('for',`${constants.educationNavigationId}-${index}`);
+      newEducation.children[1].setAttribute('for', `${constants.educationNavigationId}-${index}`);
       let educationTitle = newEducation.querySelector(constants.educationTitleId);
       educationTitle.innerHTML = content.education.educationList[index].degreeName;
       let educationContent = newEducation.querySelector(constants.educationDescriptionId);
@@ -218,36 +218,42 @@ function populateEducation(content) {
 }
 
 
-// YOu are here
+//Courses and certificates
 function populateCoursesAndCertificates(content) {
   let coursesAndCertificatesSection = document.querySelector(constants.coursesAndCertificatesSectionId);
   let coursesAndCertificatesTitle = coursesAndCertificatesSection.querySelector(constants.coursesAndCertificatesTitleId);
   coursesAndCertificatesTitle.innerHTML = content.coursesAndCertificates.categoryName;
-
   let coursesAndCertificatesSlidesSection = coursesAndCertificatesSection.querySelector(constants.coursesAndCertificatesSlidesWrapper);
-  let coursesAndCertificatesHiddenInputContainer = coursesAndCertificatesSlidesSection.children[0];
-  let coursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInputContainer.children[0]
-  clearComponents(coursesAndCertificatesHiddenInputContainer);
-  
+  let coursesAndCertificatesHiddenInputCollection = coursesAndCertificatesSlidesSection.querySelectorAll('[name="slides"]');
+  let coursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInputCollection[0];
+
+  while (coursesAndCertificatesHiddenInputCollection.length > 1) {
+    coursesAndCertificatesHiddenInputCollection.removeChild(coursesAndCertificatesHiddenInputCollection[0]);
+    coursesAndCertificatesHiddenInputCollection = coursesAndCertificatesHiddenInputCollection.slice();
+  }
+
   let coursesAndCertificatesSlidesContainer = coursesAndCertificatesSlidesSection.children[1];
   let coursesAndCertificatesSlide = coursesAndCertificatesSlidesContainer.children[0];
   clearComponents(coursesAndCertificatesSlidesContainer);
-  
+
   let coursesAndCertificatesLabelsContainer = coursesAndCertificatesSlidesSection.children[2];
-  let coursesAndCertificatesLabel = coursesAndCertificatesLabelsContainer.children[0]
+  let coursesAndCertificatesLabel = coursesAndCertificatesLabelsContainer.children[0];
   clearComponents(coursesAndCertificatesLabelsContainer);
 
+  let hiddenInputArray = [];
   for (let index = 0; index < content.coursesAndCertificates.coursesList.length; index++) {
     let id = `slide-${index}`;
-    let slidInputId =`courses-image-${index}`;
+    let slidInputId = `courses-image-${index}`;
     let slideContentInputId = `courses-content-${index}`;
 
     if (index === 0) {
       coursesAndCertificatesHiddenInput.id = id;
       coursesAndCertificatesLabel.for = id;
-      coursesAndCertificatesLabel.setAttribute(constants.coursesAndCertificatesFor ,id);
+      coursesAndCertificatesLabel.setAttribute(constants.coursesAndCertificatesFor, id);
+      coursesAndCertificatesHiddenInput.id = id;
+      hiddenInputArray.unshift(coursesAndCertificatesHiddenInput);
 
-      let slideContent = coursesAndCertificatesSlide.children[0];      
+      let slideContent = coursesAndCertificatesSlide.children[0];
       let slideInput = slideContent.children[0];
       slideInput.id = slidInputId;
       let slideLabel = slideContent.children[1];
@@ -261,22 +267,32 @@ function populateCoursesAndCertificates(content) {
       slideDescriptionInput.id = slideContentInputId;
       let slideDescriptionLabel = slideDescription.children[1];
       slideDescriptionLabel.setAttribute(constants.coursesAndCertificatesFor, slideContentInputId);
-
-      console.log(coursesAndCertificatesSlide)
+      let coursesPoints = slideDescriptionLabel.children[0];
+      coursesPoints.children[0].children[0].innerText = content.coursesAndCertificates.coursesList[index].nameLabel;
+      coursesPoints.children[0].children[1].innerText = content.coursesAndCertificates.coursesList[index].name;
+      coursesPoints.children[1].children[0].innerText = content.coursesAndCertificates.coursesList[index].organizationLabel;
+      coursesPoints.children[1].children[1].innerText = content.coursesAndCertificates.coursesList[index].organization;
+      coursesPoints.children[2].children[0].innerText = content.coursesAndCertificates.coursesList[index].issueDateLabel;
+      coursesPoints.children[2].children[1].innerText = content.coursesAndCertificates.coursesList[index].issueDate;
+      coursesPoints.children[3].children[0].innerText = content.coursesAndCertificates.coursesList[index].expirationDateLabel;
+      coursesPoints.children[3].children[1].innerText = content.coursesAndCertificates.coursesList[index].expirationDate;
+      coursesPoints.children[4].children[0].innerText = content.coursesAndCertificates.coursesList[index].identificationLabel;
+      coursesPoints.children[4].children[1].innerText = content.coursesAndCertificates.coursesList[index].identification;
+      coursesPoints.children[5].children[0].innerText = content.coursesAndCertificates.coursesList[index].name;
+      coursesPoints.children[5].children[0].href = content.coursesAndCertificates.coursesList[index].link;
+      slideDescriptionLabel.children[1].innerHTML = content.coursesAndCertificates.coursesList[index].description;
     } else {
       let newCoursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInput.cloneNode(true);
       newCoursesAndCertificatesHiddenInput.id = id;
       newCoursesAndCertificatesHiddenInput.removeAttribute(constants.coursesAndCertificatesChecked);
-      coursesAndCertificatesHiddenInputContainer.appendChild(newCoursesAndCertificatesHiddenInput);
-
-      let newCoursesAndCertificatesLabel= coursesAndCertificatesLabel.cloneNode(true);
-      newCoursesAndCertificatesLabel.setAttribute(constants.coursesAndCertificatesFor,id);
+      hiddenInputArray.unshift(newCoursesAndCertificatesHiddenInput)
+      let newCoursesAndCertificatesLabel = coursesAndCertificatesLabel.cloneNode(true);
+      newCoursesAndCertificatesLabel.setAttribute(constants.coursesAndCertificatesFor, id);
       coursesAndCertificatesLabelsContainer.appendChild(newCoursesAndCertificatesLabel);
-
       let newCoursesAndCertificatesSlide = coursesAndCertificatesSlide.cloneNode(true);
       let slideContent = newCoursesAndCertificatesSlide.children[0];
       let slideInput = slideContent.children[0];
-      slideInput.id=slidInputId;
+      slideInput.id = slidInputId;
       let slideLabel = slideContent.children[1];
       slideLabel.setAttribute('for', slidInputId);
       let slideImage = slideLabel.children[0];
@@ -284,44 +300,99 @@ function populateCoursesAndCertificates(content) {
       slideImage.alt = content.coursesAndCertificates.coursesList[index].name;
       slideImage.src = content.coursesAndCertificates.coursesList[index].image;
       let slideDescription = newCoursesAndCertificatesSlide.children[1];
-      let slideDescriptionInput = slideDescription.children[0]
+      let slideDescriptionInput = slideDescription.children[0];
       slideDescriptionInput.id = slideContentInputId;
       let slideDescriptionLabel = slideDescription.children[1];
-      slideDescriptionLabel.setAttribute(constants.coursesAndCertificatesFor, slideContentInputId)
-
+      slideDescriptionLabel.setAttribute(constants.coursesAndCertificatesFor, slideContentInputId);
+      let coursesPoints = slideDescriptionLabel.children[0];
+      coursesPoints.children[0].children[0].innerText = content.coursesAndCertificates.coursesList[index].nameLabel;
+      coursesPoints.children[0].children[1].innerText = content.coursesAndCertificates.coursesList[index].name;
+      coursesPoints.children[1].children[0].innerText = content.coursesAndCertificates.coursesList[index].organizationLabel;
+      coursesPoints.children[1].children[1].innerText = content.coursesAndCertificates.coursesList[index].organization;
+      coursesPoints.children[2].children[0].innerText = content.coursesAndCertificates.coursesList[index].issueDateLabel;
+      coursesPoints.children[2].children[1].innerText = content.coursesAndCertificates.coursesList[index].issueDate;
+      coursesPoints.children[3].children[0].innerText = content.coursesAndCertificates.coursesList[index].expirationDateLabel;
+      coursesPoints.children[3].children[1].innerText = content.coursesAndCertificates.coursesList[index].expirationDate;
+      coursesPoints.children[4].children[0].innerText = content.coursesAndCertificates.coursesList[index].identificationLabel;
+      coursesPoints.children[4].children[1].innerText = content.coursesAndCertificates.coursesList[index].identification;
+      coursesPoints.children[5].children[0].innerText = content.coursesAndCertificates.coursesList[index].name;
+      coursesPoints.children[5].children[0].href = content.coursesAndCertificates.coursesList[index].link;
       coursesAndCertificatesSlidesContainer.appendChild(newCoursesAndCertificatesSlide);
-      console.log(newCoursesAndCertificatesSlide)
     }
+
+    hiddenInputArray.forEach(coursesAndCertificatesHiddenInput => {
+      coursesAndCertificatesSlidesSection.prepend(coursesAndCertificatesHiddenInput);
+    });
   }
 }
 
+// YOu are here
 //Testimonials
-function populateTestimonials(content) {
-  let testimonialsSection = document.querySelector(constants.testimonialsSectionId);
-  let testimonialsTitle = testimonialsSection.querySelector(constants.testimonialsTitleId);
-  testimonialsTitle.innerHTML = content.testimonials.name;
-  let testimonials = testimonialsSection.querySelector(constants.testimonialsWrapperId);
-  let testimonial = testimonials.children[0];
+function populateProjects(content) {
+  let projectsSection = document.querySelector(constants.projectsSectionId);
+  let projectsTitle = projectsSection.querySelector(constants.projectsTitleId);
+  projectsTitle.innerHTML = content.projects.categoryName;
+  //READy
+  let projectListWrapper = projectsSection.children[1];
+  let projectList = projectListWrapper.children;
+  let projectTile = projectList[0];
 
-  clearComponents(testimonials);
+  clearComponents(projectsSection.children[1]);
 
-  for (let index = 0; index < content.testimonials.testimonialsList.length; index++) {
+
+  for (let index = 0; index < content.projects.projectsList.length; index++) {
     if (index === 0) {
-      let testimonialContent = testimonial.querySelector(constants.testimonialContentId)
-      testimonialContent.innerHTML = content.testimonials.testimonialsList[index].testimonial;
-      let testimonialCredentials = testimonial.querySelector(constants.testimonialCredentialsId);
-      testimonialCredentials.innerHTML = `${content.testimonials.testimonialsList[index].author}, ${content.testimonials.testimonialsList[index].position}`;
-      let testimonialDate = testimonial.querySelector(constants.testimonialDateId);
-      testimonialDate.innerHTML = content.testimonials.testimonialsList[index].date;
+      let projectName = projectTile.children[0].children[0];
+      projectName.innerHTML = content.projects.projectsList[index].name;
+
+      let contentWrapper  = projectTile.children[1];
+      let linksWrapper = contentWrapper.children[0];
+      let linkOne = linksWrapper.children[0];
+      linkOne.children[0].innerText = content.projects.projectsList[index].linkLabel;
+      linkOne.children[1].innerText = content.projects.projectsList[index].link;
+      linkOne.children[1].href = content.projects.projectsList[index].link;
+
+      let linkTwo = linksWrapper.children[1];
+      linkTwo.children[0].innerText = content.projects.projectsList[index].repositoryLink;
+      linkTwo.children[1].innerText = content.projects.projectsList[index].repository;
+      linkTwo.children[1].href = content.projects.projectsList[index].repository;
+
+      let descriptionWrapper = contentWrapper.children[1];
+      descriptionWrapper.innerHTML = content.projects.projectsList[index].description;
+
+      let tagWrapper = contentWrapper.children[2];
+      // TODO Tech stack tags
+      console.log(tagWrapper)
     } else {
-      let newTestimonial = testimonial.cloneNode(true);
-      let testimonialContent = newTestimonial.querySelector(constants.testimonialContentId)
-      testimonialContent.innerHTML = content.testimonials.testimonialsList[index].testimonial;
-      let testimonialCredentials = newTestimonial.querySelector(constants.testimonialCredentialsId);
-      testimonialCredentials.innerHTML = `${content.testimonials.testimonialsList[index].author}, ${content.testimonials.testimonialsList[index].position}`;
-      let testimonialDate = newTestimonial.querySelector(constants.testimonialDateId);
-      testimonialDate.innerHTML = content.testimonials.testimonialsList[index].date;
-      testimonials.appendChild(newTestimonial);
+      let newProjectTile = projectTile.cloneNode(true);
+      let projectName = newProjectTile.children[0].children[0];
+      projectName.innerHTML = content.projects.projectsList[index].name;
+
+      let contentWrapper  = projectTile.children[1];
+      let linksWrapper = contentWrapper.children[0];
+      let linkOne = linksWrapper.children[0];
+      linkOne.children[0].innerText = content.projects.projectsList[index].linkLabel;
+      linkOne.children[1].innerText = content.projects.projectsList[index].link;
+      linkOne.children[1].href = content.projects.projectsList[index].link;
+
+      let linkTwo = linksWrapper.children[1];
+      linkTwo.children[0].innerText = content.projects.projectsList[index].repositoryLink;
+      linkTwo.children[1].innerText = content.projects.projectsList[index].repository;
+      linkTwo.children[1].href = content.projects.projectsList[index].repository;
+
+      let descriptionWrapper = contentWrapper.children[1];
+      descriptionWrapper.innerHTML = content.projects.projectsList[index].description;
+
+      // let newTestimonial = testimonial.cloneNode(true);
+      // let testimonialContent = newTestimonial.querySelector(constants.testimonialContentId)
+      // testimonialContent.innerHTML = content.testimonials.testimonialsList[index].testimonial;
+      // let testimonialCredentials = newTestimonial.querySelector(constants.testimonialCredentialsId);
+      // testimonialCredentials.innerHTML = `${content.testimonials.testimonialsList[index].author}, ${content.testimonials.testimonialsList[index].position}`;
+      // let testimonialDate = newTestimonial.querySelector(constants.testimonialDateId);
+      // testimonialDate.innerHTML = content.testimonials.testimonialsList[index].date;
+      // testimonials.appendChild(newTestimonial);
+
+      projectListWrapper.appendChild(newProjectTile)
     }
   }
 
