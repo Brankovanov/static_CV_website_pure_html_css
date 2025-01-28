@@ -54,21 +54,15 @@ export const constants = {
   coursesAndCertificatesSlidesWrapper: '[id="courses-and-certificates-slides-wrapper"]',
   coursesAndCertificatesFor: 'for',
   coursesAndCertificatesChecked: 'checked',
-
-  //Our team ids
-
-  
-  teamMemberImageId: '[id="team-member-image"]',
-  teamMemberNameId: '[id="team-member-name"]',
-  teamMemberPositionId: '[id="team-member-position"]',
-  teamBioIdentifier: 'data-bio',
   
   //Projects ids
   projectsNavigationId: "#projects",
-
+  projectsSectionId: '[id="projects-wrapper"]',
+  projectsTitleId: '[id="projects-title"]',
+  
   //Testimonials
-  testimonialsSectionId: '[id="testimonials-wrapper"]',
-  testimonialsTitleId: '[id="testimonials-title"]',
+  // testimonialsSectionId: '[id="testimonials-wrapper"]',
+  // testimonialsTitleId: '[id="testimonials-title"]',
   testimonialsWrapperId: '[id="testimonials-wrapper"]',
   testimonialContentId: '[id="testimonial-content"]',
   testimonialCredentialsId: '[id="testimonial-credentials"]',
