@@ -5,13 +5,12 @@ export function generateTemplate(chosenLanguage, content) {
   populateHeader(content);
   populateSideNavigation(content);
   populateLanguageSelect(chosenLanguage, content);
-  // populateSlider(content);
   populateAboutMe(content);
   populateWorkExperience(content);
   populateEducation(content);
   populateCoursesAndCertificates(content);
   populateProjects(content);
-  // populateContacts(content);
+  populateSkills(content);
   // populateFooter(content);
   // hideSpinner();
 }
@@ -97,27 +96,6 @@ function createLanguageSelectOptions(languageSelect, chosenLanguage, content) {
     }
   }
 }
-
-//Slider
-// function populateSlider(content) {
-//   let carouselSection = document.querySelector(constants.carouselControlsId);
-//   let slideElements = carouselSection.querySelector(constants.slidesWrapperId);
-//   let slideElement = slideElements.children[0];
-
-//   for (let index = 0; index < content.slider.slides.length; index++) {
-//     if (index === 0) {
-//       slideElement.children[0].src = content.slider.slides[index].imageUrl;
-//       slideElement.children[0].alt = content.slider.slides[index].name;
-//       slideElement.classList.add(constants.active);
-//     } else {
-//       let newSlide = slideElement.cloneNode(true);
-//       newSlide.children[0].src = content.slider.slides[index].imageUrl;
-//       newSlide.children[0].alt = content.slider.slides[index].name;
-//       newSlide.classList.remove(constants.active);
-//       slideElements.appendChild(newSlide);
-//     }
-//   }
-// }
 
 //About me
 function populateAboutMe(content) {
@@ -326,19 +304,17 @@ function populateCoursesAndCertificates(content) {
   }
 }
 
-// YOu are here
-//Testimonials
+//Projects
 function populateProjects(content) {
   let projectsSection = document.querySelector(constants.projectsSectionId);
   let projectsTitle = projectsSection.querySelector(constants.projectsTitleId);
   projectsTitle.innerHTML = content.projects.categoryName;
-  //READy
+
   let projectListWrapper = projectsSection.children[1];
   let projectList = projectListWrapper.children;
   let projectTile = projectList[0];
 
   clearComponents(projectsSection.children[1]);
-
 
   for (let index = 0; index < content.projects.projectsList.length; index++) {
     if (index === 0) {
@@ -361,8 +337,13 @@ function populateProjects(content) {
       descriptionWrapper.innerHTML = content.projects.projectsList[index].description;
 
       let tagWrapper = contentWrapper.children[2];
-      // TODO Tech stack tags
-      console.log(tagWrapper)
+      clearComponents(tagWrapper);
+
+      content.projects.projectsList[index].tags.forEach((tag) => {
+        let span = document.createElement('span');
+        span.innerHTML = tag;
+        tagWrapper.appendChild(span)
+      });
     } else {
       let newProjectTile = projectTile.cloneNode(true);
       let projectName = newProjectTile.children[0].children[0];
@@ -383,62 +364,111 @@ function populateProjects(content) {
       let descriptionWrapper = contentWrapper.children[1];
       descriptionWrapper.innerHTML = content.projects.projectsList[index].description;
 
-      // let newTestimonial = testimonial.cloneNode(true);
-      // let testimonialContent = newTestimonial.querySelector(constants.testimonialContentId)
-      // testimonialContent.innerHTML = content.testimonials.testimonialsList[index].testimonial;
-      // let testimonialCredentials = newTestimonial.querySelector(constants.testimonialCredentialsId);
-      // testimonialCredentials.innerHTML = `${content.testimonials.testimonialsList[index].author}, ${content.testimonials.testimonialsList[index].position}`;
-      // let testimonialDate = newTestimonial.querySelector(constants.testimonialDateId);
-      // testimonialDate.innerHTML = content.testimonials.testimonialsList[index].date;
-      // testimonials.appendChild(newTestimonial);
+      let tagWrapper = contentWrapper.children[2];
+      clearComponents(tagWrapper);
+
+      content.projects.projectsList[index].tags.forEach((tag) => {
+        let span = document.createElement('span');
+        span.innerHTML = tag;
+        tagWrapper.appendChild(span)
+      });
 
       projectListWrapper.appendChild(newProjectTile)
     }
   }
-
 }
 
-//Contacts
-function populateContacts(content) {
-  let contactSection = document.querySelector(constants.contactsSectionId);
-  let contactTitle = contactSection.querySelector(constants.contactsSectionTitleId);
-  contactTitle.innerHTML = content.contacts.name;
-  let nameInput = contactSection.querySelector(constants.inputName);
-  nameInput.children[0].placeholder = content.contacts.fields[0];
-  nameInput.children[1].innerHTML = content.contacts.fields[0];
-  let emailInput = contactSection.querySelector(constants.inputEmail);
-  emailInput.children[0].placeholder = content.contacts.fields[1];
-  emailInput.children[1].innerHTML = content.contacts.fields[1];
-  let phoneInput = contactSection.querySelector(constants.inputPhone);
-  phoneInput.children[0].placeholder = content.contacts.fields[2];
-  phoneInput.children[1].innerHTML = content.contacts.fields[2];
-  let selectInput = contactSection.querySelector(constants.inputSelect);
-  let selectElement = selectInput.children[0];
-  let messageInput = contactSection.querySelector(constants.inputTextArea);
-  messageInput.children[0].placeholder = content.contacts.fields[4];
-  messageInput.children[1].innerHTML = content.contacts.fields[4];
+//Skills
+function populateSkills(content) {
+  let skillSection = document.querySelector(constants.skillsSectionId);
+  let skillTitle = skillSection.children[0].children[0];
+  skillTitle.innerHTML = content.skills.categoryName;
 
-  for (let index = 0; index < content.contacts.topics.length; index++) {
-    selectElement.children[index].value = content.contacts.topics[index];
-    selectElement.children[index].innerHTML = content.contacts.topics[index];
-  }
+  let technicalSkills = skillSection.children[1];
+  let technicalSkillLabel = technicalSkills.children[0];
+  technicalSkillLabel.innerHTML = content.skills.technicalSkillsLabel;
+  
+  let technicalSkillWrapper = technicalSkills.children[1];
+  clearComponents(technicalSkills);
 
-  selectInput.children[1].innerHTML = content.contacts.fields[3];
-  let phoneNumber = contactSection.querySelector(constants.phoneNumber);
-  phoneNumber.children[0].innerHTML = content.contacts.phoneTitle;
-  phoneNumber.children[1].innerHTML = content.contacts.phoneContent;
-  phoneNumber.children[1].href = `${constants.phoneLinkPrefix}${content.contacts.phoneContent}`;
-  let emailAddress = contactSection.querySelector(constants.emailAddress);
-  emailAddress.children[0].innerHTML = content.contacts.emailTitle;
-  emailAddress.children[1].innerHTML = content.contacts.emailContent;
-  emailAddress.children[1].href = `${constants.mailLinkPrefix}${content.contacts.mailContent}`;
-  let address = contactSection.querySelector(constants.address);
-  address.children[0].innerHTML = content.contacts.addressTitle;
-  address.children[1].innerHTML = content.contacts.addressContent;
-  address.children[1].href = content.contacts.addressCoordinates;
-  let submitButton = contactSection.querySelector(constants.sendButtonId);
-  submitButton.innerHTML = content.contacts.buttonContent;
+  content.skills.technicalSkills.forEach((skill, index) => {
+    if(index === 0) {
+      let skillInput = technicalSkillWrapper.children[0];
+      skillInput.id = `${constants.technicalSkillInputId}${index}`;
+
+      let content = technicalSkillWrapper.children[1]; 
+      content.setAttribute('for', `${constants.technicalSkillInputId}${index}`);
+      let skillCover = content.children[0];
+      skillCover.innerHTML = skill.skill;
+      let skillName = content.children[1];
+      skillName.innerHTML = skill.skill;
+      let skillDescription = content.children[2];
+      skillDescription.innerHTML = skill.description;
+
+      technicalSkills.appendChild(technicalSkillWrapper);
+    } else {
+      let newTechnicalSkillWrapper = technicalSkillWrapper.cloneNode(true);
+
+      let skillInput = newTechnicalSkillWrapper.children[0];
+      skillInput.id = `${constants.technicalSkillInputId}${index}`;
+
+      let content = newTechnicalSkillWrapper.children[1];
+      content.setAttribute('for', `${constants.technicalSkillInputId}${index}`);
+      let skillCover = content.children[0];
+      skillCover.innerHTML = skill.skill;
+      let skillName = content.children[1];
+      skillName.innerHTML = skill.skill;
+      let skillDescription = content.children[2];
+      skillDescription.innerHTML = skill.description;
+
+      technicalSkills.appendChild(newTechnicalSkillWrapper);
+    }
+  });
+
+  let softSkills =  skillSection.children[2]
+  let softSkillLabel = softSkills.children[0];
+  softSkillLabel.innerHTML = content.skills.softSkillsLabel;
+
+  let softSkillWrapper = softSkills.children[1];
+  clearComponents(softSkills);
+  content.skills.softSkills.forEach((skill, index) => {
+    if(index === 0) {
+      let skillInput = softSkillWrapper.children[0];
+      skillInput.id = `${constants.softSkillInputId}${index}`;
+
+      let content = softSkillWrapper.children[1]; 
+      content.setAttribute('for', `${constants.softSkillInputId}${index}`);
+      let skillCover = content.children[0];
+      skillCover.innerHTML = skill.skill;
+      let skillName = content.children[1];
+      skillName.innerHTML = skill.skill;
+      let skillDescription = content.children[2];
+      skillDescription.innerHTML = skill.description;
+
+      softSkills.appendChild(softSkillWrapper);
+    } else {
+      let newSoftSkillWrapper = softSkillWrapper.cloneNode(true);
+
+      let skillInput = newSoftSkillWrapper.children[0];
+      skillInput.id = `${constants.softSkillInputId}${index}`;
+
+      let content = newSoftSkillWrapper.children[1];
+      content.setAttribute('for', `${constants.softSkillInputId}${index}`);
+      let skillCover = content.children[0];
+      skillCover.innerHTML = skill.skill;
+      let skillName = content.children[1];
+      skillName.innerHTML = skill.skill;
+      let skillDescription = content.children[2];
+      skillDescription.innerHTML = skill.description;
+
+      softSkills.appendChild(newSoftSkillWrapper);
+    }
+  });
 }
+
+// TODO - languages
+// TODO - contacts
+// TODO - footer
 
 //Footer
 function populateFooter(content) {

@@ -59,17 +59,14 @@ export const constants = {
   projectsNavigationId: "#projects",
   projectsSectionId: '[id="projects-wrapper"]',
   projectsTitleId: '[id="projects-title"]',
-  
-  //Testimonials
-  // testimonialsSectionId: '[id="testimonials-wrapper"]',
-  // testimonialsTitleId: '[id="testimonials-title"]',
-  testimonialsWrapperId: '[id="testimonials-wrapper"]',
-  testimonialContentId: '[id="testimonial-content"]',
-  testimonialCredentialsId: '[id="testimonial-credentials"]',
-  testimonialDateId: '[id="testimonial-date"]',
 
   //Skills ids 
   skillsNavigationId: "#skills",
+  skillsSectionId: '[id="skills-wrapper"]',
+  technicalSkillInputId: 'tehcnical-skill-',
+  softSkillInputId: 'soft-skill-',
+
+
   //Languages ids
   languagesNavigationId: "#languages",
 

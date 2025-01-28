@@ -221,6 +221,7 @@
   },
   "skills": {
     "categoryName": "Умения",
+    "technicalSkillsLabel": "Технически умения",
     "technicalSkills": [
       {
         "skill": "React.js",
@@ -235,6 +236,7 @@
         "description": "Опит в работа с Git/GitHub за съвместна работа и управление на проекти."
       }
     ],
+    "softSkillsLabel" : "Социални умения",
     "softSkills": [
       {
         "skill": "Решаване на Проблеми",
