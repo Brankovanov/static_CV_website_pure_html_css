@@ -44,7 +44,8 @@ summary {
     font-size: 1.5em;
 }
 
-.bold {
+.bold,
+.footer-link:hover {
     font-weight: 700;
 }
 

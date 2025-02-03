@@ -33,9 +33,12 @@
     outline: none;
 }
 
+.static-container footer slot .footer-link {
+    color: var(--secondary-color);
+}
+
 /* MOUSE */
 @media (any-pointer: fine) {
-
     .static-container footer .go-to-top:hover,
     .static-container footer .footer-language-select:hover {
         scale: 1.5;
