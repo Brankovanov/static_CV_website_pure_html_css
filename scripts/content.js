@@ -21,9 +21,6 @@ export async function readContent(chosenLanguage) {
 
 async function changeLanguage(lang) {
   showSpinner();
-  let sideNavigation = document.querySelector(constants.sideNavigationIdentifier);
-  const bsOffcanvas = bootstrap.Offcanvas.getInstance(sideNavigation) || new bootstrap.Offcanvas(sideNavigation);
-  bsOffcanvas.hide();
   let chosenLanguage = lang.value;
   let content = await readContent(chosenLanguage);
   setCookie(constants.cookieTypes.language, chosenLanguage);

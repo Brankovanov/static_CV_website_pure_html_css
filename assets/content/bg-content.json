@@ -221,6 +221,7 @@
   },
   "skills": {
     "categoryName": "Умения",
+    "technicalSkillsLabel": "Технически умения",
     "technicalSkills": [
       {
         "skill": "React.js",
@@ -235,6 +236,7 @@
         "description": "Опит в работа с Git/GitHub за съвместна работа и управление на проекти."
       }
     ],
+    "softSkillsLabel" : "Социални умения",
     "softSkills": [
       {
         "skill": "Решаване на Проблеми",
@@ -252,10 +254,35 @@
   },
   "languageSkills": {
     "categoryName": "Езикови умения",
+    "languageListLabel": "Език",
     "languagesList": [
       "Български (Роден)",
       "Английски (Свободно Владеене)",
       "Френски (Базов)"
+    ],
+    "speakingLabel": "Говорене",
+    "speakingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "writingLabel": "Писане",
+    "writingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "readingLabel": "Четене",
+    "readingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "grammarLabel": "Граматика",
+    "grammarList": [
+      "C+",
+      "C",
+      "B"
     ]
   },
   "contacts": {
@@ -265,9 +292,9 @@
     "mailLabel": "Електронна поща",
     "mail": "johndoe@example.com",
     "linkedInLabel": "LinkedIn",
-    "linkedIn": "https://linkedin.com/in/johndoe",
+    "linkedIn": "https://linkedin.com/in/placeholder",
     "gitHubLabel": "GitHub",
-    "gitHub": "https://github.com/johndoe"
+    "gitHub": "https://github.com/placeholder"
   },
   "languages": {
     "bg": "BG",
@@ -275,6 +302,6 @@
     "de": "DE"
   },
   "footer": {
-    "content": "Създадено от <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"text-decoration-none link-secondary fw-bold\">Георги Бранкованов</a> - "
+    "content": "Създадено от &nbsp; <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"footer-link\">Георги Бранкованов</a> &nbsp; - &nbsp;"
   }
 }
