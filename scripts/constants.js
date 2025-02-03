@@ -6,19 +6,12 @@ export const constants = {
   logoId: "header-logo",
 
   // Header navigation ids
-  // headerNavigationId: '[id="navigation-header-menu"]',
   headerNavItemId: '[id="header-navigation-list"]',
  
-  
   // Side navigation ids 
   sideNavigationId: '[id="navigation-side-menu"]',
   navItemId: '[id="navigation-list"]',
-  languageSelectId: '[id="language-select"]',
   footerLanguageSelectId: '[id="footer-language-select"]',
-
-  // // Carousel ids
-  // carouselControlsId: '[id="carousel-controls"]',
-  // slidesWrapperId: '[id="slides-wrapper"]',
 
   // About us ids
   aboutMeSectionId: '[id="bio"]',
@@ -59,46 +52,23 @@ export const constants = {
   projectsNavigationId: "#projects",
   projectsSectionId: '[id="projects-wrapper"]',
   projectsTitleId: '[id="projects-title"]',
-  
-  //Testimonials
-  // testimonialsSectionId: '[id="testimonials-wrapper"]',
-  // testimonialsTitleId: '[id="testimonials-title"]',
-  testimonialsWrapperId: '[id="testimonials-wrapper"]',
-  testimonialContentId: '[id="testimonial-content"]',
-  testimonialCredentialsId: '[id="testimonial-credentials"]',
-  testimonialDateId: '[id="testimonial-date"]',
 
   //Skills ids 
   skillsNavigationId: "#skills",
+  skillsSectionId: '[id="skills-wrapper"]',
+  technicalSkillInputId: 'tehcnical-skill-',
+  softSkillInputId: 'soft-skill-',
+
   //Languages ids
   languagesNavigationId: "#languages",
+  languagesSectionId: '[id="languages-wrapper"]',
 
   //Contacts 
   contactsNavigationId: "#contacts",
   contactsSectionId: '[id="contact-section-container"]',
-  contactsSectionTitleId: '[id="contacts-section-title"]',
-  inputName: '[id="name-input"]',
-  inputEmail: '[id="email-input"]',
-  inputPhone: '[id="phone-input"]',
-  inputSelect: '[id="select-input"]',
-  inputTextArea: '[id="text-area-input"]',
-  phoneNumber: '[id="phone-number"]',
-  phoneLinkPrefix: 'tel:',
-  emailAddress: '[id="email-address"]',
-  mailLinkPrefix: 'mailto:',
-  address: '[id="address"]',
-  sendButtonId: '[id="submit-button"]',
 
   //Footer
-  footerContentId: '[id="footer-wrapper"]',
-
-  //Modals
-  modalLabelDataAttribute: '[data-modal-label="modalLabel"]',
-  modalImageDataAttribute: '[data-modal-label="modalImage"]',
-  modalBodyDataAttribute: '[data-modal-label="modalBody"]',
-  contentLabelDataAttribute: '[data-content-label="contentLabel"]',
-  contentImageDataAttribute: '[data-content-image="contentImage"]',
-  contentBodyDataAttribute: '[data-content-body="contentBody"]',
+  footerSectionId: '[id="footer-wrapper"]',
 
   //Spinner
   spinnerIdentifier: '[id="spinner"]',
@@ -106,20 +76,9 @@ export const constants = {
   //Side navigation
   sideNavigationIdentifier: '[id="navigation-side-menu"]',
 
-  //Bootstrap data attribute
-  bsDataTargetAttribute: 'data-bs-target',
-  bsAriaControl: 'aria-controls',
-  bsArialLabeledBy: 'aria-labelledby',
-  bsPaneIdentifier: '-pane',
-  bsTabIdentifier: '-tab',
-
   //Classes 
-  active: 'active',
-  show: 'show',
-  displayNone: 'd-none',
-  displayFlex: 'd-flex',
+  displayFlex: 'flex',
   noScroll: 'no-scroll',
-  button: 'button',
 
   //Language
   bulgarianLanguage: 'bg',
