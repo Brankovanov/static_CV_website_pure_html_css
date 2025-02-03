@@ -16,6 +16,7 @@ export async function readContent(chosenLanguage) {
     return content;
   } catch (error) {
     console.error(constants.fetchingError, error);
+    hideSpinner();
   }
 }
 
