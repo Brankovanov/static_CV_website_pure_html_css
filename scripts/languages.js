@@ -1,7 +1,7 @@
 import { constants } from './constants.js'
 
 export function createLanguages(content) {
-    populateLanguages(content) 
+  populateLanguages(content)
 }
 
 //Languages
@@ -26,15 +26,15 @@ function populateLanguages(content) {
 }
 
 function createTableRow(content, languageTable) {
-    content.languageSkills.languagesList.forEach((language, index) => {
-        let tableBody = document.createElement('tbody');
-        tableBody.appendChild(createColumn(content.languageSkills.languageListLabel, language, true));
-        tableBody.appendChild(createColumn(content.languageSkills.speakingLabel, content.languageSkills.speakingList[index], false));
-        tableBody.appendChild(createColumn(content.languageSkills.writingLabel, content.languageSkills.writingList[index], false));
-        tableBody.appendChild(createColumn(content.languageSkills.readingLabel, content.languageSkills.readingList[index], false));
-        tableBody.appendChild(createColumn(content.languageSkills.grammarLabel, content.languageSkills.grammarList[index], false));
-        languageTable.appendChild(tableBody);
-    });
+  content.languageSkills.languagesList.forEach((language, index) => {
+    let tableBody = document.createElement(constants.tbody);
+    tableBody.appendChild(createColumn(content.languageSkills.languageListLabel, language, true));
+    tableBody.appendChild(createColumn(content.languageSkills.speakingLabel, content.languageSkills.speakingList[index], false));
+    tableBody.appendChild(createColumn(content.languageSkills.writingLabel, content.languageSkills.writingList[index], false));
+    tableBody.appendChild(createColumn(content.languageSkills.readingLabel, content.languageSkills.readingList[index], false));
+    tableBody.appendChild(createColumn(content.languageSkills.grammarLabel, content.languageSkills.grammarList[index], false));
+    languageTable.appendChild(tableBody);
+  });
 }
 
 function clearTable(languageTable) {
@@ -44,19 +44,19 @@ function clearTable(languageTable) {
 }
 
 function createColumn(label, content, isBold) {
-  let tr = document.createElement('tr');
-  let th = document.createElement('th');
+  let tr = document.createElement(constants.tr);
+  let th = document.createElement(constants.th);
   th.innerHTML = label;
-  th.setAttribute('scope', 'row');
-  let td = document.createElement('td');
+  th.setAttribute(constants.scope, constants.row);
+  let td = document.createElement(constants.td);
   td.innerHTML = content;
 
   if (isBold) {
-    td.setAttribute('class', 'bold')
+    td.setAttribute(constants.class, constants.bold)
   }
 
   tr.appendChild(th);
   tr.appendChild(td);
- 
+
   return tr;
 }

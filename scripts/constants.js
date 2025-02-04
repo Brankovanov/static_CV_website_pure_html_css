@@ -1,4 +1,23 @@
+//TODO CHECK REFERENCES
 export const constants = {
+  //Tags
+  openSpanBoldTag: "<span class=\"bold\">",
+  closeSpanTag: "</span>",
+  openSpanTag: "<span>",
+  openLabelBoldTag: "<label class=\"bold\">",
+  closeLabelTag: "</label>",
+  span: "span",
+  tbody: "tbody",
+  tr: "tr",
+  th: "th",
+  td: "td",
+  scope: "scope",
+  row: "row",
+  class: "class",
+  bold: "bold",
+  for: "for",
+  toggleContent: '[class="toggle-content"]',
+
   // Header ids
   titleId: "title",
   metaTagId: '[name="apple-mobile-web-app-title"]',
@@ -7,7 +26,7 @@ export const constants = {
 
   // Header navigation ids
   headerNavItemId: '[id="header-navigation-list"]',
- 
+
   // Side navigation ids 
   sideNavigationId: '[id="navigation-side-menu"]',
   navItemId: '[id="navigation-list"]',
@@ -20,6 +39,7 @@ export const constants = {
   aboutMeBodyId: '[id="about-me-body"]',
   aboutMePersonNameId: '[id="about-me-name"]',
   aboutMePersonAgeId: '[id="about-me-age"]',
+  aboutMePersonContactsId: '[id="about-me-contacts"]',
   aboutMeNavigationId: "#bio",
 
   //WorkExperience ids
@@ -45,9 +65,8 @@ export const constants = {
   coursesAndCertificatesSectionId: '[id="courses-and-certificates-wrapper"]',
   coursesAndCertificatesTitleId: '[id="courses-and-certificates-title"]',
   coursesAndCertificatesSlidesWrapper: '[id="courses-and-certificates-slides-wrapper"]',
-  coursesAndCertificatesFor: 'for',
   coursesAndCertificatesChecked: 'checked',
-  
+
   //Projects ids
   projectsNavigationId: "#projects",
   projectsSectionId: '[id="projects-wrapper"]',
@@ -56,8 +75,14 @@ export const constants = {
   //Skills ids 
   skillsNavigationId: "#skills",
   skillsSectionId: '[id="skills-wrapper"]',
-  technicalSkillInputId: 'tehcnical-skill-',
+  technicalSkillInputId: 'technical-skill-',
   softSkillInputId: 'soft-skill-',
+
+  //Courses and certificates
+  slidesNameAttribute: '[name="slides"]',
+  slideIdPrefix: 'slide-',
+  slideImageIdPrefix: 'courses-image-',
+  slideContentIdPrefix: 'courses-content-',
 
   //Languages ids
   languagesNavigationId: "#languages",
@@ -66,6 +91,15 @@ export const constants = {
   //Contacts 
   contactsNavigationId: "#contacts",
   contactsSectionId: '[id="contact-section-container"]',
+  phone: "phone",
+  mail: "mail",
+  link: "link",
+  href: "href",
+  telAttribute: "tel:",
+  mailAttribute: "mailto:",
+  target: "target",
+  blank: "_blank",
+
 
   //Footer
   footerSectionId: '[id="footer-wrapper"]',
@@ -73,6 +107,9 @@ export const constants = {
   //Spinner
   spinnerIdentifier: '[id="spinner"]',
 
+  //Error
+  errorSectionId: '[id="error"]',
+ 
   //Side navigation
   sideNavigationIdentifier: '[id="navigation-side-menu"]',
 
@@ -98,6 +135,6 @@ export const constants = {
   //Error
   httpError: 'HTTP error! Status: ',
   fetchingError: 'Error fetching JSON:',
-
+  errorMessage: 'Something went wrong. Please try later.',
   yearCreated: 2024
 }

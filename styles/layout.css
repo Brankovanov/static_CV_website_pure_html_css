@@ -115,14 +115,14 @@ input {
   }
 }
 
-.toggle-content::after {
-  content: "Read more!";
-}
-
 a {
   color: var(--primary-color);
 }
 
 a:hover {
   color: var(--text-color);
+}
+
+button {
+  cursor: pointer
 }

@@ -303,5 +303,8 @@
   },
   "footer": {
     "content": "Created by &nbsp; <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"footer-link\">Georgi Brankovanov</a> &nbsp; - &nbsp;"
+  },
+  "buttons": {
+    "close": "Schließen"
   }
 }

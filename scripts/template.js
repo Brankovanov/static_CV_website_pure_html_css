@@ -1,4 +1,4 @@
-import { constants } from './constants.js';
+import { hideSpinner } from './spinner.js';
 import { createNavigationElements } from './navigation.js';
 import { createAboutMeElements } from './aboutMe.js';
 import { createWorkExperience } from './workExperience.js';
@@ -11,7 +11,6 @@ import { createLanguages } from './languages.js';
 import { createFooter } from './footer.js';
 
 export function generateTemplate(chosenLanguage, content) {
-  try {
     createNavigationElements(chosenLanguage,content);
     createAboutMeElements(content);
     createWorkExperience(content);
@@ -22,24 +21,5 @@ export function generateTemplate(chosenLanguage, content) {
     createLanguages(content);
     createContacts(content);
     createFooter(content);
-  } catch {
-    console.log('error');
-  }
-
-  hideSpinner();
-}
-
-//Spinner
-export function showSpinner() {
-  let spinnerElement = document.querySelector(constants.spinnerIdentifier);
-  spinnerElement.classList.add(constants.displayFlex);
-  document.body.classList.add(constants.noScroll);
-}
-
-function hideSpinner() {
-  setTimeout(() => {
-    let spinnerElement = document.querySelector(constants.spinnerIdentifier);
-    spinnerElement.classList.remove(constants.displayFlex);
-    document.body.classList.remove(constants.noScroll);
-  }, 100)
+    hideSpinner();
 }

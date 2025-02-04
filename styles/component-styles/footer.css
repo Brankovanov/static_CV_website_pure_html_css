@@ -46,4 +46,8 @@
         background-color: var(--primary-color);
         border: 0.2rem solid var(--secondary-color);
     }
+
+    .static-container footer a.footer-link:hover {
+        text-decoration-thickness: 2px;
+    }
 }

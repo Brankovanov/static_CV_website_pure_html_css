@@ -139,9 +139,6 @@
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-.courses-and-ceriticates .carousel-container .slide-container .slide input:checked ~ label .toggle-content::after  {
-  content: "Close!";
-}
 
 .courses-and-ceriticates .carousel-container .slide-container .slide div:first-of-type input:checked~label img {
   height: 70%;
@@ -177,9 +174,14 @@
 .courses-and-ceriticates .carousel-container input:nth-of-type(1):checked~.carousel-indicators label:nth-of-type(1),
 .courses-and-ceriticates .carousel-container input:nth-of-type(2):checked~.carousel-indicators label:nth-of-type(2),
 .courses-and-ceriticates .carousel-container input:nth-of-type(3):checked~.carousel-indicators label:nth-of-type(3),
-.courses-and-ceriticates .carousel-container input:nth-of-type(4):checked~.carousel-indicators label:nth-of-type(4) {
+.courses-and-ceriticates .carousel-container input:nth-of-type(4):checked~.carousel-indicators label:nth-of-type(4),
+.courses-and-ceriticates .carousel-container input:nth-of-type(4):checked~.carousel-indicators label:nth-of-type(5) {
   border: 2px solid var(--primary-color);
   background-color: var(--secondary-color);
+}
+
+.courses-and-ceriticates .carousel-container input:nth-of-type(5):checked~.slide-container .slide:first-of-type {
+  margin-left: -400%;
 }
 
 .courses-and-ceriticates .carousel-container input:nth-of-type(4):checked~.slide-container .slide:first-of-type {

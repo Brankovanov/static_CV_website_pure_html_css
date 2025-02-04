@@ -1,10 +1,10 @@
 import { setCookie } from './cookies.js';
-import { generateTemplate, showSpinner } from './template.js';
-import { constants } from './constants.js'
+import { generateTemplate } from './template.js';
+import { constants } from './constants.js';
+import { showSpinner } from './spinner.js';
 window.changeLanguage = changeLanguage;
 
 export async function readContent(chosenLanguage) {
-  try {
     let contentLink = `${constants.contentAssetOrigin}${chosenLanguage}${constants.contentJsonFile}`;
     const response = await fetch(contentLink);
 
@@ -14,10 +14,6 @@ export async function readContent(chosenLanguage) {
 
     const content = await response.json();
     return content;
-  } catch (error) {
-    console.error(constants.fetchingError, error);
-    hideSpinner();
-  }
 }
 
 async function changeLanguage(lang) {

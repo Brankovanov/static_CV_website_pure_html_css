@@ -25,6 +25,10 @@ function populateEducation(content) {
 
         educationList.appendChild(education);
     }
+
+    let buttons = educationsComponent.querySelectorAll(constants.toggleContent);
+
+    populateButtons(buttons, content);
 }
 
 function createEducationElement(education, index, content) {
@@ -33,15 +37,15 @@ function createEducationElement(education, index, content) {
 
     let educationTitle = education.querySelector(constants.educationTitleId);
     educationTitle.innerHTML = content.education.educationList[index].degreeName;
-    
+
     let educationContent = education.querySelector(constants.educationDescriptionId);
     educationContent.innerHTML = content.education.educationList[index].description;
-    
+
     let educationsAttribute = education.querySelector(constants.educationAttributes);
-    educationsAttribute.children[0].innerHTML = `<span class="bold">${content.education.educationList[index].schoolNameLabel}: </span>${content.education.educationList[index].schoolName}`;
-    educationsAttribute.children[1].innerHTML = `<span class="bold">${content.education.educationList[index].educationDegreeLabel}: </span>${content.education.educationList[index].educationDegree}`;
-    educationsAttribute.children[2].innerHTML = `<span class="bold">${content.education.educationList[index].degreeNameLabel}: </span>${content.education.educationList[index].degreeName}`;
-    educationsAttribute.children[3].innerHTML = `<span class="bold">${content.education.educationList[index].periodLabel}: </span>${content.education.educationList[index].period}`;
+    educationsAttribute.children[0].innerHTML = `${constants.openSpanBoldTag}${content.education.educationList[index].schoolNameLabel}: ${constants.closeSpanTag}${content.education.educationList[index].schoolName}`;
+    educationsAttribute.children[1].innerHTML = `${constants.openSpanBoldTag}${content.education.educationList[index].educationDegreeLabel}: ${constants.closeSpanTag}${content.education.educationList[index].educationDegree}`;
+    educationsAttribute.children[2].innerHTML = `${constants.openSpanBoldTag}${content.education.educationList[index].degreeNameLabel}: ${constants.closeSpanTag}${content.education.educationList[index].degreeName}`;
+    educationsAttribute.children[3].innerHTML = `${constants.openSpanBoldTag}${content.education.educationList[index].periodLabel}: ${constants.closeSpanTag}${content.education.educationList[index].period}`;
 
     return education;
 }
@@ -50,4 +54,10 @@ function clearComponents(parentElement) {
     while (parentElement.children.length > 1) {
         parentElement.removeChild(parentElement.lastChild);
     }
+}
+
+function populateButtons(buttons, content) {
+    buttons.forEach(button => {
+        button.innerHTML = content.buttons.close;
+    });
 }

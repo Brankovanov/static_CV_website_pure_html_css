@@ -54,7 +54,7 @@ function createProjectTile(projectTile, content, index) {
 
 function createTagList(content, index, tagWrapper) {
     content.projects.projectsList[index].tags.forEach((tag) => {
-        let span = document.createElement('span');
+        let span = document.createElement(constants.span);
         span.innerHTML = tag;
         tagWrapper.appendChild(span);
     });

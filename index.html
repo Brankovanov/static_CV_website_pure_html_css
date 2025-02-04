@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,16 +27,16 @@
             </div>
             <div class="header-wrapper">
                 <input type="checkbox" name="toggler" id="toggle-header">
-            
-                <label for="toggle-header"></label>
-                <div class="toggle-button" tabindex="-1" autofocus
+                
+                <label for="toggle-header" aria-label="toggle-header"></label>
+                <button class="toggle-button" tabindex="-1" autofocus
                     onchange='this === document.activeElement ? this.blur() : this.focus()'>
-                    <label for="toggle-header">
+                    <label for="toggle-header" aria-label="toggle-header">
                         <div></div>
                         <div></div>
                         <div></div>
                     </label>
-                </div>
+                </button>
                 <div id="header-navigation-list" class="header-menu">
                     <a class="bold" href=""> Placeholder </a>
                 </div>
@@ -66,19 +65,21 @@
                             <div class="personal-info">
                                 <h5 id="about-me-name" class="bold">Placeholder</h5>
                                 <p id="about-me-age">Placeholder</p>
-                                <p>
-                                    <span class="bold">Telephone: </span>
-                                    <a href="tel:+358 888 888 888">+358 888 888 888</a>
-                                </p>
-                                <p>
-                                    <span class="bold">Email: </span>
-                                    <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
-                                </p>
-                                <p>
-                                    <span class="bold">Linkedin: </span>
-                                    <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
-                                </p>
-                                <span class="toggle-content"></span>
+                                <div id="about-me-contacts">
+                                    <p>
+                                        <span class="bold">Placeholder</span>
+                                        <a href="">Placeholder</a>
+                                    </p>
+                                    <p>
+                                        <span class="bold">Placeholder</span>
+                                        <a href="">Placeholder</a>
+                                    </p>
+                                    <p>
+                                        <span class="bold">Placeholder</span>
+                                        <a href="" target="_blank">Placeholder</a>
+                                    </p>
+                                </div>
+                                <button class="toggle-content"></button>
                             </div>
                         </div>
                     </label>
@@ -90,7 +91,7 @@
                             </header>
                             <p>Placeholder</p>
                         </div>
-                        <span class="toggle-content"></span>
+                        <button  class="toggle-content"></button>
                     </label>
                 </article>
             </section>
@@ -113,7 +114,7 @@
                                     <li>Placeholder</li>
                                 </ul>
                                 <p id="experience-content">Placeholder</p>
-                                <span class="toggle-content"></span>
+                                <button class="toggle-content"></button>
                             </label>
                         </div>
                     </details>
@@ -153,7 +154,7 @@
                                         <p id="education-description">
                                           Placeholder
                                         </p>
-                                        <span class="toggle-content"></span>
+                                        <button class="toggle-content"></button>
                                     </div>
                                 </article>
                             </label>
@@ -170,7 +171,7 @@
                         <h2 id="courses-and-certificates-title">Placeholder</h2>
                     </header>
                     <div id="courses-and-certificates-slides-wrapper" class="carousel-container">
-                        <input type="radio" name="slides" id="" checked="checked">
+                        <input type="radio" name="slides" id="">
                         <div class="slide-container">
                             <div class="slide">
                                 <!-- IMAGES -->
@@ -211,7 +212,7 @@
                                             </li>
                                         </ul>
                                         <p class="description">Placeholder</p>
-                                        <span class="toggle-content"></span>
+                                        <button class="toggle-content"></button>
                                     </label>
                                 </div>
                                  <!-- DESCRIPTION -->
@@ -355,3 +356,9 @@
 </div>
 <!-- SPINNER -->
 
+<!-- Error -->
+ <div id="error" class="error">
+    <h1 class="error-message"></h1>
+    <small class="error-message"></small>
+ </div>
+<!-- Error -->
