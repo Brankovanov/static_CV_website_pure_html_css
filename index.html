@@ -20,351 +20,357 @@
 </head>
 
 <body>
-    <!-- MAIN HEADER -->
-    <div class="static-container main-header">
-        <header>
-            <div class="logo">
-                <h1 id="header-logo" class="bold"> Person name </h1>
-            </div>
-            <div class="header-wrapper">
-                <input type="checkbox" name="toggler" id="toggle-header">
-                
-                <label for="toggle-header" aria-label="toggle-header"></label>
-                <button class="toggle-button" tabindex="-1" autofocus
-                    onchange='this === document.activeElement ? this.blur() : this.focus()'>
-                    <label for="toggle-header" aria-label="toggle-header">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
-                </button>
-                <div id="header-navigation-list" class="header-menu">
-                    <a class="bold" href=""> Placeholder </a>
+    <section id="main-content" style="display: none;">
+        <!-- MAIN HEADER -->
+        <div class="static-container main-header">
+            <header>
+                <div class="logo">
+                    <h1 id="header-logo" class="bold"> Person name </h1>
                 </div>
-            </div>
-        </header>
-    </div>
-    <!-- MAIN HEADER -->
-
-    <div class="dynamic-container">
-        <!-- ASIDE -->
-        <aside id="navigation-side-menu">
-            <div id="navigation-list" class="aside-menu">
-                   <a class="bold" href=""> PlaceHolder </a>
-            </div>
-        </aside>
-        <!-- ASIDE -->
-
-        <main>
-            <!-- BIO -->
-            <section id="bio" class="bio">
-                <article>
-                    <input type="checkbox" name="sections" id="bio-image">
-                    <label for="bio-image">
-                        <div class="picture-container">
-                            <img id="about-me-image" src="" alt="PlaceHolder">
-                            <div class="personal-info">
-                                <h5 id="about-me-name" class="bold">Placeholder</h5>
-                                <p id="about-me-age">Placeholder</p>
-                                <div id="about-me-contacts">
-                                    <p>
-                                        <span class="bold">Placeholder</span>
-                                        <a href="">Placeholder</a>
-                                    </p>
-                                    <p>
-                                        <span class="bold">Placeholder</span>
-                                        <a href="">Placeholder</a>
-                                    </p>
-                                    <p>
-                                        <span class="bold">Placeholder</span>
-                                        <a href="" target="_blank">Placeholder</a>
-                                    </p>
-                                </div>
-                                <button class="toggle-content"></button>
-                            </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" name="sections" id="bio-description">
-                    <label for="bio-description">
-                        <div id="about-me-body" class="content-container">
-                            <header>
-                                <h2 id="about-me-title">Placeholder</h2>
-                            </header>
-                            <p>Placeholder</p>
-                        </div>
-                        <button  class="toggle-content"></button>
-                    </label>
-                </article>
-            </section>
-            <!-- BIO -->
-
-            <!-- EXPERIENCE -->
-            <section id="work-experience" class="work-experience">
-                <article id="experience-wrapper">
-                    <header>
-                        <h2 id="experiences-title">Placeholder</h2>
-                    </header>
-                    <details>
-                        <summary id="experience-title" class="bold">Placeholder</summary>
-                        <div class="details-container">
-                            <input type="checkbox" name="sections" id="">
-                            <label for="">
-                                <ul id="experience-details">
-                                    <li>Placeholder</li>
-                                    <li>Placeholder</li>
-                                    <li>Placeholder</li>
-                                </ul>
-                                <p id="experience-content">Placeholder</p>
-                                <button class="toggle-content"></button>
-                            </label>
-                        </div>
-                    </details>
-                </article>
-            </section>
-            <!-- EXPERIENCE -->
-
-            <!-- EDUCATION -->
-            <section id="education">
-                <article class="education">
-                    <header>
-                        <h2 id="educations-title">Placeholder</h2>
-                    </header>
-                    <div id="education-list">
-                        <slot>
-                            <input type="checkbox" name="sections" id="">
-                            <label for="">
-                                <article>
-                                    <header>
-                                        <h3 id="education-title">Placeholder</h3>
-                                    </header>
-                                    <div>
-                                        <ul id="education-attributes">
-                                            <li>
-                                                <span class="bold">Placeholder </span>Placeholder
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder </span>Placeholder
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder </span>Placeholder
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder </span>Placeholder
-                                            </li>
-                                        </ul>
-                                        <p id="education-description">
-                                          Placeholder
+                <div class="header-wrapper">
+                    <input type="checkbox" name="toggler" id="toggle-header">
+                    
+                    <label for="toggle-header" aria-label="toggle-header"></label>
+                    <div class="toggle-button" 
+                        aria-roledescription="button"
+                        tabindex="-1" 
+                        autofocus
+                        onchange='this === document.activeElement ? this.blur() : this.focus()'>
+                        <label for="toggle-header" aria-label="toggle-header">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+                    </div>
+                    <div id="header-navigation-list" class="header-menu">
+                        <a class="bold" href=""> Placeholder </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- MAIN HEADER -->
+    
+        <div class="dynamic-container">
+            <!-- ASIDE -->
+            <aside id="navigation-side-menu">
+                <div id="navigation-list" class="aside-menu">
+                       <a class="bold" href=""> PlaceHolder </a>
+                </div>
+            </aside>
+            <!-- ASIDE -->
+    
+            <main>
+                <!-- BIO -->
+                <section id="bio" class="bio">
+                    <article>
+                        <input type="checkbox" name="sections" id="bio-image">
+                        <label for="bio-image">
+                            <div class="picture-container">
+                                <img id="about-me-image" src="" alt="PlaceHolder">
+                                <div class="personal-info">
+                                    <h5 id="about-me-name" class="bold">Placeholder</h5>
+                                    <p id="about-me-age">Placeholder</p>
+                                    <div id="about-me-contacts">
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="">Placeholder</a>
                                         </p>
-                                        <button class="toggle-content"></button>
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="">Placeholder</a>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="" target="_blank">Placeholder</a>
+                                        </p>
                                     </div>
-                                </article>
-                            </label>
-                        </slot>
-                    </div>
-                </article>
-            </section>
-            <!-- EDUCATION -->
-
-            <!-- COURSES AND CERTIFICATES -->
-            <section id="courses-and-certificates">
-                <article id="courses-and-certificates-wrapper" class="courses-and-certificates">
-                    <header>
-                        <h2 id="courses-and-certificates-title">Placeholder</h2>
-                    </header>
-                    <div id="courses-and-certificates-slides-wrapper" class="carousel-container">
-                        <input type="radio" name="slides" id="">
-                        <div class="slide-container">
-                            <div class="slide">
-                                <!-- IMAGES -->
-                                <div> 
-                                    <input type="checkbox" name="sections" id="">
-                                    <label for="">
-                                        <img for="" src="" alt="" loading="lazy"/>
-                                    </label>
+                                    <button class="toggle-content"></button>
                                 </div>
-                                <!-- IMAGES -->
-                                <!-- DESCRIPTION -->
+                            </div>
+                        </label>
+                        <input type="checkbox" name="sections" id="bio-description">
+                        <label for="bio-description">
+                            <div id="about-me-body" class="content-container">
+                                <header>
+                                    <h2 id="about-me-title">Placeholder</h2>
+                                </header>
+                                <p>Placeholder</p>
+                            </div>
+                            <button  class="toggle-content"></button>
+                        </label>
+                    </article>
+                </section>
+                <!-- BIO -->
+    
+                <!-- EXPERIENCE -->
+                <section id="work-experience" class="work-experience">
+                    <article id="experience-wrapper">
+                        <header>
+                            <h2 id="experiences-title">Placeholder</h2>
+                        </header>
+                        <details>
+                            <summary id="experience-title" class="bold">Placeholder</summary>
+                            <div class="details-container">
+                                <input type="checkbox" name="sections" id="">
+                                <label for="">
+                                    <ul id="experience-details">
+                                        <li>Placeholder</li>
+                                        <li>Placeholder</li>
+                                        <li>Placeholder</li>
+                                    </ul>
+                                    <p id="experience-content">Placeholder</p>
+                                    <button class="toggle-content"></button>
+                                </label>
+                            </div>
+                        </details>
+                    </article>
+                </section>
+                <!-- EXPERIENCE -->
+    
+                <!-- EDUCATION -->
+                <section id="education">
+                    <article class="education">
+                        <header>
+                            <h2 id="educations-title">Placeholder</h2>
+                        </header>
+                        <div id="education-list">
+                            <slot>
+                                <input type="checkbox" name="sections" id="">
+                                <label for="">
+                                    <article>
+                                        <header>
+                                            <h3 id="education-title">Placeholder</h3>
+                                        </header>
+                                        <div>
+                                            <ul id="education-attributes">
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                            </ul>
+                                            <p id="education-description">
+                                              Placeholder
+                                            </p>
+                                            <button class="toggle-content"></button>
+                                        </div>
+                                    </article>
+                                </label>
+                            </slot>
+                        </div>
+                    </article>
+                </section>
+                <!-- EDUCATION -->
+    
+                <!-- COURSES AND CERTIFICATES -->
+                <section id="courses-and-certificates">
+                    <article id="courses-and-certificates-wrapper" class="courses-and-certificates">
+                        <header>
+                            <h2 id="courses-and-certificates-title">Placeholder</h2>
+                        </header>
+                        <div id="courses-and-certificates-slides-wrapper" class="carousel-container">
+                            <input type="radio" name="slides" id="">
+                            <div class="slide-container">
+                                <div class="slide">
+                                    <!-- IMAGES -->
+                                    <div> 
+                                        <input type="checkbox" name="sections" id="">
+                                        <label for="">
+                                            <img for="" src="" alt="" loading="lazy"/>
+                                        </label>
+                                    </div>
+                                    <!-- IMAGES -->
+                                    <!-- DESCRIPTION -->
+                                    <div>
+                                        <input type="checkbox" name="sections" id="cources-content-one">
+                                        <label for="cources-content-one">
+                                            <ul>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <a class="bold" href="#">Placeholder</a>
+                                                </li>
+                                            </ul>
+                                            <p class="description">Placeholder</p>
+                                            <button class="toggle-content"></button>
+                                        </label>
+                                    </div>
+                                     <!-- DESCRIPTION -->
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <label aria-label="carousel-indicator">
+                                    <input></input>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <!-- COURSES AND CERTIFICATES -->
+    
+                <!--PERSONAL PROJECTS-->
+                <section id="projects">
+                    <article id="projects-wrapper">
+                        <header>
+                            <h2 id="projects-title">Place holder</h2>
+                        </header>
+                        <div class="project-list">
+                            <article>
+                                <header>
+                                    <h3>Placeholder</h3>
+                                </header>
                                 <div>
-                                    <input type="checkbox" name="sections" id="cources-content-one">
-                                    <label for="cources-content-one">
-                                        <ul>
-                                            <li>
-                                                <span class="bold">Placeholder</span>
-                                                <span>Placeholder</span>
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder</span>
-                                                <span>Placeholder</span>
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder</span>
-                                                <span>Placeholder</span>
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder</span>
-                                                <span>Placeholder</span>
-                                            </li>
-                                            <li>
-                                                <span class="bold">Placeholder</span>
-                                                <span>Placeholder</span>
-                                            </li>
-                                            <li>
-                                                <a class="bold" href="#">Placeholder</a>
-                                            </li>
-                                        </ul>
-                                        <p class="description">Placeholder</p>
-                                        <button class="toggle-content"></button>
-                                    </label>
+                                    <ul>
+                                        <li>
+                                            <span class="bold">Placeholder:</span> 
+                                            <a href="#">Placeholder</a>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="#">Placeholder</a>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <span class="bold">Placeholder</span> 
+                                        <span>Placeholder</span>
+                                    </p>
+                                    <div class="tech-stack"></div>
                                 </div>
-                                 <!-- DESCRIPTION -->
-                            </div>
+                            </article>
                         </div>
-                        <div class="carousel-indicators">
-                            <label aria-label="carousel-indicator">
-                                <input></input>
-                            </label>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- COURSES AND CERTIFICATES -->
-
-            <!--PERSONAL PROJECTS-->
-            <section id="projects">
-                <article id="projects-wrapper">
-                    <header>
-                        <h2 id="projects-title">Place holder</h2>
-                    </header>
-                    <div class="project-list">
-                        <article>
-                            <header>
-                                <h3>Placeholder</h3>
-                            </header>
+                    </article>
+                </section>
+                <!--PERSONAL PROJECTS-->
+    
+                <!-- SKILLS -->
+                <section id="skills">
+                    <article id="skills-wrapper" class="skills">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <div class="skills-container">
+                            <h3>PLaceholder</h3>
                             <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">Placeholder:</span> 
-                                        <a href="#">Placeholder</a>
-                                    </li>
-                                    <li>
-                                        <span class="bold">Placeholder</span>
-                                        <a href="#">Placeholder</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    <span class="bold">Placeholder</span> 
-                                    <span>Placeholder</span>
-                                </p>
-                                <div class="tech-stack"></div>
+                                <input type="checkbox" name="sections" id="skill-one">
+                                <label for="skill-one">
+                                    <h4>PLaceholder</h4>
+                                    <p class="bold">PLaceholder</p>
+                                    <p>PLaceholder</p>
+                                </label>
                             </div>
-                        </article>
-                    </div>
-                </article>
-            </section>
-            <!--PERSONAL PROJECTS-->
-
-            <!-- SKILLS -->
-            <section id="skills">
-                <article id="skills-wrapper" class="skills">
-                    <header>
-                        <h2>Placeholder</h2>
-                    </header>
-                    <div class="skills-container">
-                        <h3>PLaceholder</h3>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-one">
-                            <label for="skill-one">
-                                <h4>PLaceholder</h4>
-                                <p class="bold">PLaceholder</p>
-                                <p>PLaceholder</p>
-                            </label>
                         </div>
-                    </div>
-                    <div class="skills-container">
-                        <h3>PLaceholder</h3>
-
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-four">
-                            <label for="skill-four">
-                                <h4>PLaceholder</h4>
-                                <p class="bold">PLaceholder</p>
-                                <p>PLaceholder</p>
-                            </label>
+                        <div class="skills-container">
+                            <h3>PLaceholder</h3>
+    
+                            <div>
+                                <input type="checkbox" name="sections" id="skill-four">
+                                <label for="skill-four">
+                                    <h4>PLaceholder</h4>
+                                    <p class="bold">PLaceholder</p>
+                                    <p>PLaceholder</p>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </section>
-            <!-- SKILLS -->
-
-            <!-- LANGUAGES -->
-            <section id="languages">
-                <article id="languages-wrapper" class="languages">
-                    <header>
-                        <h2>Placeholder</h2>
-                    </header>
-                    <table>
-                        <caption hidden>PlaceHolder</caption>
-                        <thead>
-                            <tr scope="row">
-                                <th scope="col">PlaceHolder</th>
-                                <th scope="col">PlaceHolder</th>
-                                <th scope="col">PlaceHolder</th>
-                                <th scope="col">PlaceHolder</th>
-                                <th scope="col">PlaceHolder</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </article>
-            </section>
-            <!-- LANGUAGES -->
-
-            <!-- CONTACTS -->
-            <section id="contacts">
-                <article id="contact-section-container" class="contacts">
-                    <header>
-                        <h2>Placeholder</h2>
-                    </header>
-                    <ul>
-                        <li>
-                            <span class="bold">Placeholder </span>
-                            <a href="Placeholder">Placeholder</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <!-- CONTACTS -->
-        </main>
+                    </article>
+                </section>
+                <!-- SKILLS -->
+    
+                <!-- LANGUAGES -->
+                <section id="languages">
+                    <article id="languages-wrapper" class="languages">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <table>
+                            <caption hidden>PlaceHolder</caption>
+                            <thead>
+                                <tr scope="row">
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </article>
+                </section>
+                <!-- LANGUAGES -->
+    
+                <!-- CONTACTS -->
+                <section id="contacts">
+                    <article id="contact-section-container" class="contacts">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="bold">Placeholder </span>
+                                <a href="Placeholder">Placeholder</a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <!-- CONTACTS -->
+            </main>
+        </div>
+    
+        <!-- FOOTER -->
+        <div class="static-container">
+            <footer>
+                <slot id="footer-wrapper"></slot>
+                <a href="#bio" class="go-to-top">&uArr;</a>
+                <label hidden for="footer-language-select" aria-label="footer-language-select"></label>
+                <select id="footer-language-select" class="footer-language-select" onchange="changeLanguage(this)" aria-label="footer-language-select">
+                    <option selected="" value=""></option>
+                    <option selected="" value=""></option>
+                    <option selected="" value=""></option>
+                </select>
+            </footer>
+        </div>
+        <!-- FOOTER -->
+        
+        <!-- Error -->
+         <div id="error" class="error">
+            <h1 class="error-message">PlaceHolder</h1>
+            <small class="error-message"></small>
+         </div>
+        <!-- Error -->
+    </section>
+    
+    <!-- SPINNER -->
+    <div id='spinner' class="spinner flex">
+        <output class="loader"></output>
     </div>
-
-    <!-- FOOTER -->
-    <div class="static-container">
-        <footer>
-            <slot id="footer-wrapper"></slot>
-            <a href="#bio" class="go-to-top">&uArr;</a>
-            <label hidden for="footer-language-select" aria-label="footer-language-select"></label>
-            <select id="footer-language-select" class="footer-language-select" onchange="changeLanguage(this)" aria-label="footer-language-select">
-                <option selected="" value=""></option>
-                <option selected="" value=""></option>
-                <option selected="" value=""></option>
-            </select>
-        </footer>
-    </div>
-    <!-- FOOTER -->
+    <!-- SPINNER -->
 </body>
 
 </html>
 
-<!-- SPINNER -->
-<div id='spinner' class="spinner flex">
-    <output class="loader"></output>
-</div>
-<!-- SPINNER -->
-
-<!-- Error -->
- <div id="error" class="error">
-    <h1 class="error-message">PlaceHolder</h1>
-    <small class="error-message"></small>
- </div>
-<!-- Error -->
 
 <script type="module" src="scripts/main.js" async></script>

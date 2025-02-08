@@ -19,7 +19,12 @@ export const constants = {
   button: "button",
   click: "click",
   html: "html",
+  hidden: "hidden",
+  style: "style",
   toggleContent: '[class="toggle-content"]',
+  
+  // Main content 
+  mainContentId: '[id="main-content"]',
 
   // Header ids
   titleId: "title",
