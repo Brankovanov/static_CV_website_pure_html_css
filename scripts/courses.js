@@ -1,6 +1,5 @@
 import { constants } from './constants.js'
 
-//TODO FIX
 export function createCourses(content) {
     populateCoursesAndCertificates(content)
 }
@@ -13,15 +12,15 @@ function populateCoursesAndCertificates(content) {
 
     let coursesAndCertificatesSlidesSection = coursesAndCertificatesSection.querySelector(constants.coursesAndCertificatesSlidesWrapper);
     let coursesAndCertificatesHiddenInputCollection = coursesAndCertificatesSlidesSection.querySelectorAll(constants.slidesNameAttribute);
-    let coursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInputCollection[0]; //HIDDEN INPUT
+    let coursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInputCollection[0];
     clearCertificatesHiddenInputs(coursesAndCertificatesHiddenInputCollection, coursesAndCertificatesSlidesSection);
 
     let coursesAndCertificatesSlidesContainer = coursesAndCertificatesSlidesSection.children[1];
-    let coursesAndCertificatesSlide = coursesAndCertificatesSlidesContainer.children[0]; //SLIDE
+    let coursesAndCertificatesSlide = coursesAndCertificatesSlidesContainer.children[0];
     clearComponents(coursesAndCertificatesSlidesContainer);
 
     let coursesAndCertificatesLabelsContainer = coursesAndCertificatesSlidesSection.children[2];
-    let coursesAndCertificatesLabel = coursesAndCertificatesLabelsContainer.children[0]; //Label
+    let coursesAndCertificatesLabel = coursesAndCertificatesLabelsContainer.children[0];
     clearComponents(coursesAndCertificatesLabelsContainer);
 
     let hiddenInputArray = [];
@@ -30,22 +29,9 @@ function populateCoursesAndCertificates(content) {
         let id = `${constants.slideIdPrefix}${index}`;
         let slidInputId = `${constants.slideImageIdPrefix}${index}`;
         let slideContentInputId = `${constants.slideContentIdPrefix}${index}`;
-
-        if (index === 0) {
-            setHiddenInput(coursesAndCertificatesHiddenInput, id, coursesAndCertificatesLabel, hiddenInputArray, index);
-            setSlide(coursesAndCertificatesSlide, slidInputId, content, index, slideContentInputId);
-            coursesAndCertificatesLabel.for = slidInputId;
-        } else {
-            let newCoursesAndCertificatesHiddenInput = coursesAndCertificatesHiddenInput.cloneNode(true);
-            setHiddenInput(newCoursesAndCertificatesHiddenInput, id, coursesAndCertificatesLabel, hiddenInputArray, index);
-            let newCoursesAndCertificatesSlide = coursesAndCertificatesSlide.cloneNode(true)
-            setSlide(newCoursesAndCertificatesSlide, slidInputId, content, index, slideContentInputId);
-            coursesAndCertificatesSlidesContainer.appendChild(newCoursesAndCertificatesSlide)
-            let newSlideLabel = coursesAndCertificatesLabel.cloneNode(true);
-            newSlideLabel.setAttribute(constants.for, id)
-            coursesAndCertificatesLabelsContainer.appendChild(newSlideLabel);
-        }
-
+        setHiddenInput(coursesAndCertificatesHiddenInput.cloneNode(true), id, coursesAndCertificatesLabel, hiddenInputArray, index);
+        setSlide(coursesAndCertificatesSlide.cloneNode(true), slidInputId, content, index, slideContentInputId, coursesAndCertificatesSlidesContainer);
+        setIndicatorLabel(coursesAndCertificatesLabel.cloneNode(true), id, coursesAndCertificatesLabelsContainer);
         prependHiddenInput(hiddenInputArray, coursesAndCertificatesSlidesSection);
     }
 
@@ -53,7 +39,13 @@ function populateCoursesAndCertificates(content) {
     populateButtons(buttons, content);
 }
 
-function setSlide(slide, slidInputId, content, index, slideContentInputId) {
+function setIndicatorLabel(label, id, container) {
+    label.removeAttribute(constants.for);
+    label.setAttribute(constants.for, id);
+    container.appendChild(label);
+}
+
+function setSlide(slide, slidInputId, content, index, slideContentInputId, slideContainer) {
     let slideContent = slide.children[0];
     let slideInput = slideContent.children[0];
     slideInput.id = slidInputId;
@@ -87,6 +79,8 @@ function setSlide(slide, slidInputId, content, index, slideContentInputId) {
     coursesPoints.children[5].children[0].innerText = content.coursesAndCertificates.coursesList[index].name;
     coursesPoints.children[5].children[0].href = content.coursesAndCertificates.coursesList[index].link;
     slideDescriptionLabel.children[1].innerHTML = content.coursesAndCertificates.coursesList[index].description;
+
+    slideContainer.appendChild(slide);
 }
 
 function setHiddenInput(coursesAndCertificatesHiddenInput, id, coursesAndCertificatesLabel, hiddenInputArray, index) {
@@ -95,9 +89,9 @@ function setHiddenInput(coursesAndCertificatesHiddenInput, id, coursesAndCertifi
     coursesAndCertificatesHiddenInput.id = id;
 
     if (index === 0) {
-        coursesAndCertificatesHiddenInput.setAttribute('checked', 'checked');
+        coursesAndCertificatesHiddenInput.setAttribute(constants.checked, constants.checked);
     } else {
-        coursesAndCertificatesHiddenInput.removeAttribute('checked');
+        coursesAndCertificatesHiddenInput.removeAttribute(constants.checked);
     }
 
     coursesAndCertificatesLabel.setAttribute(constants.for, id);
@@ -118,7 +112,7 @@ function clearCertificatesHiddenInputs(coursesAndCertificatesHiddenInputCollecti
 }
 
 function clearComponents(parentElement) {
-    while (parentElement.children.length > 1) {
+    while (parentElement.children.length > 0) {
         parentElement.removeChild(parentElement.lastChild);
     }
 }

@@ -1,6 +1,5 @@
 import { constants } from './constants.js'
 
-
 export function createEducation(content) {
     populateEducation(content);
 }

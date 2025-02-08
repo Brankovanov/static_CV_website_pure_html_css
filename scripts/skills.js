@@ -19,9 +19,9 @@ function populateSkills(content) {
 
   content.skills.technicalSkills.forEach((skill, index) => {
     if(index === 0) {
-      createWrapper(technicalSkillWrapper, index, skill, technicalSkills);
+      createWrapper(technicalSkillWrapper, index, skill, technicalSkills, constants.technicalSkillInputId);
     } else {
-      createWrapper( technicalSkillWrapper.cloneNode(true), index, skill, technicalSkills);
+      createWrapper( technicalSkillWrapper.cloneNode(true), index, skill, technicalSkills, constants.technicalSkillInputId);
     }
   });
 
@@ -33,19 +33,19 @@ function populateSkills(content) {
   clearComponents(softSkills);
   content.skills.softSkills.forEach((skill, index) => {
     if(index === 0) {
-        createWrapper(softSkillWrapper, index, skill, softSkills);
+        createWrapper(softSkillWrapper, index, skill, softSkills, constants.softSkillInputId);
     } else {
-      createWrapper(softSkillWrapper.cloneNode(true), index, skill, softSkills);
+      createWrapper(softSkillWrapper.cloneNode(true), index, skill, softSkills, constants.softSkillInputId);
     }
   });
 }
 
-function  createWrapper(technicalSkillWrapper, index, skill, technicalSkills) {
+function  createWrapper(technicalSkillWrapper, index, skill, technicalSkills, forPrefix) {
     let skillInput = technicalSkillWrapper.children[0];
-    skillInput.id = `${constants.technicalSkillInputId}${index}`;
+    skillInput.id = `${forPrefix}${index}`;
 
     let content = technicalSkillWrapper.children[1];
-    content.setAttribute('for', `${constants.technicalSkillInputId}${index}`);
+    content.setAttribute(constants.for, `${forPrefix}${index}`);
     let skillCover = content.children[0];
     skillCover.innerHTML = skill.skill;
     let skillName = content.children[1];

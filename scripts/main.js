@@ -23,10 +23,10 @@ async function main() {
 }
 
 function disableButtons() {
-  let buttons = document.querySelectorAll('button');
+  let buttons = document.querySelectorAll(constants.button);
 
   buttons.forEach(button => {
-    button.addEventListener("click", (event) => {
+    button.addEventListener(constants.click, (event) => {
       event.preventDefault();
       event.currentTarget.parentNode.click();
     });

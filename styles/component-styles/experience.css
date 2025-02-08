@@ -51,6 +51,7 @@
 .work-experience details label p {
   display: -webkit-box;
   margin: 0 2rem 2rem;
+  line-clamp: 10;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;

@@ -1,4 +1,3 @@
-//TODO CHECK REFERENCES
 export const constants = {
   //Tags
   openSpanBoldTag: "<span class=\"bold\">",
@@ -16,6 +15,10 @@ export const constants = {
   class: "class",
   bold: "bold",
   for: "for",
+  checked: "checked",
+  button: "button",
+  click: "click",
+  html: "html",
   toggleContent: '[class="toggle-content"]',
 
   // Header ids
@@ -65,7 +68,6 @@ export const constants = {
   coursesAndCertificatesSectionId: '[id="courses-and-certificates-wrapper"]',
   coursesAndCertificatesTitleId: '[id="courses-and-certificates-title"]',
   coursesAndCertificatesSlidesWrapper: '[id="courses-and-certificates-slides-wrapper"]',
-  coursesAndCertificatesChecked: 'checked',
 
   //Projects ids
   projectsNavigationId: "#projects",
@@ -100,7 +102,6 @@ export const constants = {
   target: "target",
   blank: "_blank",
 
-
   //Footer
   footerSectionId: '[id="footer-wrapper"]',
 
@@ -109,9 +110,6 @@ export const constants = {
 
   //Error
   errorSectionId: '[id="error"]',
- 
-  //Side navigation
-  sideNavigationIdentifier: '[id="navigation-side-menu"]',
 
   //Classes 
   displayFlex: 'flex',
@@ -128,13 +126,11 @@ export const constants = {
   },
 
   // Home
-  homeUrl: '/',
   contentAssetOrigin: 'assets/content/',
   contentJsonFile: '-content.json',
 
   //Error
   httpError: 'HTTP error! Status: ',
-  fetchingError: 'Error fetching JSON:',
   errorMessage: 'Something went wrong. Please try later.',
   yearCreated: 2024
 }

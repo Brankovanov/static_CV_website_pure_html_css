@@ -1,13 +1,15 @@
 import { constants } from './constants.js'
 
 export function createNavigationElements(chosenLanguage, content) {
-    populateHeader(content);
+    populateHeader(content, chosenLanguage);
     populateSideNavigation(content);
     populateLanguageSelect(chosenLanguage, content)
 }
 
 //Navbar
-function populateHeader(content) {
+function populateHeader(content, chosenLanguage) {
+    let language = document.querySelector(constants.html);
+    language.lang = chosenLanguage.value ?? chosenLanguage;
     let title = document.getElementsByTagName(constants.titleId);
     title[0].innerHTML = content.header.title;
 

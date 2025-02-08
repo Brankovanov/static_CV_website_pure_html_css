@@ -5,7 +5,6 @@ export async function getCookies(type, defaultValue) {
   return value ? value.value : defaultValue;
 }
 
-
 export function setCookie(type, value) {
   window.cookieStore.set({
     url: constants.homeUrl,
