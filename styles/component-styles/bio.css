@@ -35,7 +35,6 @@
   max-height: 50vh;
   object-fit: contain;
   transition: scale 1s;
-  max-height: 50vh;
 }
 
 .bio label .personal-info {
@@ -68,10 +67,6 @@
   border: 1px solid var(--secondary-color);
 }
 
-.bio input:checked ~ label .toggle-content::after {
-  content: "Close!";
-}
-
 .bio input:nth-of-type(1):checked ~ label:nth-of-type(1),
 .bio input:nth-of-type(2):checked ~ label:nth-of-type(2) {
   width: 100%;
@@ -90,6 +85,7 @@
 .bio .content-container {
   display: -webkit-box;
   padding: 0 1rem;
+  line-clamp: 10;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;

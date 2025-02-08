@@ -1,0 +1,310 @@
+{
+  "header": {
+    "title": "Ioan Dimitrov"
+  },
+  "aboutMe": {
+    "categoryName": "Über mich",
+    "name": "Ioan Dimitrov",
+    "ageLabel": "Jahre alt",
+    "age": 23,
+    "occupation": "Front-End Entwickler",
+    "description": "Ich bin ein leidenschaftlicher und detailorientierter Front-End-Entwickler, der sich auf die Erstellung visuell ansprechender, funktionaler und benutzerfreundlicher Webanwendungen konzentriert. Mit Erfahrung in der Gestaltung responsiver Schnittstellen und der Implementierung dynamischer Funktionen mit modernen Technologien liebe ich die Teamarbeit und die Entwicklung außergewöhnlicher Lösungen, die Design und Technologie kombinieren.",
+    "image": "assets/images/pexels-simon-robben-614810.webp"
+  },
+  "workExperience": {
+    "categoryName": "Berufserfahrung",
+    "workExperienceList": [
+      {
+        "positionLabel": "Position",
+        "position": "Front-End Entwickler",
+        "periodLabel": "Zeitraum",
+        "period": "Januar 2022 - Gegenwart",
+        "employerLabel": "Arbeitgeber",
+        "employer": "Tech Solutions GmbH",
+        "description": "Leitete die Entwicklung von responsiven Webanwendungen, die auf die Bedürfnisse der Kunden zugeschnitten waren, unter Verwendung von React und Angular. Arbeitete mit Designern und Backend-Entwicklern zusammen, um ein nahtloses Benutzererlebnis zu gewährleisten. Optimierte die Website-Leistung durch eine 30%ige Reduzierung der Ladezeit und implementierte Best Practices für Barrierefreiheit und SEO."
+      },
+      {
+        "positionLabel": "Position",
+        "position": "Web Entwickler - Praktikant",
+        "periodLabel": "Zeitraum",
+        "period": "Juni 2021 - Dezember 2021",
+        "employerLabel": "Arbeitgeber",
+        "employer": "Kreative Web Agentur",
+        "description": "Unterstützte das Team bei der Entwicklung und Wartung von über 15 Kundenwebsites. Arbeitete mit WordPress und JavaScript-Bibliotheken zur Verbesserung der Funktionalität. Half Senior-Entwicklern bei der Lösung technischer Probleme und schlug innovative Designverbesserungen vor."
+      },
+      {
+        "positionLabel": "Position",
+        "position": "Freiberuflicher Web Designer",
+        "periodLabel": "Zeitraum",
+        "period": "Januar 2020 - Mai 2021",
+        "employerLabel": "Arbeitgeber",
+        "employer": "Selbstständig",
+        "description": "Entwarf und entwickelte maßgeschneiderte Websites für kleine Unternehmen und Startups mit Fokus auf Benutzerfreundlichkeit, Ästhetik und Branding. Bot umfassende Dienstleistungen von der Kundenberatung bis zur Endimplementierung. Lieferte qualitativ hochwertige Projekte pünktlich und im Rahmen des Budgets und baute langfristige Kundenbeziehungen auf."
+      }
+    ]
+  },
+  "education": {
+    "categoryName": "Bildung",
+    "educationList": [
+      {
+        "schoolNameLabel": "Schulname",
+        "schoolName": "Universität der Digitalen Künste",
+        "educationDegreeLabel": "Abschluss",
+        "educationDegree": "Bachelor",
+        "degreeNameLabel": "Studiengang",
+        "degreeName": "Informatik",
+        "periodLabel": "Zeitraum",
+        "period": "2018 - 2022",
+        "description": "Absolvierte ein umfassendes Programm mit Fokus auf Grundlagen der Informatik, Softwareentwicklung und Webtechnologien. Sammelte praktische Erfahrungen mit Programmiersprachen, Datenbanken und modernen Webframeworks."
+      },
+      {
+        "schoolNameLabel": "Schulname",
+        "schoolName": "Code Akademie",
+        "educationDegreeLabel": "Abschluss",
+        "educationDegree": "Professionelles Zertifikat",
+        "degreeNameLabel": "Spezialisierung",
+        "degreeName": "Full-Stack Web-Entwicklung",
+        "periodLabel": "Zeitraum",
+        "period": "2020",
+        "description": "Erwarb fundierte Kenntnisse in Full-Stack-Anwendungsentwicklung, einschließlich Front-End-Technologien wie React und Back-End-Technologien wie Node.js. Nahm an Realprojekten teil, um praktische Erfahrungen zu sammeln."
+      },
+      {
+        "schoolNameLabel": "Schulname",
+        "schoolName": "Technische Oberschule",
+        "educationDegreeLabel": "Abschluss",
+        "educationDegree": "Sekundarbildung",
+        "degreeNameLabel": "Spezialisierung",
+        "degreeName": "Wissenschaftlich-Technologisches Profil",
+        "periodLabel": "Zeitraum",
+        "period": "2014 - 2018",
+        "description": "Schloss ab mit Grundlagen in Mathematik, Wissenschaften und Grundprogrammierung. Beteiligte sich an Technologiemessen und entwickelte frühe Projekte, die mein Interesse an Webentwicklung weckten."
+      },
+      {
+        "schoolNameLabel": "Schulname",
+        "schoolName": "Online-Lernplattform",
+        "educationDegreeLabel": "Abschluss",
+        "educationDegree": "Nano-Diplom",
+        "degreeNameLabel": "Spezialisierung",
+        "degreeName": "UX-Design",
+        "periodLabel": "Zeitraum",
+        "period": "2021",
+        "description": "Konzentrierte sich auf das Verständnis des Nutzerverhaltens und die Erstellung von Designs, die Benutzerfreundlichkeit und Barrierefreiheit verbessern. Verfeinerte Fähigkeiten beim Erstellen von Wireframes, Prototypen und Durchführen von Benutzbarkeitstests."
+      }
+    ]
+  },
+  "coursesAndCertificates": {
+    "categoryName": "Kurse und Zertifikate",
+    "coursesList": [
+      {
+        "nameLabel": "Name des Zertifikats: ",
+        "name": "Zertifizierter Front-End Entwickler",
+        "organizationLabel": "Ausstellende Organisation: ",
+        "organization": "Web-Entwicklungsinstitut",
+        "issueDateLabel": "Ausstellungsdatum: ",
+        "issueDate": "März 2022",
+        "expirationDateLabel": "Ablaufdatum: ",
+        "expirationDate": "März 2025",
+        "identificationLabel": "Kennung: ",
+        "identification": "FED123456",
+        "URLLabel": "URL: ",
+        "link": "https://certificates.webdevinstitute.com/FED123456",
+        "image": "assets/images/certificate_1.webp",
+        "description": "Zertifizierte Kenntnisse und Fähigkeiten in Front-End-Technologien, einschließlich HTML, CSS, JavaScript und moderner Frameworks wie React und Angular."
+      },
+      {
+        "nameLabel": "Name des Zertifikats: ",
+        "name": "JavaScript-Spezialist",
+        "organizationLabel": "Ausstellende Organisation: ",
+        "organisation": "Code School",
+        "issueDateLabel": "Ausstellungsdatum: ",
+        "issueDate": "Juni 2021",
+        "expirationDateLabel": "Ablaufdatum: ",
+        "expirationDate": "Juni 2024",
+        "identificationLabel": "Kennung: ",
+        "identification": "JS678910",
+        "link": "https://certificates.codeschool.com/JS678910",
+        "image": "assets/images/certificate_2.webp",
+        "description": "Nachgewiesene Fähigkeiten in JavaScript, einschließlich ES6+, asynchroner Programmierung und DOM-Manipulation."
+      },
+      {
+        "nameLabel": "Name des Zertifikats: ",
+        "name": "Responsives Webdesign",
+        "organizationLabel": "Ausstellende Organisation: ",
+        "organisation": "FreeCodeCamp",
+        "issueDateLabel": "Ausstellungsdatum: ",
+        "issueDate": "Dezember 2020",
+        "expirationDateLabel": "Ablaufdatum: ",
+        "expirationDate": null,
+        "identificationLabel": "Kennung: ",
+        "identification": "RWD345678",
+        "link": "https://www.freecodecamp.org/certification/johndoe/responsive-web-design",
+        "image": "assets/images/certificate_1.webp",
+        "description": "Erlernte Prinzipien des adaptiven Designs mit CSS und erstellte mobile Websites."
+      },
+      {
+        "nameLabel": "Name des Zertifikats: ",
+        "name": "Versionskontrolle mit Git",
+        "organizationLabel": "Ausstellende Organisation: ",
+        "organisation": "Git Akademie",
+        "issueDateLabel": "Ausstellungsdatum: ",
+        "issueDate": "Juli 2021",
+        "expirationDateLabel": "Ablaufdatum: ",
+        "expirationDate": null,
+        "identificationLabel": "Kennung: ",
+        "identification": "GIT987654",
+        "link": "https://certificates.gitacademy.com/GIT987654",
+        "image": "assets/images/certificate_2.webp",
+        "description": "Erwarb Fähigkeiten im Versions-Management, einschließlich Klonen, Zusammenführen und Konfliktlösung."
+      },
+      {
+        "nameLabel": "Name des Zertifikats: ",
+        "name": "Einführung in UI/UX-Design",
+        "organizationLabel": "Ausstellende Organisation: ",
+        "organisation": "Design Institut",
+        "issueDateLabel": "Ausstellungsdatum: ",
+        "issueDate": "April 2021",
+        "expirationDateLabel": "Ablaufdatum: ",
+        "expirationDate": null,
+        "identificationLabel": "Kennung: ",
+        "identification": "UIUX543210",
+        "link": "https://certificates.designinstitute.com/UIUX543210",
+        "image": "assets/images/certificate_1.webp",
+        "description": "Lernte Prinzipien des UI/UX-Designs, Nutzerforschung und Prototyping."
+      }
+    ]
+  },
+  "projects": {
+    "categoryName": "Projekte",
+    "projectsList": [
+      {
+        "name": "Portfolio-Website",
+        "linkLabel": "URL: ",
+        "link": "https://johndoe.dev",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/portfolio",
+        "description": "Visuell ansprechende und funktionale Portfolio-Website, die meine Fähigkeiten, Erfahrungen und Projekte präsentiert. Entwickelt mit HTML, CSS und JavaScript, mit responsivem Design für alle Geräte.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "name": "E-Commerce-Plattform",
+        "linkLabel": "URL: ",
+        "link": "https://shopmore.com",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/ecommerce-platform",
+        "descriptionLabel": "Beschreibung",
+        "description": "Robuste und skalierbare E-Commerce-Plattform mit modernem Benutzerinterface und Zahlungsintegration.",
+        "tags": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Chat-Anwendung",
+        "linkLabel": "URL: ",
+        "link": "https://chatterapp.com",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/chat-application",
+        "descriptionLabel": "Beschreibung",
+        "description": "Echtzeit-Chat-Anwendung mit Funktionen für persönliche und Gruppennachrichten. Entwickelt mit Vue.js und Socket.IO.",
+        "tags": [
+          "Vue.js",
+          "Socket.IO",
+          "Firebase"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "categoryName": "Fähigkeiten",
+    "technicalSkillsLabel": "Technische Fähigkeiten",
+    "technicalSkills": [
+      {
+        "skill": "React.js",
+        "description": "Hohes Expertenniveau bei der Erstellung modularer und dynamischer Anwendungen mit React. Erfahrung im State-Management mit Redux."
+      },
+      {
+        "skill": "HTML & CSS",
+        "description": "Expertise in der Erstellung semantischer und barrierefreier Schnittstellen mit CSS Grid und Flexbox."
+      },
+      {
+        "skill": "Versionskontrolle",
+        "description": "Erfahrung in der Arbeit mit Git/GitHub für Zusammenarbeit und Projektmanagement."
+      }
+    ],
+    "softSkillsLabel": "Soft Skills",
+    "softSkills": [
+      {
+        "skill": "Problemlösung",
+        "description": "Analyse komplexer Aufgaben und Implementierung technischer Lösungen in kurzen Zeiträumen."
+      },
+      {
+        "skill": "Kommunikation",
+        "description": "Hervorragende Fähigkeiten zur Interaktion mit Teams, Kunden und Stakeholdern."
+      },
+      {
+        "skill": "Anpassungsfähigkeit",
+        "description": "Schnelle Anpassung an neue Technologien und Arbeitsumgebungen."
+      }
+    ]
+  },
+  "languageSkills": {
+    "categoryName": "Sprachkenntnisse",
+    "languageListLabel": "Sprache",
+    "languagesList": [
+      "Bulgarisch (Muttersprache)",
+      "Englisch (Fließend)",
+      "Französisch (Grundkenntnisse)"
+    ],
+    "speakingLabel": "Sprechen",
+    "speakingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "writingLabel": "Schreiben",
+    "writingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "readingLabel": "Lesen",
+    "readingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "grammarLabel": "Grammar",
+    "grammarList": [
+      "C+",
+      "C",
+      "B"
+    ]
+  },
+  "contacts": {
+    "categoryName": "Contacts",
+    "telephoneLabel": "Phone",
+    "telephone": "+359-888-123-456",
+    "mailLabel": "Email",
+    "mail": "johndoe@example.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedIn": "https://linkedin.com/in/placeholder",
+    "gitHubLabel": "GitHub",
+    "gitHub": "https://github.com/placeholder"
+  },
+  "languages": {
+    "bg": "BG",
+    "en": "EN",
+    "de": "DE"
+  },
+  "footer": {
+    "content": "Created by &nbsp; <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"footer-link\">Georgi Brankovanov</a> &nbsp; - &nbsp;"
+  },
+  "buttons": {
+    "close": "Schließen"
+  }
+}
