@@ -1,961 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About the page">
+    <meta name="description" content="Placeholder">
     <meta name="msapplication-TileColor" content="#204020">
     <meta name="theme-color" content="#204020">
+    <meta name="apple-mobile-web-app-title" content="Placeholder" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_package/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
 
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Static cv website</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon_package/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon_package/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon_package/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_package/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/favicon_package/site.webmanifest" />
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="image" href="assets/images/pexels-simon-robben-614810.webp" type="image/webp">
+    <title>Placeholder</title>
 </head>
 
 <body>
-    <!-- MAIN HEADER -->
-    <div class="static-container main-header">
-        <header>
-            <div class="logo">
-                <h1 class="bold"> Person name </h1>
-            </div>
-            <div class="header-wrapper">
-                <input type="checkbox" name="toggler" id="toggle-header">
-
-                <label for="toggle-header"></label>
-                <div class="toggle-button" tabindex="-1" autofocus
-                    onchange='this === document.activeElement ? this.blur() : this.focus()'>
-                    <label for="toggle-header">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
+    <section id="main-content" style="display: none;">
+        <!-- MAIN HEADER -->
+        <div class="static-container main-header">
+            <header>
+                <div class="logo">
+                    <h1 id="header-logo" class="bold"> Person name </h1>
                 </div>
-                <div class="header-menu">
-                    <a class="bold" href="#bio"> About me </a>
-                    <a class="bold" href="#work-experience"> Work experience </a>
-                    <a class="bold" href="#education"> Education </a>
-                    <a class="bold" href="#courses-and-ceriticates"> Cources and certificates </a>
-                    <a class="bold" href="#projects"> Projects </a>
-                    <a class="bold" href="#skills"> Skills </a>
-                    <a class="bold" href="#languages"> Languages </a>
-                    <a class="bold" href="#contacts"> Contacts </a>
+                <div class="header-wrapper">
+                    <input type="checkbox" name="toggler" id="toggle-header">
+                    
+                    <label for="toggle-header" aria-label="toggle-header"></label>
+                    <div class="toggle-button" 
+                        aria-roledescription="button"
+                        tabindex="-1" 
+                        autofocus
+                        onchange='this === document.activeElement ? this.blur() : this.focus()'>
+                        <label for="toggle-header" aria-label="toggle-header">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+                    </div>
+                    <div id="header-navigation-list" class="header-menu">
+                        <a class="bold" href=""> Placeholder </a>
+                    </div>
                 </div>
-            </div>
-        </header>
-    </div>
-    <!-- MAIN HEADER -->
-
-    <div class="dynamic-container">
-        <!-- ASIDE -->
-        <aside>
-            <div class="aside-menu">
-                <a class="bold" href="#bio"> About me </a>
-                <a class="bold" href="#work-experience"> Work experience </a>
-                <a class="bold" href="#education"> Education </a>
-                <a class="bold" href="#courses-and-ceriticates"> Cources and certificates </a>
-                <a class="bold" href="#projects"> Projects </a>
-                <a class="bold" href="#skills"> Skills </a>
-                <a class="bold" href="#languages"> Languages </a>
-                <a class="bold" href="#contacts"> Contacts </a>
-            </div>
-        </aside>
-        <!-- ASIDE -->
-
-        <main>
-            <!-- BIO -->
-            <section id="bio" class="bio">
-                <article>
-                    <input type="checkbox" name="sections" id="bio-image">
-                    <label for="bio-image">
-                        <div class="picture-container">
-                            <img src="images/pexels-simon-robben-614810.webp" alt="Person name">
-                            <div class="personal-info">
-                                <h5 class="bold">Person name</h5>
-                                <p>
-                                    <span class="bold">Age:</span> 00
-                                </p>
-                                <p>
-                                    <span class="bold">Telephone: </span>
-                                    <a href="tel:+358 888 888 888">+358 888 888 888</a>
-                                </p>
-                                <p>
-                                    <span class="bold">Email: </span>
-                                    <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
-                                </p>
-                                <p>
-                                    <span class="bold">Linkedin: </span>
-                                    <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
-                                </p>
-                                <span class="toggle-content"></span>
+            </header>
+        </div>
+        <!-- MAIN HEADER -->
+    
+        <div class="dynamic-container">
+            <!-- ASIDE -->
+            <aside id="navigation-side-menu">
+                <div id="navigation-list" class="aside-menu">
+                       <a class="bold" href=""> PlaceHolder </a>
+                </div>
+            </aside>
+            <!-- ASIDE -->
+    
+            <main>
+                <!-- BIO -->
+                <section id="bio" class="bio">
+                    <article>
+                        <input type="checkbox" name="sections" id="bio-image">
+                        <label for="bio-image">
+                            <div class="picture-container">
+                                <img id="about-me-image" src="" alt="PlaceHolder">
+                                <div class="personal-info">
+                                    <h5 id="about-me-name" class="bold">Placeholder</h5>
+                                    <p id="about-me-age">Placeholder</p>
+                                    <div id="about-me-contacts">
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="">Placeholder</a>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="">Placeholder</a>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Placeholder</span>
+                                            <a href="" target="_blank">Placeholder</a>
+                                        </p>
+                                    </div>
+                                    <button class="toggle-content"></button>
+                                </div>
                             </div>
-                        </div>
-                    </label>
-                    <input type="checkbox" name="sections" id="bio-description">
-                    <label for="bio-description">
-                        <div class="content-container">
-                            <header>
-                                <h2>About me</h2>
-                            </header>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque
-                                sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci vestibulum
-                                eget.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                                himenaeos.
-                                Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut,
-                                pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer
-                                feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.
-                                Phasellus
-                                bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. Cras pharetra mi
-                                tristique sapien vestibulum lobortis. Nam eget bibendum metus, non dictum mauris. Nulla
-                                at
-                                tellus sagittis, viverra est a, bibendum metus. end
-                            </p>
-                        </div>
-                        <span class="toggle-content"></span>
-                    </label>
-                </article>
-            </section>
-            <!-- BIO -->
-
-            <!-- EXPERIENCE -->
-            <section id="work-experience" class="work-experience">
-                <article>
-                    <header>
-                        <h2>Work experience</h2>
-                    </header>
-                    <details>
-                        <summary class="bold">Work position one</summary>
-                        <div class="details-container">
-                            <input type="checkbox" name="sections" id="work-experience-one">
-                            <label for="work-experience-one">
-                                <ul>
-                                    <li>
-                                        <label class="bold">Position: </label>Position title
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                    <li>
-                                        <label class="bold">Location: </label>Location name
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                    vestibulum
-                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    nunc.
-                                    nunc.
-                                </p>
-                                <span class="toggle-content"></span>
-                            </label>
-                        </div>
-                    </details>
-                    <details>
-                        <summary class="bold">Work position Two</summary>
-                        <input type="checkbox" name="sections" id="work-experience-two">
-                        <label for="work-experience-two">
+                        </label>
+                        <input type="checkbox" name="sections" id="bio-description">
+                        <label for="bio-description">
+                            <div id="about-me-body" class="content-container">
+                                <header>
+                                    <h2 id="about-me-title">Placeholder</h2>
+                                </header>
+                                <p>Placeholder</p>
+                            </div>
+                            <button  class="toggle-content"></button>
+                        </label>
+                    </article>
+                </section>
+                <!-- BIO -->
+    
+                <!-- EXPERIENCE -->
+                <section id="work-experience" class="work-experience">
+                    <article id="experience-wrapper">
+                        <header>
+                            <h2 id="experiences-title">Placeholder</h2>
+                        </header>
+                        <details>
+                            <summary id="experience-title" class="bold">Placeholder</summary>
                             <div class="details-container">
-                                <ul>
-                                    <li>
-                                        <label class="bold">Position: </label>Position title Two
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                    <li>
-                                        <label class="bold">Location: </label>Location name
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                </p>
-                                <span class="toggle-content"></span>
+                                <input type="checkbox" name="sections" id="">
+                                <label for="">
+                                    <ul id="experience-details">
+                                        <li>Placeholder</li>
+                                        <li>Placeholder</li>
+                                        <li>Placeholder</li>
+                                    </ul>
+                                    <p id="experience-content">Placeholder</p>
+                                    <button class="toggle-content"></button>
+                                </label>
                             </div>
-                        </label>
-                    </details>
-                    <details>
-                        <summary class="bold">Work position three</summary>
-                        <input type="checkbox" name="sections" id="work-experience-three">
-                        <label for="work-experience-three">
-                            <div class="details-container">
-                                <ul>
-                                    <li>
-                                        <label class="bold">Position: </label>Position title three
-                                    </li>
-                                    <li>
-                                        <span class="bold">Duration: </span>Start date - End date - duration
-                                    </li>
-                                    <li>
-                                        <label class="bold">Location: </label>Location name
-                                    </li>
-                                </ul>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar
-                                    facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                    scelerisque
-                                    sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                    vestibulum
-                                    eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos
-                                    himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia
-                                    quis
-                                    posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                    vel
-                                    leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec
-                                    enim
-                                    nunc.
-                                </p>
-                                <span class="toggle-content"></span>
+                        </details>
+                    </article>
+                </section>
+                <!-- EXPERIENCE -->
+    
+                <!-- EDUCATION -->
+                <section id="education">
+                    <article class="education">
+                        <header>
+                            <h2 id="educations-title">Placeholder</h2>
+                        </header>
+                        <div id="education-list">
+                            <slot>
+                                <input type="checkbox" name="sections" id="">
+                                <label for="">
+                                    <article>
+                                        <header>
+                                            <h3 id="education-title">Placeholder</h3>
+                                        </header>
+                                        <div>
+                                            <ul id="education-attributes">
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder </span>Placeholder
+                                                </li>
+                                            </ul>
+                                            <p id="education-description">
+                                              Placeholder
+                                            </p>
+                                            <button class="toggle-content"></button>
+                                        </div>
+                                    </article>
+                                </label>
+                            </slot>
+                        </div>
+                    </article>
+                </section>
+                <!-- EDUCATION -->
+    
+                <!-- COURSES AND CERTIFICATES -->
+                <section id="courses-and-certificates">
+                    <article id="courses-and-certificates-wrapper" class="courses-and-certificates">
+                        <header>
+                            <h2 id="courses-and-certificates-title">Placeholder</h2>
+                        </header>
+                        <div id="courses-and-certificates-slides-wrapper" class="carousel-container">
+                            <input type="radio" name="slides" id="">
+                            <div class="slide-container">
+                                <div class="slide">
+                                    <!-- IMAGES -->
+                                    <div> 
+                                        <input type="checkbox" name="sections" id="">
+                                        <label for="">
+                                            <img for="" src="" alt="" loading="lazy"/>
+                                        </label>
+                                    </div>
+                                    <!-- IMAGES -->
+                                    <!-- DESCRIPTION -->
+                                    <div>
+                                        <input type="checkbox" name="sections" id="cources-content-one">
+                                        <label for="cources-content-one">
+                                            <ul>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Placeholder</span>
+                                                    <span>Placeholder</span>
+                                                </li>
+                                                <li>
+                                                    <a class="bold" href="#">Placeholder</a>
+                                                </li>
+                                            </ul>
+                                            <p class="description">Placeholder</p>
+                                            <button class="toggle-content"></button>
+                                        </label>
+                                    </div>
+                                     <!-- DESCRIPTION -->
+                                </div>
                             </div>
-                        </label>
-                    </details>
-                </article>
-            </section>
-            <!-- EXPERIENCE -->
-
-            <!-- EDUCATION -->
-            <section id="education">
-                <article class="education">
-                    <header>
-                        <h2>Education</h2>
-                    </header>
-                    <div>
-                        <input type="checkbox" name="sections" id="education-one">
-                        <label for="education-one">
+                            <div class="carousel-indicators">
+                                <label aria-label="carousel-indicator">
+                                    <input></input>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <!-- COURSES AND CERTIFICATES -->
+    
+                <!--PERSONAL PROJECTS-->
+                <section id="projects">
+                    <article id="projects-wrapper">
+                        <header>
+                            <h2 id="projects-title">Place holder</h2>
+                        </header>
+                        <div class="project-list">
                             <article>
                                 <header>
-                                    <h3>Education 1</h3>
+                                    <h3>Placeholder</h3>
                                 </header>
                                 <div>
                                     <ul>
                                         <li>
-                                            <span class="bold">School: </span>School name
+                                            <span class="bold">Placeholder:</span> 
+                                            <a href="#">Placeholder</a>
                                         </li>
                                         <li>
-                                            <span class="bold">Education degree: </span>Bachelor's degree
-                                        </li>
-                                        <li>
-                                            <span class="bold">Degree name: </span>Degree name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Duration: </span>Start date - End date - duration
+                                            <span class="bold">Placeholder</span>
+                                            <a href="#">Placeholder</a>
                                         </li>
                                     </ul>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
-                                        pulvinar
-                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                        scelerisque
-                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                        vestibulum
+                                        <span class="bold">Placeholder</span> 
+                                        <span>Placeholder</span>
                                     </p>
-                                    <span class="toggle-content"></span>
+                                    <div class="tech-stack"></div>
                                 </div>
                             </article>
-                        </label>
-
-                        <input type="checkbox" name="sections" id="education-two">
-                        <label for="education-two">
-                            <article>
-                                <header>
-                                    <h3>Education 2</h3>
-                                </header>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <span class="bold">School: </span>School name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Education degree: </span>Master's degree
-                                        </li>
-                                        <li>
-                                            <span class="bold">Degree name: </span>Degree name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Duration: </span>Start date - End date - duration
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
-                                        pulvinar
-                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                        scelerisque
-                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                        vestibulum
-                                        eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                        inceptos
-                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
-                                        lacinia
-                                        quis
-                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
-                                        id
-                                        vel
-                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
-                                        nec
-                                        enim
-                                        nunc. eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                                        per
-                                        inceptos
-                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
-                                        lacinia
-                                        quis
-                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
-                                        id
-                                        vel
-                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
-                                        nec
-                                        enim
-                                        nunc.
-                                    </p>
-                                    <span class="toggle-content"></span>
-                                </div>
-                            </article>
-                        </label>
-
-                        <input type="checkbox" name="sections" id="education-three">
-                        <label for="education-three">
-                            <article>
-                                <header>
-                                    <h3>Education 3</h3>
-                                </header>
-
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <span class="bold">School: </span>School name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Education degree: </span>Master's degree
-                                        </li>
-                                        <li>
-                                            <span class="bold">Degree name: </span>Degree name
-                                        </li>
-                                        <li>
-                                            <span class="bold">Duration: </span>Start date - End date - duration
-                                        </li>
-                                    </ul>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
-                                        pulvinar
-                                        facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec
-                                        scelerisque
-                                        sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
-                                        vestibulum
-                                        eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                        inceptos
-                                        himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus,
-                                        lacinia
-                                        quis
-                                        posuere ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis
-                                        id
-                                        vel
-                                        leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi
-                                        nec
-                                        enim
-                                        nunc.
-                                    </p>
-                                    <span class="toggle-content"></span>
-                                </div>
-                            </article>
-                        </label>
-                    </div>
-                </article>
-            </section>
-            <!-- EDUCATION -->
-
-            <!-- COURSES AND CERTIFICATES -->
-            <section id="courses-and-ceriticates">
-                <article class="courses-and-ceriticates">
-                    <header>
-                        <h2>Courses and Certificates</h2>
-                    </header>
-                    <div class="carousel-container">
-                        <input type="radio" name="slides" id="slide-1" checked="checked">
-                        <input type="radio" name="slides" id="slide-2">
-                        <input type="radio" name="slides" id="slide-3">
-                        <input type="radio" name="slides" id="slide-4">
-                        <div class="slide-container">
-                            <div class="slide">
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-image-one">
-                                    <label for="cources-image-one">
-                                        <img for="cources-image-one" src="images/certificate_1.webp"
-                                            alt="certificate_1" />
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-content-one">
-                                    <label for="cources-content-one">
-                                        <ul>
-                                            <li>
-                                                <span class="bold">Cerrificate name: </span>
-                                                Certificate name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issuing organization </span>
-                                                Organization name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issue date: </span>
-                                                Start date
-                                            </li>
-                                            <li>
-                                                <span class="bold">Expiration date: </span>
-                                                End date
-                                            </li>
-                                            <li>
-                                                <span class="bold">Credential ID: </span>
-                                                ID Number
-                                            </li>
-                                            <li>
-                                                <a class="bold" href="#">Credential URL</a>
-                                            </li>
-                                        </ul>
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-                                            Morbi
-                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                            tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
-                                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
-                                            pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
-                                            posuere
-                                            ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                            vel
-                                            leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere.
-                                            Morbi
-                                            nec enim nunc.
-                                        </p>
-                                        <span class="toggle-content"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-image-two">
-                                    <label for="cources-image-two">
-                                        <img src="images/certificate_2.webp" alt="certificate_2" />
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-content-two">
-                                    <label for="cources-content-two">
-                                        <ul>
-                                            <li>
-                                                <span class="bold">Cerrificate name: </span>
-                                                Certificate name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issuing organization </span>
-                                                Organization name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issue date: </span>
-                                                Start date
-                                            </li>
-                                            <li>
-                                                <span class="bold">Expiration date: </span>
-                                                End date
-                                            </li>
-                                            <li>
-                                                <span class="bold">Credential ID: </span>ID Number
-                                            </li>
-                                            <li>
-                                                <a class="bold" href="#">Credential URL</a>
-                                            </li>
-                                        </ul>
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-                                            Morbi
-                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                            tincidunt laoreet ex, in pretium orci vestibulum
-                                        </p>
-                                        <span class="toggle-content"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-image-three">
-                                    <label for="cources-image-three">
-                                        <img src="images/certificate_1.webp" alt="certificate_1" />
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="sections" id="cources-content-three">
-                                    <label for="cources-content-three">
-                                        <ul>
-                                            <li>
-                                                <span class="bold">Cerrificate name: </span>
-                                                Certificate name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issuing organization </span>
-                                                Organization name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issue date: </span>
-                                                Start date
-                                            </li>
-                                            <li>
-                                                <a class="bold" href="#">Credential URL</a>
-                                            </li>
-                                        </ul>
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque nisl eros, pulvinar
-                                        </p>
-                                        <span class="toggle-content"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div>
-
-                                </div>
-                                <div class="content">
-                                    <input type="checkbox" name="sections" id="cources-content-four">
-                                    <label for="cources-content-four">
-                                        <ul>
-                                            <li>
-                                                <span class="bold">Cerrificate name: </span>Certificate name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issuing organization </span>Organization name
-                                            </li>
-                                            <li>
-                                                <span class="bold">Issue date: </span>Start date
-                                            </li>
-                                            <li>
-                                                <span class="bold">Credential ID: </span>ID Number
-                                            </li>
-                                        </ul>
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-                                            Morbi
-                                            a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                            tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent taciti
-                                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
-                                            pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis
-                                            posuere
-                                            ut, pulvinar vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id
-                                            vel
-                                            leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere.
-                                            Morbi
-                                            nec enim nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Quisque
-                                            nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
-                                            bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
-                                            tincidunt
-                                            laoreet ex, in pretium orci vestibulum eget. Class aptent taciti sociosqu ad
-                                            litora torquent per conubia nostra, per inceptos himenaeos. Duis pharetra
-                                            luctus
-                                            lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar
-                                            vitae dolor. Integer eu nibh at nisi ullamcorper sagittis id vel leo.
-                                            Integer
-                                            feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim
-                                            nunc.
-                                        </p>
-                                        <span class="toggle-content"></span>
-                                    </label>
-                                </div>
-                            </div>
                         </div>
-                        <div class="carousel-indicators">
-                            <label for="slide-1"></label>
-                            <label for="slide-2"></label>
-                            <label for="slide-3"></label>
-                            <label for="slide-4"></label>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- COURSES AND CERTIFICATES -->
-
-            <!--PERSONAL PROJECTS-->
-            <section id="projects">
-                <article>
-                    <header>
-                        <h2>Personal projects</h2>
-                    </header>
-                    <div class="project-list">
-                        <article>
-                            <header>
-                                <h3>
-                                    Project one
-                                </h3>
-                            </header>
+                    </article>
+                </section>
+                <!--PERSONAL PROJECTS-->
+    
+                <!-- SKILLS -->
+                <section id="skills">
+                    <article id="skills-wrapper" class="skills">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <div class="skills-container">
+                            <h3>PLaceholder</h3>
                             <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">Project link:</span> 
-                                        <a href="#">project link</a>
-                                    </li>
-                                    <li>
-                                        <span class="bold">Repository link:</span>
-                                        <a href="#">project link</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                    officia deserunt mollit anim id est laborum
-                                </p>
-                                <div class="tech-stack">
-                                    <span>Tech 1</span>
-                                    <span>Tech 2</span>
-                                    <span>Tech 3</span>
-                                    <span>Tech 4</span>
-                                </div>
+                                <input type="checkbox" name="sections" id="skill-one">
+                                <label for="skill-one">
+                                    <h4>PLaceholder</h4>
+                                    <p class="bold">PLaceholder</p>
+                                    <p>PLaceholder</p>
+                                </label>
                             </div>
-                        </article>
-                        <article>
-                            <header>
-                                <h3>
-                                    Project Two
-                                </h3>
-                            </header>
+                        </div>
+                        <div class="skills-container">
+                            <h3>PLaceholder</h3>
+    
                             <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">Project link:</span> 
-                                        <a href="#">project link</a>
-                                    </li>
-                                    <li>
-                                        <span class="bold">Repository link:</span>
-                                        <a href="#">project link</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                </p>
-                                <div class="tech-stack">
-                                    <span>Tech 1</span>
-                                    <span>Tech 2</span>
-                                    <span>Tech 3</span>
-                                    <span>Tech 4</span>
-                                    <span>Tech 5</span>
-                                    <span>Tech 6</span>
-                                    <span>Tech 7</span>
-                                    <span>Tech 8</span>
-                                </div>
+                                <input type="checkbox" name="sections" id="skill-four">
+                                <label for="skill-four">
+                                    <h4>PLaceholder</h4>
+                                    <p class="bold">PLaceholder</p>
+                                    <p>PLaceholder</p>
+                                </label>
                             </div>
-                        </article>
-                        <article>
-                            <header>
-                                <h3>
-                                    Project Three
-                                </h3>
-                            </header>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span class="bold">Project link:</span> 
-                                        <a href="#">project link</a>
-                                    </li>
-                                    <li>
-                                        <span class="bold">Repository link:</span>
-                                        <a href="#">project link</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    <span class="bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    Description:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                </p>
-                                <div class="tech-stack">
-                                    <span>Tech 1</span>
-                                    <span>Tech 2</span>
-                                    <span>Tech 3</span>
-                                    <span>Tech 4</span>
-                                    <span>Tech 5</span>
-                                    <span>Tech 6</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </article>
-            </section>
-            <!--PERSONAL PROJECTS-->
-
-            <!-- SKILLS -->
-            <section id="skills">
-                <article class="skills">
-                    <header>
-                        <h2>Skills</h2>
-                    </header>
-                    <div class="skills-container">
-                        <h3>Technical skills</h3>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-one">
-                            <label for="skill-one">
-                                <h4>Tech skill 1</h4>
-                                <p class="bold">Tech skill 1</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                </p>
-                            </label>
                         </div>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-two">
-                            <label for="skill-two">
-                                <h4>Tech skill 2</h4>
-                                <p class="bold">Tech skill 2</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-three">
-                            <label for="skill-three">
-                                <h4>Tech skill 3</h4>
-                                <p class="bold">Tech skill 3</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                </p>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="skills-container">
-                        <h3>Soft skills</h3>
-
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-four">
-                            <label for="skill-four">
-                                <h4>Soft skills 1</h4>
-                                <p class="bold">Soft skills 1</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-five">
-                            <label for="skill-five">
-                                <h4>Soft skills 2</h4>
-                                <p class="bold">Soft skills 2</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-six">
-                            <label for="skill-six">
-                                <h4>Soft skills 3</h4>
-                                <p class="bold">Soft skills 3</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="sections" id="skill-seven">
-                            <label for="skill-seven">
-                                <h4>Soft skills 4</h4>
-                                <p class="bold">Soft skills 4</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
-                                </p>
-                            </label>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- SKILLS -->
-
-            <!-- LANGUAGES -->
-            <section id="languages">
-                <article class="languages">
-                    <header>
-                        <h2>Languages</h2>
-                    </header>
-                    <table>
-                        <caption>Language proficiency</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Language</th>
-                                <th scope="col">Speaking</th>
-                                <th scope="col">Writting</th>
-                                <th scope="col">Reading</th>
-                                <th scope="col">Grammar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Language</th>
-                                <td class="bold">English</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Speaking</th>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Writting</th>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Reading</th>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Grammar</th>
-                                <td>C</td>
-                            </tr>
-                        </tbody>
-
-                        <tbody>
-                            <tr>
-                                <th scope="row">Language</th>
-                                <td class="bold">German</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Speaking</th>
-                                <td>B</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Writting</th>
-                                <td>B</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Reading</th>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Grammar</th>
-                                <td>B</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </article>
-            </section>
-            <!-- LANGUAGES -->
-
-            <!-- CONTACTS -->
-            <section id="contacts">
-                <article class="contacts">
-                    <header>
-                        <h2>Contacts</h2>
-                    </header>
-                    <ul>
-                        <li>
-                            <!-- <h5> -->
-                            <span class="bold">Telephone: </span>
-                            <a href="tel:+358 888 888 888">+358 888 888 888</a>
-                            <!-- </h5> -->
-                        </li>
-                        <li>
-                            <!-- <h5> -->
-                            <span class="bold">Email: </span>
-                            <a href="mailto:some-email@someemail.com">some-email@someemail.com</a>
-                            <!-- </h5> -->
-                        </li>
-                        <li>
-                            <!-- <h5> -->
-                            <span class="bold">Linkedin: </span>
-                            <a href="https://www.linkedin.com/" target="_blank">Linked in profile</a>
-                            <!-- </h5> -->
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <!-- CONTACTS -->
-        </main>
+                    </article>
+                </section>
+                <!-- SKILLS -->
+    
+                <!-- LANGUAGES -->
+                <section id="languages">
+                    <article id="languages-wrapper" class="languages">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <table>
+                            <caption hidden>PlaceHolder</caption>
+                            <thead>
+                                <tr scope="row">
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                    <th scope="col">PlaceHolder</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </article>
+                </section>
+                <!-- LANGUAGES -->
+    
+                <!-- CONTACTS -->
+                <section id="contacts">
+                    <article id="contact-section-container" class="contacts">
+                        <header>
+                            <h2>Placeholder</h2>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="bold">Placeholder </span>
+                                <a href="Placeholder">Placeholder</a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <!-- CONTACTS -->
+            </main>
+        </div>
+    
+        <!-- FOOTER -->
+        <div class="static-container">
+            <footer>
+                <slot id="footer-wrapper"></slot>
+                <a href="#bio" class="go-to-top">&uArr;</a>
+                <label hidden for="footer-language-select" aria-label="footer-language-select"></label>
+                <select id="footer-language-select" class="footer-language-select" onchange="changeLanguage(this)" aria-label="footer-language-select">
+                    <option selected="" value=""></option>
+                    <option selected="" value=""></option>
+                    <option selected="" value=""></option>
+                </select>
+            </footer>
+        </div>
+        <!-- FOOTER -->
+        
+        <!-- Error -->
+         <div id="error" class="error">
+            <h1 class="error-message">PlaceHolder</h1>
+            <small class="error-message"></small>
+         </div>
+        <!-- Error -->
+    </section>
+    
+    <!-- SPINNER -->
+    <div id='spinner' class="spinner flex">
+        <output class="loader"></output>
     </div>
-
-    <!-- FOOTER -->
-    <div class="static-container">
-        <footer>
-            <p class="bold">Developed by Georgi Brankovanov - 2024</p>
-            <a href="#bio" class="go-to-top">&uArr;</a>
-        </footer>
-    </div>
-    <!-- FOOTER -->
+    <!-- SPINNER -->
 </body>
 
 </html>
+
+
+<script type="module" src="scripts/main.js" async></script>

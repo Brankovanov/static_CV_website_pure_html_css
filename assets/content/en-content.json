@@ -1,0 +1,310 @@
+{
+  "header": {
+    "title": "Ioan Dimitrov"
+  },
+  "aboutMe": {
+    "categoryName": "About Me",
+    "name": "Ioan Dimitrov",
+    "ageLabel": "Years Old",
+    "age": 23,
+    "occupation": "Front-End Developer",
+    "description": "I am a passionate and detail-oriented front-end developer focused on creating visually appealing, functional, and user-friendly web applications. With experience in designing responsive interfaces and implementing dynamic features using modern technologies, I love working in a team and creating exceptional solutions that combine design and technology.",
+    "image": "assets/images/pexels-simon-robben-614810.webp"
+  },
+  "workExperience": {
+    "categoryName": "Work Experience",
+    "workExperienceList": [
+      {
+        "positionLabel": "Position",
+        "position": "Front-End Developer",
+        "periodLabel": "Period",
+        "period": "January 2022 - Present",
+        "employerLabel": "Employer",
+        "employer": "Tech Solutions Ltd.",
+        "description": "Led the development of responsive web applications tailored to client needs, using React and Angular. Collaborated with designers and backend developers to ensure seamless user experience. Optimized website performance, reducing loading time by 30%, and implemented best practices for accessibility and SEO."
+      },
+      {
+        "positionLabel": "Position",
+        "position": "Web Developer - Intern",
+        "periodLabel": "Period",
+        "period": "June 2021 - December 2021",
+        "employerLabel": "Employer",
+        "employer": "Creative Web Agency",
+        "description": "Supported the team in developing and maintaining over 15 client websites. Worked with WordPress and JavaScript libraries to enhance functionality. Assisted senior developers in solving technical problems and proposing innovative design improvements."
+      },
+      {
+        "positionLabel": "Position",
+        "position": "Freelance Web Designer",
+        "periodLabel": "Period",
+        "period": "January 2020 - May 2021",
+        "employerLabel": "Employer",
+        "employer": "Self-Employed",
+        "description": "Designed and developed customized websites for small businesses and startups, focusing on usability, aesthetics, and branding. Provided comprehensive service from client consultation to final implementation. Delivered quality projects on time and within budget, building long-term client relationships."
+      }
+    ]
+  },
+  "education": {
+    "categoryName": "Education",
+    "educationList": [
+      {
+        "schoolNameLabel": "School Name",
+        "schoolName": "University of Digital Arts",
+        "educationDegreeLabel": "Degree",
+        "educationDegree": "Bachelor",
+        "degreeNameLabel": "Major",
+        "degreeName": "Computer Science",
+        "periodLabel": "Period",
+        "period": "2018 - 2022",
+        "description": "Completed a comprehensive program focused on computer science fundamentals, software development, and web technologies. Gained practical experience with programming languages, databases, and modern web frameworks."
+      },
+      {
+        "schoolNameLabel": "School Name",
+        "schoolName": "Code Academy",
+        "educationDegreeLabel": "Degree",
+        "educationDegree": "Professional Certificate",
+        "degreeNameLabel": "Specialization",
+        "degreeName": "Full-Stack Web Development",
+        "periodLabel": "Period",
+        "period": "2020",
+        "description": "Gained in-depth knowledge of full-stack application development, including front-end technologies like React and back-end technologies like Node.js. Participated in real-world projects to build practical experience."
+      },
+      {
+        "schoolNameLabel": "School Name",
+        "schoolName": "Technology High School",
+        "educationDegreeLabel": "Degree",
+        "educationDegree": "Secondary Education",
+        "degreeNameLabel": "Specialization",
+        "degreeName": "Science and Technology Profile",
+        "periodLabel": "Period",
+        "period": "2014 - 2018",
+        "description": "Graduated with foundations in mathematics, sciences, and basic programming. Participated in technology fairs and developed early projects that sparked my interest in web development."
+      },
+      {
+        "schoolNameLabel": "School Name",
+        "schoolName": "Online Learning Platform",
+        "educationDegreeLabel": "Degree",
+        "educationDegree": "Nano Diploma",
+        "degreeNameLabel": "Specialization",
+        "degreeName": "UX Design",
+        "periodLabel": "Period",
+        "period": "2021",
+        "description": "Focused on understanding user behavior and creating designs that improve usability and accessibility. Refined skills in creating wireframes, prototypes, and conducting usability tests."
+      }
+    ]
+  },
+  "coursesAndCertificates": {
+    "categoryName": "Courses and Certificates",
+    "coursesList": [
+      {
+        "nameLabel": "Certificate Name: ",
+        "name": "Certified Front-End Developer",
+        "organizationLabel": "Issuing Organization: ",
+        "organization": "Web Development Institute",
+        "issueDateLabel": "Issue Date: ",
+        "issueDate": "March 2022",
+        "expirationDateLabel": "Expiration Date: ", 
+        "expirationDate": "March 2025",
+        "identificationLabel": "Identifier: ",
+        "identification": "FED123456",
+        "URLLabel": "URL: ",
+        "link": "https://certificates.webdevinstitute.com/FED123456",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Certified knowledge and skills in front-end technologies, including HTML, CSS, JavaScript, and modern frameworks like React and Angular."
+      },
+      {
+        "nameLabel": "Certificate Name: ",
+        "name": "JavaScript Specialist",
+        "organizationLabel": "Issuing Organization: ",
+        "organisation": "Code School",
+        "issueDateLabel": "Issue Date: ",
+        "issueDate": "June 2021",
+        "expirationDateLabel": "Expiration Date: ", 
+        "expirationDate": "June 2024",
+        "identificationLabel": "Identifier: ",
+        "identification": "JS678910",
+        "link": "https://certificates.codeschool.com/JS678910",
+        "image":"assets/images/certificate_2.webp",
+        "description": "Proven skills in JavaScript, including ES6+, asynchronous programming, and DOM manipulation."
+      },
+      {
+        "nameLabel": "Certificate Name: ",
+        "name": "Responsive Web Design",
+        "organizationLabel": "Issuing Organization: ",
+        "organisation": "FreeCodeCamp",
+        "issueDateLabel": "Issue Date: ",
+        "issueDate": "December 2020",
+        "expirationDateLabel": "Expiration Date: ", 
+        "expirationDate": null,
+        "identificationLabel": "Identifier: ",
+        "identification": "RWD345678",
+        "link": "https://www.freecodecamp.org/certification/johndoe/responsive-web-design",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Learned principles of adaptive design with CSS and created mobile-oriented websites."
+      },
+      {
+        "nameLabel": "Certificate Name: ",
+        "name": "Version Control with Git",
+        "organizationLabel": "Issuing Organization: ",
+        "organisation": "Git Academy",
+        "issueDateLabel": "Issue Date: ",
+        "issueDate": "July 2021",
+        "expirationDateLabel": "Expiration Date: ", 
+        "expirationDate": null,
+        "identificationLabel": "Identifier: ",
+        "identification": "GIT987654",
+        "link": "https://certificates.gitacademy.com/GIT987654",
+        "image":"assets/images/certificate_2.webp",
+        "description": "Acquired skills in version management, including cloning, merging, and conflict resolution."
+      },
+      {
+        "nameLabel": "Certificate Name: ",
+        "name": "Introduction to UI/UX Design",
+        "organizationLabel": "Issuing Organization: ",
+        "organisation": "Design Institute",
+        "issueDateLabel": "Issue Date: ",
+        "issueDate": "April 2021",
+        "expirationDateLabel": "Expiration Date: ", 
+        "expirationDate": null,
+        "identificationLabel": "Identifier: ",
+        "identification": "UIUX543210",
+        "link": "https://certificates.designinstitute.com/UIUX543210",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Learned principles of UI/UX design, user research, and prototyping."
+      }
+    ]
+  },
+  "projects": {
+    "categoryName": "Projects",
+    "projectsList": [
+      {
+        "name": "Portfolio Website",
+        "linkLabel": "URL: ",
+        "link": "https://johndoe.dev",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/portfolio",
+        "description": "Visually appealing and functional portfolio showcasing my skills, experience, and projects. Developed with HTML, CSS, and JavaScript, with a responsive design for all devices.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "name": "E-Commerce Platform",
+        "linkLabel": "URL: ",
+        "link": "https://shopmore.com",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/ecommerce-platform",
+        "descriptionLabel": "Description",
+        "description": "Robust and scalable e-commerce platform with a modern user interface and payment integration.",
+        "tags": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Chat Application",
+        "linkLabel": "URL: ",
+        "link": "https://chatterapp.com",
+        "repositoryLink": "Repository: ",
+        "repository": "https://github.com/johndoe/chat-application",
+        "descriptionLabel": "Description",
+        "description": "Real-time chat application with capabilities for personal and group messaging. Built with Vue.js and Socket.IO.",
+        "tags": [
+          "Vue.js",
+          "Socket.IO",
+          "Firebase"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "categoryName": "Skills",
+    "technicalSkillsLabel": "Technical Skills",
+    "technicalSkills": [
+      {
+        "skill": "React.js",
+        "description": "High level of expertise in creating modular and dynamic applications with React. Experience in state management through Redux."
+      },
+      {
+        "skill": "HTML & CSS",
+        "description": "Expertise in creating semantic and accessible interfaces with CSS Grid and Flexbox."
+      },
+      {
+        "skill": "Version Control",
+        "description": "Experience working with Git/GitHub for collaboration and project management."
+      }
+    ],
+    "softSkillsLabel" : "Soft Skills",
+    "softSkills": [
+      {
+        "skill": "Problem Solving",
+        "description": "Analysis of complex tasks and implementation of technical solutions in short timeframes."
+      },
+      {
+        "skill": "Communication",
+        "description": "Excellent skills for interacting with teams, clients, and stakeholders."
+      },
+      {
+        "skill": "Adaptability",
+        "description": "Quick adaptation to new technologies and work environments."
+      }
+    ]
+  },
+  "languageSkills": {
+    "categoryName": "Language Skills",
+    "languageListLabel": "Language",
+    "languagesList": [
+      "Bulgarian (Native)",
+      "English (Fluent)",
+      "French (Basic)"
+    ],
+    "speakingLabel": "Speaking",
+    "speakingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "writingLabel": "Writing",
+    "writingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "readingLabel": "Reading",
+    "readingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "grammarLabel": "Grammar",
+    "grammarList": [
+      "C+",
+      "C",
+      "B"
+    ]
+  },
+  "contacts": {
+    "categoryName": "Contacts",
+    "telephoneLabel": "Phone",
+    "telephone": "+359-888-123-456",
+    "mailLabel": "Email",
+    "mail": "johndoe@example.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedIn": "https://linkedin.com/in/placeholder",
+    "gitHubLabel": "GitHub",
+    "gitHub": "https://github.com/placeholder"
+  },
+  "languages": {
+    "bg": "BG",
+    "en": "EN",
+    "de": "DE"
+  },
+  "footer": {
+    "content": "Created by &nbsp; <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"footer-link\">Georgi Brankovanov</a> &nbsp; - &nbsp;"
+  },
+  "buttons": {
+    "close": "Close"
+  }
+}

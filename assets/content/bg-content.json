@@ -1,0 +1,310 @@
+{
+  "header": {
+    "title": "Йоан Димитров"
+  },
+  "aboutMe": {
+    "categoryName": "За мен",
+    "name": "Йоан Димитров",
+    "ageLabel": "Години",
+    "age": 23,
+    "occupation": "Front-End Разработчик",
+    "description": "Аз съм страстен и детайлно ориентиран front-end разработчик с фокус върху създаването на визуално привлекателни, функционални и удобни за потребителите уеб приложения. С опит в проектирането на отзивчиви интерфейси и внедряването на динамични функции чрез модерни технологии, обичам да работя в екип и да създавам изключителни решения, които съчетават дизайн и технологии.",
+    "image": "assets/images/pexels-simon-robben-614810.webp"
+  },
+  "workExperience": {
+    "categoryName": "Работен опит",
+    "workExperienceList": [
+      {
+        "positionLabel": "Длъжност",
+        "position": "Front-End Разработчик",
+        "periodLabel": "Период",
+        "period": "Януари 2022 - Настояще",
+        "employerLabel": "Работодател",
+        "employer": "Тех Солюшънс ООД",
+        "description": "Ръководих разработката на отзивчиви уеб приложения, съобразени с нуждите на клиентите, използвайки React и Angular. Работих съвместно с дизайнери и бекенд разработчици за осигуряване на безупречно потребителско изживяване. Оптимизирах производителността на уебсайтовете, намалявайки времето за зареждане с 30%, и внедрих най-добрите практики за достъпност и SEO."
+      },
+      {
+        "positionLabel": "Длъжност",
+        "position": "Уеб разработчик - стажант",
+        "periodLabel": "Период",
+        "period": "Юни 2021 - Декември 2021",
+        "employerLabel": "Работодател",
+        "employer": "Креатив Уеб Агенция",
+        "description": "Подкрепях екипа в разработката и поддръжката на повече от 15 клиентски уебсайта. Работих с WordPress и JavaScript библиотеки за подобряване на функционалността. Асистирах на старши разработчиците, решавайки технически проблеми и предлагайки иновативни подобрения в дизайна."
+      },
+      {
+        "positionLabel": "Длъжност",
+        "position": "Фрийланс Уеб Дизайнер",
+        "periodLabel": "Период",
+        "period": "Януари 2020 - Май 2021",
+        "employerLabel": "Работодател",
+        "employer": "Самонает",
+        "description": "Проектирах и разработих персонализирани уебсайтове за малки бизнеси и стартиращи компании, фокусирайки се върху използваемостта, естетиката и брандирането. Осигурих цялостна услуга от консултации с клиенти до крайното внедряване. Доставях качествени проекти в срок и бюджет, изграждайки дългосрочни отношения с клиентите."
+      }
+    ]
+  },
+  "education": {
+    "categoryName": "Образование",
+    "educationList": [
+      {
+        "schoolNameLabel": "Име на училището",
+        "schoolName": "Университет по Дигитални Изкуства",
+        "educationDegreeLabel": "Степен",
+        "educationDegree": "Бакалавър",
+        "degreeNameLabel": "Специалност",
+        "degreeName": "Компютърни Науки",
+        "periodLabel": "Период",
+        "period": "2018 - 2022",
+        "description": "Завърших обширна програма, фокусирана върху основи на компютърните науки, разработка на софтуер и уеб технологии. Придобих практически опит с програмни езици, бази данни и модерни уеб рамки."
+      },
+      {
+        "schoolNameLabel": "Име на училището",
+        "schoolName": "Код Академия",
+        "educationDegreeLabel": "Степен",
+        "educationDegree": "Професионален Сертификат",
+        "degreeNameLabel": "Специалност",
+        "degreeName": "Full-Stack Уеб Разработка",
+        "periodLabel": "Период",
+        "period": "2020",
+        "description": "Придобих задълбочени знания за разработка на full-stack приложения, включително front-end технологии като React и back-end технологии като Node.js. Участвах в реални проекти за изграждане на практически опит."
+      },
+      {
+        "schoolNameLabel": "Име на училището",
+        "schoolName": "Технологично Средно Училище",
+        "educationDegreeLabel": "Степен",
+        "educationDegree": "Средно Образование",
+        "degreeNameLabel": "Специалност",
+        "degreeName": "Научно-Технологичен Профил",
+        "periodLabel": "Период",
+        "period": "2014 - 2018",
+        "description": "Завърших с основи в математиката, науките и основното програмиране. Участвах в технологични панаири и разработих ранни проекти, които събудиха интереса ми към уеб разработката."
+      },
+      {
+        "schoolNameLabel": "Име на училището",
+        "schoolName": "Онлайн Платформа за Обучение",
+        "educationDegreeLabel": "Степен",
+        "educationDegree": "Нано Диплома",
+        "degreeNameLabel": "Специалност",
+        "degreeName": "UX Дизайн",
+        "periodLabel": "Период",
+        "period": "2021",
+        "description": "Фокусирах се върху разбирането на поведението на потребителите и създаването на дизайни, които подобряват използваемостта и достъпността. Усъвършенствах умения в създаването на wireframes, прототипи и провеждане на тестове за използваемост."
+      }
+    ]
+  },
+  "coursesAndCertificates": {
+    "categoryName": "Курсове и сертификати",
+    "coursesList": [
+      {
+        "nameLabel": "Име на сертификата: ",
+        "name": "Сертифициран Front-End Разработчик",
+        "organizationLabel": "Издаваща организация: ",
+        "organization": "Институт по Уеб Разработка",
+        "issueDateLabel": "Дата на издаване: ",
+        "issueDate": "Март 2022",
+        "expirationDateLabel": "Дата на изтичане: ", 
+        "expirationDate": "Март 2025",
+        "identificationLabel": "Идентификатор: ",
+        "identification": "FED123456",
+        "URLLabel": "URL: ",
+        "link": "https://certificates.webdevinstitute.com/FED123456",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Сертифицирани знания и умения в front-end технологии, включително HTML, CSS, JavaScript и модерни рамки като React и Angular."
+      },
+      {
+        "nameLabel": "Име на сертификата: ",
+        "name": "Специалист по JavaScript",
+        "organizationLabel": "Издаваща организация: ",
+        "organisation": "Code School",
+        "issueDateLabel": "Дата на издаване: ",
+        "issueDate": "Юни 2021",
+        "expirationDateLabel": "Дата на изтичане: ", 
+        "expirationDate": "Юни 2024",
+        "identificationLabel": "Идентификатор: ",
+        "identification": "JS678910",
+        "link": "https://certificates.codeschool.com/JS678910",
+        "image":"assets/images/certificate_2.webp",
+        "description": "Доказани умения в JavaScript, включително ES6+, асинхронно програмиране и манипулиране на DOM."
+      },
+      {
+        "nameLabel": "Име на сертификата: ",
+        "name": "Отзивчив Уеб Дизайн",
+        "organizationLabel": "Издаваща организация: ",
+        "organisation": "FreeCodeCamp",
+        "issueDateLabel": "Дата на издаване: ",
+        "issueDate": "Декември 2020",
+        "expirationDateLabel": "Дата на изтичане: ", 
+        "expirationDate": null,
+        "identificationLabel": "Идентификатор: ",
+        "identification": "RWD345678",
+        "link": "https://www.freecodecamp.org/certification/johndoe/responsive-web-design",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Научих принципите на адаптивния дизайн с CSS и създадох мобилно-ориентирани уебсайтове."
+      },
+      {
+        "nameLabel": "Име на сертификата: ",
+        "name": "Контрол на Версиите с Git",
+        "organizationLabel": "Издаваща организация: ",
+        "organisation": "Git Academy",
+        "issueDateLabel": "Дата на издаване: ",
+        "issueDate": "Юли 2021",
+        "expirationDateLabel": "Дата на изтичане: ", 
+        "expirationDate": null,
+        "identificationLabel": "Идентификатор: ",
+        "identification": "GIT987654",
+        "link": "https://certificates.gitacademy.com/GIT987654",
+        "image":"assets/images/certificate_2.webp",
+        "description": "Придобих умения в управление на версии, включително клониране, обединяване и разрешаване на конфликти."
+      },
+      {
+        "nameLabel": "Име на сертификата: ",
+        "name": "Въведение в UI/UX Дизайн",
+        "organizationLabel": "Издаваща организация: ",
+        "organisation": "Design Institute",
+        "issueDateLabel": "Дата на издаване: ",
+        "issueDate": "Април 2021",
+        "expirationDateLabel": "Дата на изтичане: ", 
+        "expirationDate": null,
+        "identificationLabel": "Идентификатор: ",
+        "iidentification": "UIUX543210",
+        "link": "https://certificates.designinstitute.com/UIUX543210",
+        "image":"assets/images/certificate_1.webp",
+        "description": "Запознах се с принципите на UI/UX дизайн, проучване на потребители и прототипиране."
+      }
+    ]
+  },
+  "projects": {
+    "categoryName": "Проекти",
+    "projectsList": [
+      {
+        "name": "Портфолио Уебсайт",
+        "linkLabel": "URL: ",
+        "link": "https://johndoe.dev",
+        "repositoryLink": "Репозитори: ",
+        "repository": "https://github.com/johndoe/portfolio",
+        "description": "Визуално привлекателно и функционално портфолио, представящо моите умения, опит и проекти. Разработено с HTML, CSS и JavaScript, с отзивчив дизайн за всички устройства.",
+        "tags": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "name": "Е-Платформа за Търговия",
+        "linkLabel": "URL: ",
+        "link": "https://shopmore.com",
+        "repositoryLink": "Репозитори: ",
+        "repository": "https://github.com/johndoe/ecommerce-platform",
+        "descriptionLabel": "Описание",
+        "description": "Стабилна и мащабируема платформа за електронна търговия със съвременен потребителски интерфейс и интеграция на плащания.",
+        "tags": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Чат Приложение",
+        "linkLabel": "URL: ",
+        "link": "https://chatterapp.com",
+        "repositoryLink": "Репозитори: ",
+        "repository": "https://github.com/johndoe/chat-application",
+        "descriptionLabel": "Описание",
+        "description": "Приложение за чат в реално време с възможности за лични и групови съобщения. Построено с Vue.js и Socket.IO.",
+        "tags": [
+          "Vue.js",
+          "Socket.IO",
+          "Firebase"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "categoryName": "Умения",
+    "technicalSkillsLabel": "Технически умения",
+    "technicalSkills": [
+      {
+        "skill": "React.js",
+        "description": "Високо ниво на познания за създаване на модулни и динамични приложения с React. Опит в управление на състоянието чрез Redux."
+      },
+      {
+        "skill": "HTML & CSS",
+        "description": "Експертност в създаването на семантични и достъпни интерфейси с CSS Grid и Flexbox."
+      },
+      {
+        "skill": "Контрол на Версии",
+        "description": "Опит в работа с Git/GitHub за съвместна работа и управление на проекти."
+      }
+    ],
+    "softSkillsLabel" : "Социални умения",
+    "softSkills": [
+      {
+        "skill": "Решаване на Проблеми",
+        "description": "Анализ на сложни задачи и внедряване на технически решения в кратки срокове."
+      },
+      {
+        "skill": "Комуникация",
+        "description": "Отлични умения за взаимодействие с екипи, клиенти и заинтересовани страни."
+      },
+      {
+        "skill": "Адаптивност",
+        "description": "Бързо адаптиране към нови технологии и работна среда."
+      }
+    ]
+  },
+  "languageSkills": {
+    "categoryName": "Езикови умения",
+    "languageListLabel": "Език",
+    "languagesList": [
+      "Български (Роден)",
+      "Английски (Свободно Владеене)",
+      "Френски (Базов)"
+    ],
+    "speakingLabel": "Говорене",
+    "speakingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "writingLabel": "Писане",
+    "writingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "readingLabel": "Четене",
+    "readingList": [
+      "C+",
+      "C",
+      "B"
+    ],
+    "grammarLabel": "Граматика",
+    "grammarList": [
+      "C+",
+      "C",
+      "B"
+    ]
+  },
+  "contacts": {
+    "categoryName": "Контакти",
+    "telephoneLabel": "Телефон",
+    "telephone": "+359-888-123-456",
+    "mailLabel": "Електронна поща",
+    "mail": "johndoe@example.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedIn": "https://linkedin.com/in/placeholder",
+    "gitHubLabel": "GitHub",
+    "gitHub": "https://github.com/placeholder"
+  },
+  "languages": {
+    "bg": "BG",
+    "en": "EN",
+    "de": "DE"
+  },
+  "footer": {
+    "content": "Създадено от &nbsp; <a href=\"https://www.linkedin.com/in/georgi-brankovanov/\" target=\"_blank\" class=\"footer-link\">Георги Бранкованов</a> &nbsp; - &nbsp;"
+  },
+  "buttons": {
+    "close": "Затвори"
+  }
+}

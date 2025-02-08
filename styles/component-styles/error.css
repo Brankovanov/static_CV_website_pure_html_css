@@ -1,0 +1,23 @@
+.error {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.error.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.error .error-message {
+  width: 100%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  text-align: center;
+}
