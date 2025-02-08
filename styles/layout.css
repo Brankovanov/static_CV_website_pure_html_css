@@ -69,7 +69,7 @@ html:has(article:not(.education, .skills) input[type=checkbox]:checked) {
   display: none;
 
   /* TABLET */
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
     flex: 1;
   }
