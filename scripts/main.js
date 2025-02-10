@@ -1,3 +1,4 @@
+
 import { constants } from './constants.js'
 import { getCookies } from './cookies.js';
 import { generateTemplate } from './template.js';
@@ -7,7 +8,6 @@ import { showSpinner } from './spinner.js';
 
 let content;
 let chosenLanguage = constants.bulgarianLanguage;
-
 main();
 async function main() {
   // TODO -> CLEAN ACCESSIBILITY REPORT + EXPORT CLEAN REPORT 

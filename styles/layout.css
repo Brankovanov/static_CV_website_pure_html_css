@@ -87,15 +87,17 @@ img {
 }
 
 input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 .main-header:has(+ .dynamic-container .bio input[type=checkbox]:checked),
 .main-header:has(+ .dynamic-container .work-experience input[type=checkbox]:checked),
 .main-header:has(+ .dynamic-container .courses-and-certificates input[type=checkbox]:checked),
-.dynamic-container:has(.bio input[type=checkbox]:checked) + .static-container footer a,
-.dynamic-container:has(.work-experience input[type=checkbox]:checked) + .static-container footer a,
-.dynamic-container:has(.courses-and-certificates input[type=checkbox]:checked) + .static-container footer a {
+.dynamic-container:has(.bio input[type=checkbox]:checked)+.static-container footer a,
+.dynamic-container:has(.work-experience input[type=checkbox]:checked)+.static-container footer a,
+.dynamic-container:has(.courses-and-certificates input[type=checkbox]:checked)+.static-container footer a {
   z-index: -1;
 }
 
@@ -111,7 +113,7 @@ input {
 
   /* TOUCH SCREEN */
   @media (any-pointer: coarse) {
-      display: block;
+    display: block;
   }
 }
 
@@ -128,5 +130,14 @@ button {
 }
 
 .hidden {
- display: none;
+  display: none;
+}
+
+*:focus-visible,
+input:focus-visible+*,
+input:focus-visible+*>*,
+input:focus-visible~* {
+  background-color: rgba(var(--outline-color), 0.5)!important;
+  outline: 5px solid rgba(var(--outline-color), 0.5)!important;
+  outline-offset: -3px;
 }

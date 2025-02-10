@@ -137,5 +137,62 @@ export const constants = {
   //Error
   httpError: 'HTTP error! Status: ',
   errorMessage: 'Something went wrong. Please try later.',
-  yearCreated: 2024
+  yearCreated: 2024,
+  
+  //Cached
+  cacheVersion: '1',
+  cacheName: 'cv-site-cache-v',
+  serviceWorker: 'serviceWorker',
+  serviceWorkerLink: 'scripts/cache.js',
+  install_event: 'install',
+  fetch_event: 'fetch',
+  activate_event: 'activate',
+  cache_assets:  [
+    '../index.html',
+    // CSS Files
+    '../styles/components.css',
+    '../styles/definitions.css',
+    '../styles/layout.css',
+    '../styles/reset.css',
+    '../styles/styles.css',
+    '../styles/typography.css',
+
+    // Component Styles
+    '../styles/component-styles/aside.css',
+    '../styles/component-styles/bio.css',
+    '../styles/component-styles/contacts.css',
+    '../styles/component-styles/courses-and-certificates.css',
+    '../styles/component-styles/education.css',
+    '../styles/component-styles/error.css',
+    '../styles/component-styles/experience.css',
+    '../styles/component-styles/footer.css',
+    '../styles/component-styles/header.css',
+    '../styles/component-styles/languages.css',
+    '../styles/component-styles/projects.css',
+    '../styles/component-styles/skills.css',
+    '../styles/component-styles/spinner.css',
+    //Scripts
+    './aboutMe.js',
+    './cache.js',
+    './constants.js',
+    './contacts.js',
+    './content.js',
+    './cookies.js',
+    './courses.js',
+    './education.js',
+    './error.js',
+    './footer.js',
+    './languages.js',
+    './main.js',
+    './navigation.js',
+    './projects.js',
+    './skills.js',
+    './spinner.js',
+    './template.js',
+    './workExperience.js',
+    //Images
+    `../assets/images/certificate_1.webp`,
+    `../assets/images/certificate_2.webp`,
+    `../assets/images/pexels-simon-robben-614810.webp`
+  ]
 }

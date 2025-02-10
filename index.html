@@ -28,7 +28,7 @@
                     <h1 id="header-logo" class="bold"> Person name </h1>
                 </div>
                 <div class="header-wrapper">
-                    <input type="checkbox" name="toggler" hidden id="toggle-header">
+                    <input type="checkbox" name="toggler" hidden id="toggle-header" aria-label="hidden">
                     
                     <label for="toggle-header" aria-label="toggle-header"></label>
                     <div class="toggle-button" 
@@ -63,15 +63,15 @@
                 <!-- BIO -->
                 <section id="bio" class="bio">
                     <article>
-                        <input type="checkbox" name="sections" id="bio-image">
+                        <input type="checkbox" name="sections" id="bio-image" aria-label="hidden">
                         <label for="bio-image">
                             <div class="picture-container">
                                 <img id="about-me-image" src="" alt="PlaceHolder">
                                 <div class="personal-info">
                                     <h5 id="about-me-name" class="bold">Placeholder</h5>
                                     <p id="about-me-age">Placeholder</p>
-                                    <div id="about-me-contacts">
-                                        <p>
+                                    <div id="about-me-contacts">            
+                                                <p>
                                             <span class="bold">Placeholder</span>
                                             <a href="">Placeholder</a>
                                         </p>
@@ -88,9 +88,9 @@
                                 </div>
                             </div>
                         </label>
-                        <input type="checkbox" name="sections" id="bio-description">
+                        <input type="checkbox" name="sections" id="bio-description" aria-label="hidden">
                         <label for="bio-description">
-                            <div id="about-me-body" class="content-container">
+                            <div id="about-me-body" class="content-container" >
                                 <header>
                                     <h2 id="about-me-title">Placeholder</h2>
                                 </header>
@@ -111,7 +111,7 @@
                         <details>
                             <summary id="experience-title" class="bold">Placeholder</summary>
                             <div class="details-container">
-                                <input type="checkbox" name="sections" id="">
+                                <input type="checkbox" name="sections" id="" aria-label="hidden">
                                 <label for="">
                                     <ul id="experience-details">
                                         <li>Placeholder</li>
@@ -135,7 +135,7 @@
                         </header>
                         <div id="education-list">
                             <slot>
-                                <input type="checkbox" name="sections" id="">
+                                <input type="checkbox" name="sections" id="" aria-label="hidden">
                                 <label for="">
                                     <article>
                                         <header>
@@ -176,12 +176,12 @@
                             <h2 id="courses-and-certificates-title">Placeholder</h2>
                         </header>
                         <div id="courses-and-certificates-slides-wrapper" class="carousel-container">
-                            <input type="radio" name="slides" id="">
+                            <input type="radio" name="slides" id="" aria-label="hidden">
                             <div class="slide-container">
                                 <div class="slide">
                                     <!-- IMAGES -->
                                     <div> 
-                                        <input type="checkbox" name="sections" id="">
+                                        <input type="checkbox" name="sections" id="" aria-label="hidden">
                                         <label for="">
                                             <img for="" src="" alt="" loading="lazy"/>
                                         </label>
@@ -189,7 +189,7 @@
                                     <!-- IMAGES -->
                                     <!-- DESCRIPTION -->
                                     <div>
-                                        <input type="checkbox" name="sections" id="cources-content-one">
+                                        <input type="checkbox" name="sections" id="cources-content-one" aria-label="hidden">
                                         <label for="cources-content-one">
                                             <ul>
                                                 <li>
@@ -225,7 +225,7 @@
                             </div>
                             <div class="carousel-indicators">
                                 <label aria-label="carousel-indicator">
-                                    <input></input>
+                                    <input aria-label="hidden" class="hidden"></input>
                                 </label>
                             </div>
                         </div>
@@ -276,7 +276,7 @@
                         <div class="skills-container">
                             <h3>PLaceholder</h3>
                             <div>
-                                <input type="checkbox" name="sections" id="skill-one">
+                                <input type="checkbox" name="sections" id="skill-one" aria-label="hidden">
                                 <label for="skill-one">
                                     <h4>PLaceholder</h4>
                                     <p class="bold">PLaceholder</p>
@@ -288,7 +288,7 @@
                             <h3>PLaceholder</h3>
     
                             <div>
-                                <input type="checkbox" name="sections" id="skill-four">
+                                <input type="checkbox" name="sections" id="skill-four" aria-label="hidden">
                                 <label for="skill-four">
                                     <h4>PLaceholder</h4>
                                     <p class="bold">PLaceholder</p>
@@ -373,4 +373,5 @@
 </html>
 
 
+<script type="module" src="scripts/cache.js" async></script>
 <script type="module" src="scripts/main.js" async></script>
