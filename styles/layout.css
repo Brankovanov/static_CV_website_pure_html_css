@@ -137,7 +137,7 @@ button {
 input:focus-visible+*,
 input:focus-visible+*>*,
 input:focus-visible~* {
-  background-color: rgba(var(--outline-color), 0.5)!important;
-  outline: 5px solid rgba(var(--outline-color), 0.5)!important;
+  background-color: var(--outline-color) !important;
+  outline: 5px solid rgba(var(--outline-color), 0.5) !important;
   outline-offset: -3px;
 }
