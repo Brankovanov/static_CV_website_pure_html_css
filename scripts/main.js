@@ -10,6 +10,23 @@ let chosenLanguage = constants.bulgarianLanguage;
 
 main();
 async function main() {
+  // TODO -> CLEAN ACCESSIBILITY REPORT + EXPORT CLEAN REPORT 
+  // https://www.accessibilitychecker.org/
+  console.log("TODO -> CLEAN ACCESSIBILITY REPORT + EXPORT CLEAN REPORT");
+  console.log("https://www.accessibilitychecker.org/");
+  // TODO -> CLEAN PAGE SPEED INSIGHT + EXPORT CLEAN REPORT
+  // https://pagespeed.web.dev/
+  console.log("TODO -> CLEAN PAGE SPEED INSIGHT + EXPORT CLEAN REPORT");
+  console.log("https://pagespeed.web.dev/");
+  // TODO -> CLEAN GTMETRIX + EXPORT CLEAN REPORT
+  // https://gtmetrix.com/
+  console.log("TODO -> CLEAN GTMETRIX + EXPORT CLEAN REPORT");
+  console.log("https://gtmetrix.com/");
+  // TODO -> CLEAN LIGHTHOUSE ANALYSIS DESKTOP AND MOBILE + EXPORT CLEAN REPORT
+  console.log("TODO -> CLEAN LIGHTHOUSE ANALYSIS DESKTOP AND MOBILE + EXPORT CLEAN REPORT");
+  // TODO -> UPDATE README FILE
+  console.log("TODO -> UPDATE README FILE");
+
   showSpinner();
   try {
     chosenLanguage = await getCookies(constants.cookieTypes.language, chosenLanguage);
